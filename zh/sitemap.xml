@@ -3,78 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>mydocs/zh/basics/</loc>
+    <loc>/zh/basics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/basics/"
+                href="/en/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/basics/"
+                href="/fr/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/basics/"
+                href="/zh/basics/"
                 />
   </url>
   
   <url>
-    <loc>mydocs/zh/categories/</loc>
+    <loc>/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/categories/"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/categories/"
+                href="/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/categories/"
+                href="/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>mydocs/zh/</loc>
+    <loc>/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/"
+                href="/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/"
+                href="/zh/"
                 />
   </url>
   
   <url>
-    <loc>mydocs/zh/tags/</loc>
+    <loc>/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/tags/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/tags/"
+                href="/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/tags/"
+                href="/zh/tags/"
                 />
   </url>
   
