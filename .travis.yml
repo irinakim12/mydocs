@@ -1,0 +1,43 @@
+---
+dist: xenial # Ubuntu 16.04
+language: node_js
+node_js: 11.0.0
+
+# Enable for PowerShell support
+#addons:
+#  apt:
+#    sources:
+#      - sourceline: "deb [arch=amd64] https://packages.microsoft.com/ubuntu/16.04/prod xenial main"
+#        key_url: "https://packages.microsoft.com/keys/microsoft.asc"
+#    packages:
+#      - powershell
+
+install:
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.64.0/hugo_extended_0.64.0_Linux-64bit.deb
+  - sudo dpkg -i /tmp/hugo.deb
+  - npm install
+
+script:
+  - hugo --debug
+
+after_success:
+  - bash ./deploy.sh
+
+env:
+  global:
+  - GH_TOKEN: $GITHUB_TOKEN
+  - GH_USER: bjnhur
+  - GH_REPO: mydocs
+  - GH_SRC: master
+  - GH_DST: gh-pages
+
+# Deploy to GitHub pages
+#deploy:
+#  provider: pages
+#  cleanup: true
+#  token: $GITHUB_TOKEN
+#  email: bjnhur@gmail.com
+#  name: bjnhur
+#  local_dir: public
+#  on:
+#    branch: master
