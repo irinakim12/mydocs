@@ -2,7 +2,7 @@ baseURL = "https://devbj.com/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation 적용"
+title = "DevBJ.com"
 theme = "hugo-theme-learn"
 #themesdir = "."
 metaDataFormat = "yaml"
