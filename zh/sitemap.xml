@@ -3,78 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>mydocs/zh/basics/</loc>
+    <loc>https://devbj.com/zh/basics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/basics/"
+                href="https://devbj.com/en/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/basics/"
+                href="https://devbj.com/fr/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/basics/"
+                href="https://devbj.com/zh/basics/"
                 />
   </url>
   
   <url>
-    <loc>mydocs/zh/categories/</loc>
+    <loc>https://devbj.com/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/categories/"
+                href="https://devbj.com/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/categories/"
+                href="https://devbj.com/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/categories/"
+                href="https://devbj.com/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>mydocs/zh/</loc>
+    <loc>https://devbj.com/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/"
+                href="https://devbj.com/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/"
+                href="https://devbj.com/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/"
+                href="https://devbj.com/zh/"
                 />
   </url>
   
   <url>
-    <loc>mydocs/zh/tags/</loc>
+    <loc>https://devbj.com/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="mydocs/en/tags/"
+                href="https://devbj.com/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="mydocs/fr/tags/"
+                href="https://devbj.com/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="mydocs/zh/tags/"
+                href="https://devbj.com/zh/tags/"
                 />
   </url>
   
