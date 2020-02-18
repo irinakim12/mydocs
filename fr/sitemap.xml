@@ -3,553 +3,553 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/fr/cont/pages/</loc>
+    <loc>mydocs/fr/cont/pages/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/pages/"
+                href="mydocs/en/cont/pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/pages/"
+                href="mydocs/fr/cont/pages/"
                 />
   </url>
   
   <url>
-    <loc>/fr/basics/</loc>
+    <loc>mydocs/fr/basics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="mydocs/en/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/basics/"
+                href="mydocs/zh/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/"
+                href="mydocs/fr/basics/"
                 />
   </url>
   
   <url>
-    <loc>/fr/cont/</loc>
+    <loc>mydocs/fr/cont/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/"
+                href="mydocs/en/cont/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/"
+                href="mydocs/fr/cont/"
                 />
   </url>
   
   <url>
-    <loc>/fr/cont/archetypes/</loc>
+    <loc>mydocs/fr/cont/archetypes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/archetypes/"
+                href="mydocs/en/cont/archetypes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/archetypes/"
+                href="mydocs/fr/cont/archetypes/"
                 />
   </url>
   
   <url>
-    <loc>/fr/basics/requirements/</loc>
+    <loc>mydocs/fr/basics/requirements/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/requirements/"
+                href="mydocs/en/basics/requirements/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/requirements/"
+                href="mydocs/fr/basics/requirements/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/</loc>
+    <loc>mydocs/fr/shortcodes/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/"
+                href="mydocs/en/shortcodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/"
+                href="mydocs/fr/shortcodes/"
                 />
   </url>
   
   <url>
-    <loc>/fr/cont/markdown/</loc>
+    <loc>mydocs/fr/cont/markdown/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/markdown/"
+                href="mydocs/en/cont/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/markdown/"
+                href="mydocs/fr/cont/markdown/"
                 />
   </url>
   
   <url>
-    <loc>/fr/basics/installation/</loc>
+    <loc>mydocs/fr/basics/installation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/installation/"
+                href="mydocs/en/basics/installation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/installation/"
+                href="mydocs/fr/basics/installation/"
                 />
   </url>
   
   <url>
-    <loc>/fr/basics/configuration/</loc>
+    <loc>mydocs/fr/basics/configuration/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/configuration/"
+                href="mydocs/en/basics/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/configuration/"
+                href="mydocs/fr/basics/configuration/"
                 />
   </url>
   
   <url>
-    <loc>/fr/basics/style-customization/</loc>
+    <loc>mydocs/fr/basics/style-customization/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/style-customization/"
+                href="mydocs/en/basics/style-customization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/style-customization/"
+                href="mydocs/fr/basics/style-customization/"
                 />
   </url>
   
   <url>
-    <loc>/fr/cont/menushortcuts/</loc>
+    <loc>mydocs/fr/cont/menushortcuts/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/menushortcuts/"
+                href="mydocs/en/cont/menushortcuts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/menushortcuts/"
+                href="mydocs/fr/cont/menushortcuts/"
                 />
   </url>
   
   <url>
-    <loc>/fr/cont/i18n/</loc>
+    <loc>mydocs/fr/cont/i18n/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/i18n/"
+                href="mydocs/en/cont/i18n/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/i18n/"
+                href="mydocs/fr/cont/i18n/"
                 />
   </url>
   
   <url>
-    <loc>/fr/cont/tags/</loc>
+    <loc>mydocs/fr/cont/tags/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/tags/"
+                href="mydocs/en/cont/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/tags/"
+                href="mydocs/fr/cont/tags/"
                 />
   </url>
   
   <url>
-    <loc>/fr/tags/documentation/</loc>
+    <loc>mydocs/fr/tags/documentation/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/documentation/"
+                href="mydocs/en/tags/documentation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/documentation/"
+                href="mydocs/fr/tags/documentation/"
                 />
   </url>
   
   <url>
-    <loc>/fr/</loc>
+    <loc>mydocs/fr/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="mydocs/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/"
+                href="mydocs/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/"
+                href="mydocs/fr/"
                 />
   </url>
   
   <url>
-    <loc>/fr/tags/</loc>
+    <loc>mydocs/fr/tags/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="mydocs/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/"
+                href="mydocs/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/"
+                href="mydocs/fr/tags/"
                 />
   </url>
   
   <url>
-    <loc>/fr/tags/tutorial/</loc>
+    <loc>mydocs/fr/tags/tutorial/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/tutorial/"
+                href="mydocs/en/tags/tutorial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/tutorial/"
+                href="mydocs/fr/tags/tutorial/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/attachments/</loc>
+    <loc>mydocs/fr/shortcodes/attachments/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/attachments/"
+                href="mydocs/en/shortcodes/attachments/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/attachments/"
+                href="mydocs/fr/shortcodes/attachments/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/button/</loc>
+    <loc>mydocs/fr/shortcodes/button/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/button/"
+                href="mydocs/en/shortcodes/button/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/button/"
+                href="mydocs/fr/shortcodes/button/"
                 />
   </url>
   
   <url>
-    <loc>/fr/categories/</loc>
+    <loc>mydocs/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="mydocs/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/categories/"
+                href="mydocs/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/categories/"
+                href="mydocs/fr/categories/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/</loc>
+    <loc>mydocs/fr/shortcodes/children/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/"
+                href="mydocs/en/shortcodes/children/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/"
+                href="mydocs/fr/shortcodes/children/"
                 />
   </url>
   
   <url>
-    <loc>/fr/credits/</loc>
+    <loc>mydocs/fr/credits/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/credits/"
+                href="mydocs/en/credits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/credits/"
+                href="mydocs/fr/credits/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/expand/</loc>
+    <loc>mydocs/fr/shortcodes/expand/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/expand/"
+                href="mydocs/en/shortcodes/expand/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/expand/"
+                href="mydocs/fr/shortcodes/expand/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/mermaid/</loc>
+    <loc>mydocs/fr/shortcodes/mermaid/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/mermaid/"
+                href="mydocs/en/shortcodes/mermaid/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/mermaid/"
+                href="mydocs/fr/shortcodes/mermaid/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/notice/</loc>
+    <loc>mydocs/fr/shortcodes/notice/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/notice/"
+                href="mydocs/en/shortcodes/notice/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/notice/"
+                href="mydocs/fr/shortcodes/notice/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-1/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/"
+                href="mydocs/en/shortcodes/children/children-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/"
+                href="mydocs/fr/shortcodes/children/children-1/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-1/children-1-1/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-1/children-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/"
+                href="mydocs/en/shortcodes/children/children-1/children-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/"
+                href="mydocs/fr/shortcodes/children/children-1/children-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/"
+                href="mydocs/en/shortcodes/children/children-1/children-1-1/children-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/"
+                href="mydocs/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
+                href="mydocs/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
+                href="mydocs/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
+                href="mydocs/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
+                href="mydocs/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-2/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-2/"
+                href="mydocs/en/shortcodes/children/children-2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-2/"
+                href="mydocs/fr/shortcodes/children/children-2/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-3/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-3/"
+                href="mydocs/en/shortcodes/children/children-3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-3/"
+                href="mydocs/fr/shortcodes/children/children-3/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-4/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-4/"
+                href="mydocs/en/shortcodes/children/children-4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-4/"
+                href="mydocs/fr/shortcodes/children/children-4/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/test/</loc>
+    <loc>mydocs/fr/shortcodes/children/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/test/"
+                href="mydocs/en/shortcodes/children/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/test/"
+                href="mydocs/fr/shortcodes/children/test/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/children/children-2/test3/</loc>
+    <loc>mydocs/fr/shortcodes/children/children-2/test3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-2/test3/"
+                href="mydocs/en/shortcodes/children/children-2/test3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-2/test3/"
+                href="mydocs/fr/shortcodes/children/children-2/test3/"
                 />
   </url>
   
   <url>
-    <loc>/fr/shortcodes/siteparam/</loc>
+    <loc>mydocs/fr/shortcodes/siteparam/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/siteparam/"
+                href="mydocs/en/shortcodes/siteparam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/siteparam/"
+                href="mydocs/fr/shortcodes/siteparam/"
                 />
   </url>
   
   <url>
-    <loc>/fr/vitrine/</loc>
+    <loc>mydocs/fr/vitrine/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/showcase/"
+                href="mydocs/en/showcase/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/vitrine/"
+                href="mydocs/fr/vitrine/"
                 />
   </url>
   
