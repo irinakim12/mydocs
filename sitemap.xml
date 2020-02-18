@@ -1,119 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/table-of-contents/with-toc/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/table-of-contents/without-toc/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/posts/creating-a-new-theme/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/posts/migrate-from-jekyll/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/table-of-contents/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/collapsed/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/posts/goisforlovers/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/posts/hugoisforlovers/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/collapsed/3rd-level/4th-level/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/collapsed/3rd-level/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/example/hidden/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/buttons/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/columns/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/expand/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/hints/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/katex/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/mermaid/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/shortcodes/tabs/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/posts/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/docs/</loc>
-  </url>
-  
-  <url>
-    <loc>http://debbj.com/mydocs/</loc>
-    <lastmod>2020-02-17T20:19:55+09:00</lastmod>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>mydocs/en/sitemap.xml</loc>
+		
+	   	<lastmod>2018-11-29T08:41:44+01:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>mydocs/fr/sitemap.xml</loc>
+		
+	   	<lastmod>2018-11-29T08:41:44+01:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>mydocs/zh/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

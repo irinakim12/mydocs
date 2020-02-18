@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>mydocs/zh/basics/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="mydocs/en/basics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="mydocs/fr/basics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="mydocs/zh/basics/"
+                />
+  </url>
+  
+  <url>
+    <loc>mydocs/zh/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="mydocs/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="mydocs/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="mydocs/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>mydocs/zh/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="mydocs/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="mydocs/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="mydocs/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>mydocs/zh/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="mydocs/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="mydocs/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="mydocs/zh/tags/"
+                />
+  </url>
+  
+</urlset>
