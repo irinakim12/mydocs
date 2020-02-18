@@ -22,7 +22,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme 영어"
+title = "DevBJ.com"
 weight = 1
 languageName = "English"
 
