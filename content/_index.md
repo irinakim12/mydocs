@@ -8,13 +8,13 @@ title: Home
 
 여기는 홈화면입니다.
 
-# 🍳**Remove a git submodule**
+## 🍳**Remove a git submodule**
 
 From:
 
 [Remove a git submodule (Example)](https://coderwall.com/p/csriig/remove-a-git-submodule)
 
-## T**o remove a submodule you need to: 🐌**
+### T**o remove a submodule you need to: 🐌**
 
 1. Delete the relevant line from the .gitmodules file.
 2. Delete the relevant section from .git/config.
