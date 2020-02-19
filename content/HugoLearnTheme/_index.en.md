@@ -1,5 +1,10 @@
 ---
 title: "Learn Theme for Hugo"
+weight: 100
+chapter: true
+#pre: "<b>1. </b>"
+pre: "<i class='fab fa-github'></i> "
+menuTitle: About Learn Theme
 ---
 
 # Hugo learn theme
@@ -8,21 +13,21 @@ title: "Learn Theme for Hugo"
 
 This theme is a partial porting of the [Learn theme](http://learn.getgrav.org/) of [Grav](https://getgrav.org/), a modern flat-file CMS written in PHP.
 
-{{% notice tip %}}Learn theme works with a _page tree structure_ to organize content : All contents are pages, which belong to other pages. [read more about this]({{%relref "cont/pages/_index.md"%}}) 
+{{% notice tip %}}Learn theme works with a _page tree structure_ to organize content : All contents are pages, which belong to other pages. [read more about this]({{%relref "HugoLearnTheme/cont/pages/_index.md"%}})
 {{% /notice %}}
 
 ## Main features
 
-* [Automatic Search]({{%relref "basics/configuration/_index.md#activate-search" %}})
-* [Multilingual mode]({{%relref "cont/i18n/_index.md" %}})
+* [Automatic Search]({{%relref "HugoLearnTheme/basics/configuration/_index.md#activate-search" %}})
+* [Multilingual mode]({{%relref "HugoLearnTheme/cont/i18n/_index.md" %}})
 * **Unlimited menu levels**
 * **Automatic next/prev buttons to navigate through menu entries**
-* [Image resizing, shadow...]({{%relref "cont/markdown.en.md#images" %}})
-* [Attachments files]({{%relref "shortcodes/attachments.en.md" %}})
-* [List child pages]({{%relref "shortcodes/children/_index.md" %}})
-* [Mermaid diagram]({{%relref "shortcodes/mermaid.en.md" %}}) (flowchart, sequence, gantt)
-* [Customizable look and feel and themes variants]({{%relref "basics/style-customization/_index.md"%}})
-* [Buttons]({{%relref "shortcodes/button.en.md" %}}), [Tip/Note/Info/Warning boxes]({{%relref "shortcodes/notice.en.md" %}}), [Expand]({{%relref "shortcodes/expand.en.md" %}})
+* [Image resizing, shadow...]({{%relref "HugoLearnTheme/cont/markdown.en.md#images" %}})
+* [Attachments files]({{%relref "HugoLearnTheme/shortcodes/attachments.en.md" %}})
+* [List child pages]({{%relref "HugoLearnTheme/shortcodes/children/_index.md" %}})
+* [Mermaid diagram]({{%relref "HugoLearnTheme/shortcodes/mermaid.en.md" %}}) (flowchart, sequence, gantt)
+* [Customizable look and feel and themes variants]({{%relref "HugoLearnTheme/basics/style-customization/_index.md"%}})
+* [Buttons]({{%relref "HugoLearnTheme/shortcodes/button.en.md" %}}), [Tip/Note/Info/Warning boxes]({{%relref "HugoLearnTheme/shortcodes/notice.en.md" %}}), [Expand]({{%relref "HugoLearnTheme/shortcodes/expand.en.md" %}})
 
 ![Screenshot](https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&classes=shadow)
 
