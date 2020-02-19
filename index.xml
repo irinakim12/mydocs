@@ -1,171 +1,181 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on Devbj Blog</title>
-    <link>http://debbj.com/mydocs/</link>
-    <description>Recent content in Introduction on Devbj Blog</description>
+    <title>Home on DevBJ.com</title>
+    <link>https://devbj.com/</link>
+    <description>Recent content in Home on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 29 Nov 2018 08:41:44 +0100</lastBuildDate>
     
-	<atom:link href="http://debbj.com/mydocs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://devbj.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>With ToC</title>
-      <link>http://debbj.com/mydocs/docs/example/table-of-contents/with-toc/</link>
+      <title>Archetypes</title>
+      <link>https://devbj.com/hugolearntheme/cont/archetypes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/example/table-of-contents/with-toc/</guid>
-      <description>Caput vino delphine in tamen vias Cognita laeva illo fracta Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
- Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
+      <guid>https://devbj.com/hugolearntheme/cont/archetypes/</guid>
+      <description>Using the command: hugo new [relative new content path], you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more : archetypes.
+It is pre-configured skeleton pages with default front matter. Please refer to the documentation for types of page to understand the differences.
+Chapter To create a Chapter page, run the following commands
+hugo new --kind chapter &amp;lt;name&amp;gt;/_index.</description>
     </item>
     
     <item>
-      <title>Without ToC</title>
-      <link>http://debbj.com/mydocs/docs/example/table-of-contents/without-toc/</link>
+      <title>Markdown syntax</title>
+      <link>https://devbj.com/hugolearntheme/cont/markdown/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>https://devbj.com/hugolearntheme/cont/markdown/</guid>
+      <description>This page is a shameful copy of the great Grav original page. Only difference is information about image customization (resizing, add CSS classes&amp;hellip;)
+ Let&amp;rsquo;s face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
+Markdown is a better way to write HTML, without all the complexities and ugliness that usually accompanies it.</description>
+    </item>
+    
+    <item>
+      <title>Menu extra shortcuts</title>
+      <link>https://devbj.com/hugolearntheme/cont/menushortcuts/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>https://devbj.com/hugolearntheme/cont/menushortcuts/</guid>
+      <description>You can define additional menu entries or shortcuts in the navigation menu without any link to content.
+Basic configuration Edit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.
+Example from the current website:
+[[menu.shortcuts]] name = &amp;quot;&amp;lt;i class=&#39;fab fa-github&#39;&amp;gt;&amp;lt;/i&amp;gt; Github repo&amp;quot; identifier = &amp;quot;ds&amp;quot; url = &amp;quot;https://github.com/matcornic/hugo-theme-learn&amp;quot; weight = 10 [[menu.shortcuts]] name = &amp;quot;&amp;lt;i class=&#39;fas fa-camera&#39;&amp;gt;&amp;lt;/i&amp;gt; Showcases&amp;quot; url = &amp;quot;/showcase&amp;quot; weight = 11 [[menu.</description>
+    </item>
+    
+    <item>
+      <title>Icons and logos</title>
+      <link>https://devbj.com/hugolearntheme/cont/icons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/example/table-of-contents/without-toc/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus Tanto oblite Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
-Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
+      <guid>https://devbj.com/hugolearntheme/cont/icons/</guid>
+      <description>The Learn theme for Hugo loads the Font Awesome library, allowing you to easily display any icon or logo available in the Font Awesome free collection.
+Finding an icon Browse through the available icons in the Font Awesome Gallery. Notice that the free filter is enabled, as only the free icons are available by default.
+Once on the Font Awesome page for a specific icon, for example the page for the heart, copy the HTML reference and paste into the markdown content.</description>
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>http://debbj.com/mydocs/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Tags</title>
+      <link>https://devbj.com/hugolearntheme/cont/tags/</link>
+      <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
       
-      <guid>http://debbj.com/mydocs/posts/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>https://devbj.com/hugolearntheme/cont/tags/</guid>
+      <description>Learn theme support one default taxonomy of gohugo: the tag feature.
+Configuration Just add tags to any page:
+--- date: 2018-11-29T08:41:44+01:00 title: Theme tutorial weight: 15 tags: [&amp;#34;tutorial&amp;#34;, &amp;#34;theme&amp;#34;] --- Behavior The tags are displayed at the top of the page, in their insertion order.
+Each tag is a link to a Taxonomy page displaying all the articles with the given tag.
+List all the tags In the config.toml file you can add a shortcut to display all the tags</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>http://debbj.com/mydocs/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://debbj.com/mydocs/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>http://debbj.com/mydocs/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://debbj.com/mydocs/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>http://debbj.com/mydocs/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://debbj.com/mydocs/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/example/collapsed/3rd-level/4th-level/</link>
+      <title>Attachments</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/attachments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/example/collapsed/3rd-level/4th-level/</guid>
-      <description>4th Level of Menu Caesorum illa tu sentit micat vestes papyriferi Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
-Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii. Cupiens auctoribus pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae iusto! Sedes ante dum superest extrema.</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/attachments/</guid>
+      <description>The Attachments shortcode displays a list of files attached to a page.
+  Attachments   BachGavotteShort.mp3  (357 ko)   Carroll_AliceAuPaysDesMerveilles.pdf  (175 ko)   adivorciarsetoca00cape.pdf  (361 ko)   hugo.png  (17 ko)   movieselectricsheep-flock-244-32500-2.mp4  (340 ko)    Usage The shortcurt lists files found in a specific folder. Currently, it support two implementations for pages
+  If your page is a markdown file, attachements must be place in a folder named like your page and ending with .</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/example/hidden/</link>
+      <title>Button</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/example/hidden/</guid>
-      <description>This page is hidden in menu Quondam non pater est dignior ille Eurotas Latent te facies Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
- Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor  Cum honorum Latona O fallor in sustinui iussorum equidem.</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/button/</guid>
+      <description>A button is a just a clickable button with optional icon.
+{{% button href=&amp;quot;https://getgrav.org/&amp;quot; %}}Get Grav{{% /button %}} {{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fas fa-download&amp;quot; %}}Get Grav with icon{{% /button %}} {{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fas fa-download&amp;quot; icon-position=&amp;quot;right&amp;quot; %}}Get Grav with icon right{{% /button %}}  Get Grav   Get Grav with icon  Get Grav with icon right   </description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/buttons/</link>
+      <title>Expand</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/expand/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/buttons/</guid>
-      <description>Buttons Buttons are styled links that can lead to local page or external link.
-Example {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}}  Get Home  Contribute  </description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/expand/</guid>
+      <description>The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example
+  Expand me...   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/columns/</link>
+      <title>Mermaid</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/mermaid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/columns/</guid>
-      <description>Columns Columns help organize shorter pieces of content horizontally for readability.
-{{&amp;lt; columns &amp;gt;}} &amp;lt;!--begin columns block --&amp;gt; # Left Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!--magic sparator, between columns --&amp;gt; # Mid Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!--magic sparator, between columns --&amp;gt; # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example Left Content Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes.</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/mermaid/</guid>
+      <description>Mermaid is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.
+Just insert your mermaid code in the mermaid shortcode and that&amp;rsquo;s it.
+Flowchart example {{&amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt;}} graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] {{&amp;lt; /mermaid &amp;gt;}}  renders as
+graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two]  or you can use this alternative syntax:</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/expand/</link>
+      <title>Notice</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/notice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/expand/</guid>
-      <description>Expand Expand shortcode can help to decrease clutter on screen by hiding part of text. Expand content by clicking on it.
-Example Default {{&amp;lt; expand &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}}  Expand ↕  Markdown content Lorem markdownum insigne&amp;hellip;    With Custom Label {{&amp;lt; expand &amp;#34;Custom Label&amp;#34; &amp;#34;...&amp;#34; &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}}  Custom Label ...  Markdown content Lorem markdownum insigne.</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/notice/</guid>
+      <description>The notice shortcode shows 4 types of disclaimers to help you structure your page.
+Note {{% notice note %}} A notice disclaimer {{% /notice %}} renders as
+A notice disclaimer
+ Info {{% notice info %}} An information disclaimer {{% /notice %}} renders as
+An information disclaimer
+ Tip {{% notice tip %}} A tip disclaimer {{% /notice %}} renders as
+A tip disclaimer
+ Warning {{% notice warning %}} A warning disclaimer {{% /notice %}} renders as</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/hints/</link>
+      <title>page test</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/children/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/hints/</guid>
-      <description>Hints Hint shortcode can be used as hint/alerts/notification block.
-There are 3 colors to choose: info, warning and danger.
-{{&amp;lt; hint [info|warning|danger] &amp;gt;}} **Markdown content** Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa {{&amp;lt; /hint &amp;gt;}} Example Markdown content
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa  Markdown content</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/children/test/</guid>
+      <description>This is a test demo child page</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/katex/</link>
+      <title>page test</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/children/test.fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/katex/</guid>
-      <description>KaTeX KaTeX shortcode let you render math typesetting in markdown document. See KaTeX
-Example {{&amp;lt; katex [display] [class=&amp;#34;text-center&amp;#34;] &amp;gt;}} x = \begin{cases} a &amp;amp;\text{if } b \\ c &amp;amp;\text{if } d \end{cases} {{&amp;lt; /katex &amp;gt;}}     \( x = \begin{cases} a &amp;\text{if } b \\ c &amp;\text{if } d \end{cases} \)    Display Mode Example Here is some inline example: \(\pi(x)\)  , rendered in the same line.</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/children/test.fr/</guid>
+      <description>Ceci est une page de demo</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/mermaid/</link>
+      <title>page test 3</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/children/children-2/test3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/mermaid/</guid>
-      <description>Mermaid Chart Mermaid is library for generating svg charts and diagrams from text.
-Example {{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} sequenceDiagram Alice-&amp;gt;&amp;gt;Bob: Hello Bob, how are you? alt is sick Bob-&amp;gt;&amp;gt;Alice: Not so good :( else is well Bob-&amp;gt;&amp;gt;Alice: Feeling fresh like a daisy end opt Extra response Bob-&amp;gt;&amp;gt;Alice: Thanks for asking end {{&amp;lt; /mermaid &amp;gt;}}    sequenceDiagram Alice-Bob: Hello Bob, how are you? alt is sick Bob-Alice: Not so good :( else is well Bob-Alice: Feeling fresh like a daisy end opt Extra response Bob-Alice: Thanks for asking end   </description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/children/children-2/test3/</guid>
+      <description>This is a test 3 demo child page</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://debbj.com/mydocs/docs/shortcodes/tabs/</link>
+      <title>page test 3</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/children/children-2/test3.fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://debbj.com/mydocs/docs/shortcodes/tabs/</guid>
-      <description>Tabs Tabs let you organize content by context, for example installation instructions for each supported platform.
-{{&amp;lt; tabs &amp;#34;uniqueid&amp;#34; &amp;gt;}} {{&amp;lt; tab &amp;#34;MacOS&amp;#34; &amp;gt;}} # MacOS Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Linux&amp;#34; &amp;gt;}} # Linux Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Windows&amp;#34; &amp;gt;}} # Windows Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabs &amp;gt;}} Example MacOS  MacOS This is tab MacOS content.
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!</description>
+      <guid>https://devbj.com/hugolearntheme/shortcodes/children/children-2/test3.fr/</guid>
+      <description>Ceci est une page de demo test 3</description>
+    </item>
+    
+    <item>
+      <title>Site param</title>
+      <link>https://devbj.com/hugolearntheme/shortcodes/siteparam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/hugolearntheme/shortcodes/siteparam/</guid>
+      <description>siteparam shortcode is used to help you print values of site params.
+For instance, in this current site, the editURL variable is used in config.toml
+[params] editURL = &amp;#34;https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/&amp;#34; Use the siteparam shortcode to display its value.
+`editURL` Value : {{% siteparam &amp;quot;editURL&amp;quot; %}} is displayed as
+editURL Value : https://github.com/bjnhur/mydocs/edit/master/content/</description>
     </item>
     
   </channel>

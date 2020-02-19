@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.64.0" />
     <meta name="google-site-verification" content="22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ" />
-<meta name="description" content="Documentation for Hugo Learn Theme">
+<meta name="description" content="Generation of diagram and flowchart from text in a similar manner as markdown">
 <meta name="author" content="Bongjun Hur">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Home :: DevBJ.com</title>
+    <title>Mermaid :: DevBJ.com</title>
 
     
     <link href="/css/nucleus.css?1582112676" rel="stylesheet">
@@ -47,7 +47,7 @@
 <script data-ad-client="ca-pub-3059347231702682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/hugolearntheme/shortcodes/mermaid/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -186,7 +186,7 @@
   
     
     <li data-nav-id="/hugolearntheme/" title="Learn Theme for Hugo" class="dd-item 
-        
+        parent
         
         
         ">
@@ -542,7 +542,7 @@
   
     
     <li data-nav-id="/hugolearntheme/shortcodes/" title="Shortcodes" class="dd-item 
-        
+        parent
         
         
         ">
@@ -984,7 +984,7 @@
  
   
     
-      <li data-nav-id="/hugolearntheme/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+      <li data-nav-id="/hugolearntheme/shortcodes/mermaid/" title="Mermaid" class="dd-item active">
         <a href="/hugolearntheme/shortcodes/mermaid/">
         Mermaid
         <i class="fas fa-check read-icon"></i>
@@ -1109,6 +1109,82 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/bjnhur/mydocs/edit/master/content/HugoLearnTheme/shortcodes/mermaid.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/hugolearntheme/'>Learn Theme for Hugo</a> > <a href='/hugolearntheme/shortcodes/'>Shortcodes</a> > Mermaid
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#flowchart-example">Flowchart example</a></li>
+    <li><a href="#sequence-example">Sequence example</a></li>
+    <li><a href="#gantt-example">GANTT Example</a>
+      <ul>
+        <li><a href="#class-example">Class example</a></li>
+        <li><a href="#git-example">Git example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         <div id="adsection">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -1128,19 +1204,194 @@
         
         <div id="body-inner">
           
+            <h1>
+              
+              Mermaid
+            </h1>
+          
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="home">Home</h1>
-<p>여기는 홈화면입니다.</p>
+<p><a href="https://mermaidjs.github.io/">Mermaid</a> is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.</p>
+<p>Just insert your mermaid code in the <code>mermaid</code> shortcode and that&rsquo;s it.</p>
+<h2 id="flowchart-example">Flowchart example</h2>
+<pre><code>{{&lt;mermaid align=&quot;left&quot;&gt;}}
+graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+
+<div class="mermaid" align="left">
+graph LR;
+	A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+
+<p>or you can use this alternative syntax:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>renders as</p>
+<pre><code class="language-mermaid" data-lang="mermaid">graph LR;
+  A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+</code></pre><h2 id="sequence-example">Sequence example</h2>
+<pre><code>{{&lt;mermaid&gt;}}
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
+</div>
+
+<p>or you can use this alternative syntax:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>renders as</p>
+<pre><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+</code></pre><h2 id="gantt-example">GANTT Example</h2>
+<pre><code>{{&lt;mermaid&gt;}}
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+</div>
+
+<p>or you can use this alternative syntax:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>renders as</p>
+<pre><code class="language-mermaid" data-lang="mermaid">gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+</code></pre><h3 id="class-example">Class example</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>renders as</p>
+<pre><code class="language-mermaid" data-lang="mermaid">classDiagram
+  Class01 &lt;|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --&gt; C2 : Where am i?
+  Class09 --* C3
+  Class09 --|&gt; Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 &lt;--&gt; C2: Cool label
+</code></pre><h3 id="git-example">Git example</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>renders as</p>
+<pre><code class="language-mermaid" data-lang="mermaid">gitGraph:
+options
+{
+  &quot;nodeSpacing&quot;: 150,
+  &quot;nodeRadius&quot;: 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+</code></pre>
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div> 
         
@@ -1237,20 +1488,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1267,72 +1504,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1343,54 +1516,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1516,6 +1641,140 @@
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -1734,6 +1993,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1749,6 +2009,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1792,8 +2055,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/hugolearntheme/shortcodes/expand/" title="Expand"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/thought/" title="Thought" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/hugolearntheme/shortcodes/notice/" title="Notice" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
