@@ -137,7 +137,7 @@
 	"title": "Home",
 	"tags": [],
 	"description": "",
-	"content": "Home 여기는 홈화면입니다.\n"
+	"content": "Home 여기는 홈화면입니다.\n🍳Remove a git submodule From:\nRemove a git submodule (Example)\nTo remove a submodule you need to: 🐌  Delete the relevant line from the .gitmodules file. Delete the relevant section from .git/config. Run git rm \u0026ndash;cached pathtosubmodule (no trailing slash). Commit the superproject. Delete the now untracked submodule files.  Source(s): https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial\n"
 },
 {
 	"uri": "https://devbj.com/tags/",
