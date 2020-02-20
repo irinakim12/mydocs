@@ -29,5 +29,275 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Encoding</title>
+      <link>https://devbj.com/tags/encoding/</link>
+      <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/encoding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://devbj.com/tags/golang/</link>
+      <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bytes</title>
+      <link>https://devbj.com/tags/bytes/</link>
+      <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/bytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package</title>
+      <link>https://devbj.com/tags/package/</link>
+      <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>https://devbj.com/tags/strings/</link>
+      <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/strings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IO</title>
+      <link>https://devbj.com/tags/io/</link>
+      <pubDate>Wed, 26 Oct 2016 02:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>번역</title>
+      <link>https://devbj.com/tags/%EB%B2%88%EC%97%AD/</link>
+      <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/%EB%B2%88%EC%97%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>아키텍쳐</title>
+      <link>https://devbj.com/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</link>
+      <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object Oriented</title>
+      <link>https://devbj.com/tags/object-oriented/</link>
+      <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/object-oriented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>struct</title>
+      <link>https://devbj.com/tags/struct/</link>
+      <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/struct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>allocator</title>
+      <link>https://devbj.com/tags/allocator/</link>
+      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/allocator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bootstrap</title>
+      <link>https://devbj.com/tags/bootstrap/</link>
+      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internals</title>
+      <link>https://devbj.com/tags/internals/</link>
+      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/internals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>memory</title>
+      <link>https://devbj.com/tags/memory/</link>
+      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>runtime</title>
+      <link>https://devbj.com/tags/runtime/</link>
+      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/runtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linker</title>
+      <link>https://devbj.com/tags/linker/</link>
+      <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/linker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metadata</title>
+      <link>https://devbj.com/tags/metadata/</link>
+      <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/metadata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>object file</title>
+      <link>https://devbj.com/tags/object-file/</link>
+      <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/object-file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relocations</title>
+      <link>https://devbj.com/tags/relocations/</link>
+      <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/relocations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compiler</title>
+      <link>https://devbj.com/tags/compiler/</link>
+      <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structure</title>
+      <link>https://devbj.com/tags/structure/</link>
+      <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assembler</title>
+      <link>https://devbj.com/tags/assembler/</link>
+      <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/assembler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>beginning</title>
+      <link>https://devbj.com/tags/beginning/</link>
+      <pubDate>Mon, 12 Sep 2016 13:10:03 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/beginning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>install</title>
+      <link>https://devbj.com/tags/install/</link>
+      <pubDate>Sun, 28 Aug 2016 15:10:07 +0830</pubDate>
+      
+      <guid>https://devbj.com/tags/install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://devbj.com/tags/blog/</link>
+      <pubDate>Tue, 23 Aug 2016 23:25:55 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://devbj.com/tags/hugo/</link>
+      <pubDate>Tue, 23 Aug 2016 23:25:55 -0400</pubDate>
+      
+      <guid>https://devbj.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://devbj.com/tags/development/</link>
+      <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://devbj.com/tags/vim/</link>
+      <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>https://devbj.com/tags/tdd/</link>
+      <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UnitTest</title>
+      <link>https://devbj.com/tags/unittest/</link>
+      <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
+      
+      <guid>https://devbj.com/tags/unittest/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

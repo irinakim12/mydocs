@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on DevBJ.com</title>
+    <link>https://devbj.com/categories/development/</link>
+    <description>Recent content in Development on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 22 Aug 2016 22:57:14 +0900</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vim-go를 이용한 go 개발 환경 구축</title>
+      <link>https://devbj.com/golangkorea/vim-go/</link>
+      <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/vim-go/</guid>
+      <description>Vim Vim은 Emacs와 함께 (적어도 리눅스에서는) 가장 널리 사용하는 에디터일 것이다. 가볍고 빠르며, 어디에서나 실행되기 때문에 그 단순함에도 불구하고 여</description>
+    </item>
+    
+    <item>
+      <title>Golang 프로젝트에 TDD 도입하기</title>
+      <link>https://devbj.com/golangkorea/tdd-with-golang/</link>
+      <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/tdd-with-golang/</guid>
+      <description>여기에서 사용한 테스트 코드는 Bitbucket 에서 다운로드 할 수 있다. TDD 클라우드와 MSA와 REST의 등장으로 TDD가 재조명 받고 있다. TDD를 제대로 적용하려면 상당</description>
+    </item>
+    
+  </channel>
+</rss>

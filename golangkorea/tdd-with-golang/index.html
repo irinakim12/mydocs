@@ -1,0 +1,3472 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.64.0" />
+    <meta name="google-site-verification" content="22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ" />
+<meta name="description" content="Documentation for Hugo Learn Theme">
+<meta name="author" content="Bongjun Hur">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Golang 프로젝트에 TDD 도입하기 :: DevBJ.com</title>
+
+    
+    <link href="/css/nucleus.css?1582179500" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582179500" rel="stylesheet">
+    <link href="/css/hybrid.css?1582179500" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582179500" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582179500" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582179500" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582179500" rel="stylesheet">
+    <link href="/css/theme.css?1582179500" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582179500" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1582179500" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1582179500"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<style type="text/css">
+.adslot_1 { display:inline-block; width: 320px; height: 50px; }
+@media (max-width: 400px) { .adslot_1 { display: none; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+#adsection {
+    margin:1em;
+}
+</style>
+<script data-ad-client="ca-pub-3059347231702682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  </head>
+  <body class="" data-url="/golangkorea/tdd-with-golang/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/"><img src="/images/logo.png" /></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1582179500"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582179500"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/devbj.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1582179500"></script>
+
+<div style="margin:10px;">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="1238597657"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/">
+          <b>1. </b>Blog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/thought/" title="Thought" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/thought/">
+          <b>1. </b>Thought
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/button/" title="Button" class="dd-item ">
+        <a href="/blog/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/expand/" title="Expand" class="dd-item ">
+        <a href="/blog/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/blog/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/" title="WizFi360" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/wizfi360/">
+          <i class='fab fa-github'></i> Learn WizFi360
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/wizfi360/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/" title="Learn Theme for Hugo" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/">
+          <i class='fab fa-github'></i> About Learn Theme
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/mytips/" title="사용팁" class="dd-item ">
+        <a href="/hugolearntheme/mytips/">
+        사용팁
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/requirements/" title="Requirements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/requirements/">
+          Requirements
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/installation/">
+          Installation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/configuration/" title="Configuration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/configuration/">
+          Configuration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/style-customization/" title="Style customization" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/style-customization/">
+          Style customization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/" title="Content" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/">
+          <b>2. </b>Content
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/pages/" title="Pages organization" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/pages/">
+          Pages organization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/archetypes/" title="Archetypes" class="dd-item ">
+        <a href="/hugolearntheme/cont/archetypes/">
+        Archetypes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/markdown/" title="Markdown syntax" class="dd-item ">
+        <a href="/hugolearntheme/cont/markdown/">
+        Markdown syntax
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/menushortcuts/" title="Menu extra shortcuts" class="dd-item ">
+        <a href="/hugolearntheme/cont/menushortcuts/">
+        Menu extra shortcuts
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/icons/" title="Icons and logos" class="dd-item ">
+        <a href="/hugolearntheme/cont/icons/">
+        Icons and logos
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/i18n/" title="Multilingual and i18n" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/i18n/">
+          Multilingual and i18n
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/tags/" title="Tags" class="dd-item ">
+        <a href="/hugolearntheme/cont/tags/">
+        Tags
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/" title="Shortcodes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/">
+          <b>3. </b>Shortcodes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/attachments/" title="Attachments" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/attachments/">
+        Attachments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/button/" title="Button" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/" title="Children" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/">
+          Children
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/" title="page 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/">
+          page 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/" title="page 1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/">
+          page 1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/" title="page 1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/">
+          page 1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" title="page 1-1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">
+          page 1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" title="page 1-1-1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">
+          page 1-1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/" title="page 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-2/">
+          page 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3.fr/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3.fr/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-3/" title="page 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-3/">
+          page 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test.fr/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test.fr/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/expand/" title="Expand" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/notice/" title="Notice" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/notice/">
+        Notice
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/siteparam/" title="Site param" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/siteparam/">
+        Site param
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/" title="GoLang Korea" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/golangkorea/">
+          GoLang Korea
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-json-package/" title="Go 둘러보기 - encoding/json 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-json-package/">
+        Go 둘러보기 - encoding/json 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-package/" title="Go 둘러보기 - encoding 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-package/">
+        Go 둘러보기 - encoding 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/bytes-strings-packages/" title="Go 둘러보기 - bytes &#43; strings 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/bytes-strings-packages/">
+        Go 둘러보기 - bytes &#43; strings 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/io-package/" title="Go 둘러보기 - io 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/io-package/">
+        Go 둘러보기 - io 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/structuring-applications-in-go/" title="Go에서 애플리케이션 설계하기" class="dd-item ">
+        <a href="/golangkorea/structuring-applications-in-go/">
+        Go에서 애플리케이션 설계하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/object-oriented/" title="Go와 객체지향" class="dd-item ">
+        <a href="/golangkorea/go-start/object-oriented/">
+        Go와 객체지향
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part6/" title="Golang의 내부, 6부: 부트스트래핑과 메모리 할당자" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part6/">
+        Golang의 내부, 6부: 부트스트래핑과 메모리 할당자
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part5/" title="Golang의 내부, 5부: 런타임 부트스트랩" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part5/">
+        Golang의 내부, 5부: 런타임 부트스트랩
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part4/" title="Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part4/">
+        Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part3/" title="Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part3/">
+        Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part2/" title="Golang의 내부, 2부: Go 컴파일러 들여다 보기" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part2/">
+        Golang의 내부, 2부: Go 컴파일러 들여다 보기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part1/" title="Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part1/">
+        Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/resources/" title="Golang의 내부, 0부: 부록" class="dd-item ">
+        <a href="/golangkorea/golang-internals/resources/">
+        Golang의 내부, 0부: 부록
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/feature/" title="Go의 주요 특징들" class="dd-item ">
+        <a href="/golangkorea/go-start/feature/">
+        Go의 주요 특징들
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/getting-start/" title="Go언어 시작하기" class="dd-item ">
+        <a href="/golangkorea/go-start/getting-start/">
+        Go언어 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/how-to-contribute-content/" title="시리즈 #5 - 사이트에 블로그 올리는 방법" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/how-to-contribute-content/">
+        시리즈 #5 - 사이트에 블로그 올리는 방법
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/taxonomy-basic/" title="시리즈 #4 - 분류(Taxonomy)기능 사용하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/taxonomy-basic/">
+        시리즈 #4 - 분류(Taxonomy)기능 사용하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/theme-customizing/" title="시리즈 #3 - 사이트 테마 개발하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/theme-customizing/">
+        시리즈 #3 - 사이트 테마 개발하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/content-basic/" title="시리즈 #2 - 컨텐츠 제작 기초" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/content-basic/">
+        시리즈 #2 - 컨텐츠 제작 기초
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/getting-started/" title="시리즈 #1 - Hugo 시작하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/getting-started/">
+        시리즈 #1 - Hugo 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/overview/" title="Hugo 입문 - 개요" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/overview/">
+        Hugo 입문 - 개요
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/vim-go/" title="vim-go를 이용한 go 개발 환경 구축" class="dd-item ">
+        <a href="/golangkorea/vim-go/">
+        vim-go를 이용한 go 개발 환경 구축
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/tdd-with-golang/" title="Golang 프로젝트에 TDD 도입하기" class="dd-item active">
+        <a href="/golangkorea/tdd-with-golang/">
+        Golang 프로젝트에 TDD 도입하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/bjnhur/mydocs"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://devbj.com/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    <div class='copyright'>
+      <p>&copy; 2019 DevBJ.com All Rights Reserved.</p>
+    </div>
+    <p>Thanks Hugo & hugo-theme-learn theme</p>
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/bjnhur/mydocs/edit/master/content/GoLangKorea/tdd-with-golang.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/golangkorea/'>GoLang Korea</a> > Golang 프로젝트에 TDD 도입하기
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tdd">TDD</a></li>
+    <li><a href="#go-유닛-테스트-개요">Go 유닛 테스트 개요</a></li>
+    <li><a href="#testing-패키지">testing 패키지</a></li>
+    <li><a href="#assertion">Assertion</a></li>
+    <li><a href="#http-핸들러-테스트">HTTP 핸들러 테스트</a></li>
+    <li><a href="#서비스간-연동-테스트">서비스간 연동 테스트</a></li>
+    <li><a href="#목업-vs-직접-구성">목업 vs 직접 구성</a></li>
+    <li><a href="#테스트-커버리지">테스트 커버리지</a></li>
+    <li><a href="#gocov">gocov</a></li>
+    <li><a href="#젠킨스와의-통합">젠킨스와의 통합</a></li>
+    <li><a href="#tdd-통합-프로세스">TDD 통합 프로세스</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        <div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<div class="tags">
+
+  <a class="tag-link" href="/tags/development">Development</a>
+
+  <a class="tag-link" href="/tags/unittest">UnitTest</a>
+
+  <a class="tag-link" href="/tags/tdd">TDD</a>
+
+</div>
+
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Golang 프로젝트에 TDD 도입하기
+            </h1>
+          
+
+        
+
+
+
+<p>여기에서 사용한 테스트 코드는 <a href="https://bitbucket.org/dream_yun/handlertest">Bitbucket</a> 에서 다운로드 할 수 있다.</p>
+<h2 id="tdd">TDD</h2>
+<p>클라우드와 <strong>MSA</strong>와 <strong>REST</strong>의 등장으로 TDD가 재조명 받고 있다. TDD를 제대로 적용하려면 상당히 많은 시간과 노력이 필요하다. 특히 여기 저기 연동되는 라이브러리나 소프트웨어가 많은 경우 테스트가 굉장히 복잡해지는데, 복잡해지는 만큼 테스트의 신뢰성도 함께 떨어진다.</p>
+<p>TDD는 <strong>유닛 테스트</strong>를 기본으로 하는데, 애플리케이션이 복잡해지면 유닛테스트에 간섭하는 객체들이 많아진다. 이렇게 늘어난 객체들에 대해서 테스트를 진행하다 보면 테스트를 위한 설계로 변질되는 경우가 있다.</p>
+<p>데이터베이스, 소켓, UI가 서로 엉켜있는 소프트웨어를 테스트 한다고 생각해보라. 머리 좀 아플 것이다. 물론 TDD가 테스트를 쉽게 할 수 있는 설계를 지향하긴 하지만, 테스트를 쉽게 할 수 있는 설계와 테스트를 위한 설계는 엄연히 다른 것이다.</p>
+<p>TDD의 단점은 아래와 같이 정리 할 수 있다.</p>
+<ol>
+<li><strong>개발 기간이 늘어난다.</strong> TDD에 익숙해졌다고 가정 할 경우 약 20% 정도 구현시간이 늘어난다. 복잡한 소프트웨어의 경우 더 구현시간은 더 늘어날 것이다.</li>
+<li><strong>복잡성 증가.</strong> 테스트시나리오가 길어질 경우, 시나리오 자체를 관리하는 것도 작업이 된다.</li>
+<li><strong>디자인 변경.</strong> 종종 TDD에 어울리지 않는 디자인의 소프트웨어를 개발 해야 하는 경우도 있다. TDD는 <strong>좋은 코드는 테스트하기 좋은 코드다</strong>라고 주장한다. 하지만 항상 그런건 아니다. TDD에 맞추다 보니 디자인이 이상해지는 경우가 종종 생긴다.</li>
+</ol>
+<p>요약하자면 실행관점에서 TDD를 위한 기본 요소는 <strong>유닛 테스트</strong>인데, 소프트웨어가 복잡해지면 굉장히 힘들어 지는게 TDD의 문제다.</p>
+<p>달리 생각하면 소프트웨어가 단순해지면 TDD를 하기 좋은 환경이 된다는 이야기가 되겠다.<strong>MSA와 REST</strong> 바로 그런 환경이다.</p>
+<p>MSA는 작업 서비스(애플리케이션)들을 결합해서 하나의 큰 서비스를 만드는 서비스 디자인 스타일이다. 각 MSA 서비스들은 다른 서비스들과 독립적으로 구성되고 단순한 기능을 가지도록 설계되기 때문에 유닛 테스트가 큰 효과를 발휘 할 수 있다.</p>
+<p>Go언어는 범용 시스템언어로 개발이 됐지만 <strong>net/http</strong>와 <strong>gorilla</strong>를 비롯해서 MSA+REST(이하 MSA) 스타일의 웹 애플리케이션을 효과적으로 만들 수 있도록 지원하고 있다. 나는 Go 언어에서 MSA 애플리케이션을 TDD로 개발하고 테스트 하는 방법을 정리 하려 한다. 이 문서에서 다룰 내용은 아래와 같다.</p>
+<ol>
+<li>Go 언어에서 제공하는 유닛테스트 프레임워크를 살펴본다.</li>
+<li>HTTP 핸들러 테스트 : HTTP 웹 서버 핸들러를 테스트하려면, 서버가 실행 중이어야 하기 때문에 메서드 단위의 유닛 테스트로는 테스트가 어렵다. <strong>net/http/httptest</strong>패키지를 이용해서 HTTP 핸들러를 테스트할 수 있다.</li>
+<li>TDD는 유닛테스만 의미하지 않는다. 개발 에서 배포까지의 전 과정을 <strong>테스트</strong>를 기반으로 통합하는 일련의 과정들이다. 젠킨스(Jenkins)를 이용해서 TDD를 완성해 본다.</li>
+<li><strong>테스트 커버리지는</strong> 유닛테스트가 얼마나 잘 이루어졌는지를 측정하기 위해서 사용한다. 테스트 커버리지를 계산하고 그 결과를 문서로 출력한다. 이 문서를 젠킨스와 통합해보자.</li>
+</ol>
+<h2 id="go-유닛-테스트-개요">Go 유닛 테스트 개요</h2>
+<p>Go 는 테스트 프레임워크를 내장(build-in)하고 있다. <strong>testing</strong>페키지를 이용해서 유닛 테스트 코드를 만들고 <strong>go test</strong>명령으로 테스트를 수행하면 된다. 유닛 테스트를 위한 간단한 예제 코드를 만들었다. 코드의 이름은 math.go 다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">math</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;errors&#34;</span>
+)   
+
+<span style="color:#75715e">// 값들을 모두 더한다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Sum</span>(<span style="color:#a6e22e">nums</span> <span style="color:#f92672">...</span><span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> {
+    <span style="color:#a6e22e">total</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span> 
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">num</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">nums</span> {
+        <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">num</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>
+}   
+
+<span style="color:#75715e">// a를 b로 나눈다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Div</span>(<span style="color:#a6e22e">a</span> <span style="color:#66d9ef">float64</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">float64</span>) (<span style="color:#66d9ef">float64</span>, <span style="color:#66d9ef">error</span>) {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span>, <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;Can&#39;t divide by zero&#34;</span>)
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">b</span>, <span style="color:#66d9ef">nil</span>
+}
+
+<span style="color:#75715e">// 문자열을 count만큼 반복하고 결과를 반화한다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">StrRept</span>(<span style="color:#a6e22e">s</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">count</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, len(<span style="color:#a6e22e">s</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">count</span>)
+    <span style="color:#a6e22e">bp</span> <span style="color:#f92672">:=</span> copy(<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">s</span>)
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">bp</span> &lt; len(<span style="color:#a6e22e">b</span>) {
+        copy(<span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">bp</span>:], <span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">bp</span>:])
+        <span style="color:#a6e22e">bp</span> <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
+    }
+    <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">b</span>)
+}   
+</code></pre></div><p>유닛 테스트 파일을 만든다. 파일의 이름은 <strong>math_test.go</strong>다. 참고로 유닛 테스트 파일의 이름은 반드시 <strong>_test.go</strong>로 끝나야 한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">math</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;testing&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Sum</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">v0</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Sum</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v0</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">6</span> {
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;1+2+3 == 6&#34;</span>)
+    }
+
+    <span style="color:#a6e22e">v1</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Sum</span>(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v1</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">11</span> {
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;6+5 == 11 &#34;</span>)
+    }
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Div</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">v2</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Div</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)
+    <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Log</span>(<span style="color:#e6db74">&#34;0/2 =&#34;</span>,<span style="color:#a6e22e">v2</span>)
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_StrRept</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">StrRept</span>(<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#ae81ff">3</span>)
+    <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">str</span>) <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span> {
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;Repeat fail&#34;</span>)
+    }
+}
+</code></pre></div><p>go test를 실행해보자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># go test</span>
+PASS
+ok  	_/home/yundream/workspace/golang/unitTest	0.001s
+</code></pre></div><p><strong>-v</strong> 옵션을 주면 자세한 테스트 정보를 확인 할 수 있다. 로그(t.Log) 정보도 함께 출력한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># go test -v</span>
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span> RUN   Test_Sum
+--- PASS: Test_Sum <span style="color:#f92672">(</span>0.00s<span style="color:#f92672">)</span>
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span> RUN   Test_Div
+--- PASS: Test_Div <span style="color:#f92672">(</span>0.00s<span style="color:#f92672">)</span>
+	math_test.go:21: 0/2 <span style="color:#f92672">=</span> 0
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span> RUN   Test_StrRept
+--- PASS: Test_StrRept <span style="color:#f92672">(</span>0.00s<span style="color:#f92672">)</span>
+PASS
+ok  	_/home/yundream/workspace/golang/unittest	0.002s
+</code></pre></div><p><strong>Test_StrRept</strong>테스트를 아래와 같이 수정 한 다음에 테스트해보자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_StrRept</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">StrRept</span>(<span style="color:#e6db74">&#34;ab&#34;</span>, <span style="color:#ae81ff">3</span>)
+    <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">str</span>) <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span> {
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;Repeat fail&#34;</span>)
+    }
+}
+</code></pre></div><p>테스트 조건을 바꿨는데, 실수로 예상 결과를 수정하지 않았다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">v</span>
+<span style="color:#f92672">==</span>= <span style="color:#a6e22e">RUN</span>   <span style="color:#a6e22e">Test_Sum</span>
+<span style="color:#f92672">--</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">PASS</span>: <span style="color:#a6e22e">Test_Sum</span> (<span style="color:#ae81ff">0.00</span><span style="color:#a6e22e">s</span>)
+<span style="color:#f92672">==</span>= <span style="color:#a6e22e">RUN</span>   <span style="color:#a6e22e">Test_Div</span>
+<span style="color:#f92672">--</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">PASS</span>: <span style="color:#a6e22e">Test_Div</span> (<span style="color:#ae81ff">0.00</span><span style="color:#a6e22e">s</span>)
+	<span style="color:#a6e22e">math_test</span>.<span style="color:#66d9ef">go</span>:<span style="color:#ae81ff">21</span>: <span style="color:#ae81ff">0</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> = <span style="color:#ae81ff">0</span>
+<span style="color:#f92672">==</span>= <span style="color:#a6e22e">RUN</span>   <span style="color:#a6e22e">Test_StrRept</span>
+<span style="color:#f92672">--</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">FAIL</span>: <span style="color:#a6e22e">Test_StrRept</span> (<span style="color:#ae81ff">0.00</span><span style="color:#a6e22e">s</span>)
+	<span style="color:#a6e22e">math_test</span>.<span style="color:#66d9ef">go</span>:<span style="color:#ae81ff">27</span>: <span style="color:#a6e22e">Repeat</span> <span style="color:#a6e22e">fail</span>
+<span style="color:#a6e22e">FAIL</span>
+<span style="color:#a6e22e">exit</span> <span style="color:#a6e22e">status</span> <span style="color:#ae81ff">1</span>
+<span style="color:#a6e22e">FAIL</span>	<span style="color:#a6e22e">_</span><span style="color:#f92672">/</span><span style="color:#a6e22e">home</span><span style="color:#f92672">/</span><span style="color:#a6e22e">yundream</span><span style="color:#f92672">/</span><span style="color:#a6e22e">workspace</span><span style="color:#f92672">/</span><span style="color:#a6e22e">golang</span><span style="color:#f92672">/</span><span style="color:#a6e22e">unittest</span>	<span style="color:#ae81ff">0.002</span><span style="color:#a6e22e">s</span>
+</code></pre></div><p>테스트 실패를 확인 할 수 있다.</p>
+<h2 id="testing-패키지">testing 패키지</h2>
+<p>함수가 실행 된 결과가 예측한 결과와 맞아 떨어지는 지를 검사하는 방식으로 테스트를 진행 한다. <strong>t.Fatal()</strong>, **t.Fail()**등을 이용해서 테스트를 제어 할 수 있다.</p>
+<ul>
+<li>**FailNow()**이 호출되면, 테스트 함수를 즉시 종료하고 다음 테스트 함수를 실행한다.</li>
+<li>**Fatal()**는 로그를 출력하는 걸 제외하고 <strong>FailNow</strong> 메서드와 같은 일을 한다.</li>
+<li>**Fail()**이 호출되면, 테스트가 실패하더라도 함수를 종료하지 않고 다음 코드를 계속 실행한다.</li>
+<li>**Error()**는 로그를 출력하는 걸 제외하고 <strong>Fail</strong> 메서드와 같은 일을 한다.</li>
+<li><strong>Errorf()</strong> 형식화된 로그를 출력한다. Fila 메서드와 같은 일을 한다.</li>
+<li><strong>Log()</strong> 테스트 로그를 출력한다.</li>
+<li><strong>Logf()</strong> 형식화된 테스트 로그를 출력한다.</li>
+<li><strong>Failed()</strong> 실패하더라도 레포트하지 않는다.</li>
+</ul>
+<h2 id="assertion">Assertion</h2>
+<p>테스트 코드를 만들다 보면 if 문이 코드의 절반 이상을 차지하는 걸 보게될 것이다. 비교대상도 가지각색이라서 가독성이 떨어진다. assert 함수가 필요하다. 직접 만들어 보고 싶겠지만 그냥 잘 만들어져 있는 테스트 패키지 가져다가 쓰자. 내가 요즘 쓰고 있는 테스트 패키지는 <strong>github.com/stretchr/testify/assert</strong>이다. 패키지를 설치 한 후 아래 코드를 테스트 했다.</p>
+<pre><code>package yours
+
+import (
+    &quot;github.com/stretchr/testify/assert&quot;
+    &quot;testing&quot;
+)
+
+func TestSomething(t *testing.T) {
+    // assert equality
+    assert.Equal(t, 123, 125, &quot;they should be equal&quot;)
+
+    // assert inequality
+    assert.NotEqual(t, 123, 456, &quot;they should not be equal&quot;)
+}
+}}}
+테스트를 돌려보자.
+{{{#!plain
+# go test
+--- FAIL: TestSomething (0.00s)
+        Error Trace:    yours_test.go:11
+	Error:		Not equal: 123 (expected)
+			        != 125 (actual)
+	Messages:	they should be equal
+		
+FAIL
+exit status 1
+FAIL	_/home/yundream/workspace/golang/mytest	0.003s
+</code></pre><p>테스트 코드와 테스트 결과의 가독성 모두 좋아졌다. 이 패키지는 <strong>assert</strong>외에도 <strong>mock</strong>, <strong>http 테스트</strong>, <strong>suite</strong>등 테스트를 위한 다양한 툴들을 지원한다.</p>
+<h2 id="http-핸들러-테스트">HTTP 핸들러 테스트</h2>
+<p>HTTP 핸들러의 경우 웹 서버를 띄워야 하기 때문에, 메서드보다 테스트가 까다롭다. 아래의 방식으로 테스트 할 수 있다.</p>
+<ol>
+<li><strong>net/http/httptest</strong> 패키지를 이용한 테스트. httptest를 이용하면 루프백(127.0.0.1)에 바인드 되는 서버를 띄울 수 있다. 이후 net/http에서 제공하는 클라이언트 메서드들을 이용하면 <strong>서버 &amp; 클라이언트</strong>모드에서 테스트 할 수 있다.</li>
+<li>아예 빌드하고 실행하고, HTTP 클라이언트를 이용해서 테스트 한다.
+각각의 장/단점이 있다. 1의 경우 테스트 커버리지를 확인 할 수 있고, 2의 경우에는 통합된 환경에서의 테스트가 가능하다. 나는 1과 2의 방법을 모두 다 사용하고 있다. 여기에서는 <strong>httptest</strong>를 이용한 테스트를 살펴볼 생각이다.</li>
+</ol>
+<p>테스트에 사용한 소스코드 트리다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">.
+├── handler
+│   ├── handler.go
+│   └── handler_test.go
+└── main.go
+</code></pre></div><p>net/http, gorilla, 패키지를 이용해서 개발 했다. GET /ping에 대해서 &ldquo;pong&quot;를 리턴하는 일을 한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">handler</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;encoding/json&#34;</span>
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;github.com/gorilla/mux&#34;</span>
+    <span style="color:#e6db74">&#34;net/http&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Handler</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">router</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Router</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">h</span> <span style="color:#a6e22e">Handler</span>) <span style="color:#a6e22e">Init</span>() {
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span> = <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">NewRouter</span>()
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/ping&#34;</span>, <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">Ping</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;GET&#34;</span>)
+    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Handle</span>(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span>)
+}
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">h</span> <span style="color:#a6e22e">Handler</span>) <span style="color:#a6e22e">Ping</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprint</span>(<span style="color:#a6e22e">w</span>, <span style="color:#e6db74">&#34;pong&#34;</span>)
+}
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">h</span> <span style="color:#a6e22e">Handler</span>) <span style="color:#a6e22e">Calc</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+
+}
+</code></pre></div><p>테스트 코드다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// handler_test.go
+</span><span style="color:#75715e"></span><span style="color:#f92672">package</span> <span style="color:#a6e22e">handler</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;github.com/gorilla/handlers&#34;</span>
+    <span style="color:#e6db74">&#34;github.com/stretchr/testify/assert&#34;</span>
+    <span style="color:#e6db74">&#34;io/ioutil&#34;</span>
+    <span style="color:#e6db74">&#34;net/http&#34;</span>
+    <span style="color:#e6db74">&#34;net/http/httptest&#34;</span>
+    <span style="color:#e6db74">&#34;os&#34;</span>
+    <span style="color:#e6db74">&#34;testing&#34;</span>
+)
+
+<span style="color:#66d9ef">var</span> (
+    <span style="color:#a6e22e">server</span>  <span style="color:#f92672">*</span><span style="color:#a6e22e">httptest</span>.<span style="color:#a6e22e">Server</span>
+    <span style="color:#a6e22e">testUrl</span> <span style="color:#66d9ef">string</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Response</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">Content</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">Code</span>    <span style="color:#66d9ef">int</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Init</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">logfile</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">OpenFile</span>(<span style="color:#e6db74">&#34;/tmp/test.log&#34;</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_RDWR</span>|<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_CREATE</span>|<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_APPEND</span>, <span style="color:#ae81ff">0755</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">h</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Handler</span>{}
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">Init</span>()
+    <span style="color:#a6e22e">server</span> = <span style="color:#a6e22e">httptest</span>.<span style="color:#a6e22e">NewServer</span>(<span style="color:#a6e22e">handlers</span>.<span style="color:#a6e22e">CombinedLoggingHandler</span>(<span style="color:#a6e22e">logfile</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">DefaultServeMux</span>))
+    <span style="color:#a6e22e">testUrl</span> = <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">URL</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Ping</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">testUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/ping&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#ae81ff">200</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Code</span>, <span style="color:#e6db74">&#34;PING API&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#e6db74">&#34;pong&#34;</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Content</span>, <span style="color:#e6db74">&#34;PONG Message&#34;</span>)
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">Response</span>, <span style="color:#66d9ef">error</span>) {
+    <span style="color:#a6e22e">response</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">url</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>, <span style="color:#a6e22e">err</span>
+    }
+    <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">Body</span>.<span style="color:#a6e22e">Close</span>()
+    <span style="color:#a6e22e">contents</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ioutil</span>.<span style="color:#a6e22e">ReadAll</span>(<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">Body</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>, <span style="color:#a6e22e">err</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Response</span>{<span style="color:#a6e22e">Content</span>: string(<span style="color:#a6e22e">contents</span>), <span style="color:#a6e22e">Code</span>: <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">StatusCode</span>}, <span style="color:#66d9ef">nil</span>
+}
+</code></pre></div><p><strong>httptest</strong>패키지는 테스트를 위해서 내장된 웹 서버를 실행한다. 따라서 핸들러 등록, 데이터베이스 연결과 같이 서비스를 위해서 필요한 자원들을 초기화 해야 한다. <strong>Test_init</strong>메서드를 이용해서 서비스를 초기화 하고 있다. 테스트 코드에 대한 디버깅은 <strong>testing.T.Log</strong> 계열의 메서드를 이용해서 모니터에 표준출력하는 방식으로 진행하는데, 웹 서버가 실행되는 방식이라서 로그를 표준출력 할 수 없다. 그래서 /tmp/test.log에 access log를 남기기로 했다.</p>
+<p><strong>httptest.NewServer</strong> 메서드를 실행하면, 웹 서버가 실행된다. 웹 서버의 접근 URL은 server.URL에 저장돼 있다.</p>
+<p><strong>Test_Ping</strong>에서 ping API를 테스트한다. 테스트는 http client를 이용한다. 200 OK와 &ldquo;pong&rdquo; 메시지를 검사하고 있다. 테스트결과다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">v</span>
+<span style="color:#f92672">==</span>= <span style="color:#a6e22e">RUN</span>   <span style="color:#a6e22e">Test_Init</span>
+<span style="color:#f92672">--</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">PASS</span>: <span style="color:#a6e22e">Test_Init</span> (<span style="color:#ae81ff">0.00</span><span style="color:#a6e22e">s</span>)
+<span style="color:#f92672">==</span>= <span style="color:#a6e22e">RUN</span>   <span style="color:#a6e22e">Test_Ping</span>
+<span style="color:#f92672">--</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">PASS</span>: <span style="color:#a6e22e">Test_Ping</span> (<span style="color:#ae81ff">0.00</span><span style="color:#a6e22e">s</span>)
+<span style="color:#a6e22e">PASS</span>
+<span style="color:#a6e22e">ok</span>  	<span style="color:#a6e22e">bitbucket</span>.<span style="color:#a6e22e">org</span><span style="color:#f92672">/</span><span style="color:#a6e22e">dream_yun</span><span style="color:#f92672">/</span><span style="color:#a6e22e">handlertest</span><span style="color:#f92672">/</span><span style="color:#a6e22e">handler</span>	<span style="color:#ae81ff">0.003</span><span style="color:#a6e22e">s</span>
+</code></pre></div><p>존재하지 않는 페이지를 요청 할 경우 <strong>404 Page Not Found</strong>를 반환해야 할테다. 이를 테스트하기 위한 코드를 만들었다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_APINotFound</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">testUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/myfunc&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#ae81ff">404</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Code</span>, <span style="color:#e6db74">&#34;Unknown API&#34;</span>)
+}
+</code></pre></div><p>이렇게 테스트 시나리오에 따라서 테스트 코드를 추가하면 된다.</p>
+<h2 id="서비스간-연동-테스트">서비스간 연동 테스트</h2>
+<p>MSA 모델을 따르는 애플리케이션을 만들다 보면, 다른 (REST)애플리케이션과 통신 해야 할 수도 있다.</p>
+<p><img src="https://docs.google.com/drawings/d/1VaRfN4dntpTqQb_zOZhXMXDxVa49PzXfIOR9KyPO_Co/pub?w=521&amp;h=255" alt="MSA에서의 REST API를 이용한 서비스 이용"></p>
+<p><strong>App02</strong>는 서비스에서 발생한 다양한 데이터들을 관리하는 일을 한다. 유저가 업로드한 이미지, 문서 파일은 App-02로 전달된다. App-02는 이 파일들을 유저 설정에 따라서 S3, DropBox, Google Drive 등으로 전송한다.</p>
+<p>나는 App01 서비스도 유저가 입력한 연산과 그 결과를 <strong>App02</strong>를 이용해서 저장하기로 했다. &ndash; 이게 어떤 쓸모가 있는 기능인지는 묻지도 말고 따지지도 말자 &ndash; <strong>코드의 추가와 추가된 코드에 대한 테스트</strong>가 필요하다.</p>
+<p>App02를 직접 띄운다음 테스트 하는 방법도 있다. 이 방법에 따라 테스트 하려면 App02를 단순 실행하는 것이 아닌, App02가 제대로 실행 할 수 있는 환경을 만들어야 한다. 그러니까 S3, DropBox, Google Drive 등과 연동할 수 있는 환경을 <strong>개발 서버에 만들어야</strong> 한다. 애로 사항이 꽃필 것이다. 최종 연동 테스트에서는 이렇게 해야겠지만, 개발단계에서 이렇게 하기는 쉽지 않다.</p>
+<p>나는 입력과 출력만 검사하는 <strong>블랙 박스 테스트</strong>를 실행하기로 했다. httptest 패키지를 이용해서 <strong>App02 테스트 서버</strong>를 만들었다. 물론 App02 테스트 서버를 만들기 위해서는 App02의 API 명세서와 App02 패키지가 필요하다. 아래는 테스트 서버 코드다. handler 디렉토리 밑에 만들었다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">//  handler/app02_test_server.go
+</span><span style="color:#75715e"></span><span style="color:#f92672">package</span> <span style="color:#a6e22e">handler</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;bitbucket.org/dream_yun/app02&#34;</span>
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;github.com/gorilla/handlers&#34;</span>
+    <span style="color:#e6db74">&#34;github.com/gorilla/mux&#34;</span>
+    <span style="color:#e6db74">&#34;net/http&#34;</span>
+    <span style="color:#e6db74">&#34;net/http/httptest&#34;</span>
+    <span style="color:#e6db74">&#34;os&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TestApiServer</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">router</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Router</span>
+}
+
+<span style="color:#75715e">// 실행 후 테스트 서버의 URL을 반환한다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">api</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">TestApiServer</span>) <span style="color:#a6e22e">Run</span>() <span style="color:#66d9ef">string</span> {
+
+    <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">router</span> = <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">NewRouter</span>()
+    <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/save/{serviceName}&#34;</span>, <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">Save</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;POST&#34;</span>)
+    <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/save/{serviceName}/{fileName}&#34;</span>, <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">ReadFile</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;GET&#34;</span>)
+
+    <span style="color:#a6e22e">logfile</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">OpenFile</span>(<span style="color:#e6db74">&#34;/tmp/app02_test.log&#34;</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_RDWR</span>|<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_CREATE</span>|<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_APPEND</span>, <span style="color:#ae81ff">0644</span>)
+    <span style="color:#a6e22e">server</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">httptest</span>.<span style="color:#a6e22e">NewServer</span>(<span style="color:#a6e22e">handlers</span>.<span style="color:#a6e22e">CombinedLoggingHandler</span>(<span style="color:#a6e22e">logfile</span>, <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">router</span>))
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">URL</span>
+}
+
+<span style="color:#75715e">// Save API다. 여기에 여러가지 테스트 조건들을 코딩하면 된다. 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">api</span> <span style="color:#a6e22e">TestApiServer</span>) <span style="color:#a6e22e">Save</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">vars</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Vars</span>(<span style="color:#a6e22e">r</span>)
+    <span style="color:#a6e22e">serviceName</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;serviceName&#34;</span>]
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">serviceName</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;calc&#34;</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusBadRequest</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">w</span>, <span style="color:#a6e22e">app02</span>.<span style="color:#a6e22e">ServiceOK</span>)
+}
+
+<span style="color:#75715e">// 저장된 파일을 가져온다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">api</span> <span style="color:#a6e22e">TestApiServer</span>) <span style="color:#a6e22e">ReadFile</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">vars</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Vars</span>(<span style="color:#a6e22e">r</span>)
+    <span style="color:#a6e22e">serviceName</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;serviceName&#34;</span>]
+    <span style="color:#a6e22e">fileName</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;fileName&#34;</span>]
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">serviceName</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;calc&#34;</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusBadRequest</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">fileName</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;my.jpg&#34;</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">w</span>, <span style="color:#a6e22e">app02</span>.<span style="color:#a6e22e">ServiceOK</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+}
+</code></pre></div><p>연산을 끝낸 후에 Save API를 호출하도록 Div 메서드를 수정했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Handler</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">router</span>     <span style="color:#f92672">*</span><span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Router</span>
+    <span style="color:#a6e22e">fileServer</span> <span style="color:#66d9ef">string</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">h</span> <span style="color:#a6e22e">Handler</span>) <span style="color:#a6e22e">Init</span>(<span style="color:#a6e22e">fileServer</span> <span style="color:#66d9ef">string</span>) {
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span> = <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">NewRouter</span>()
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">fileServer</span> = <span style="color:#a6e22e">fileServer</span>
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/ping&#34;</span>, <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">Ping</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;GET&#34;</span>)
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/div/{a}/{b}&#34;</span>, <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">Div</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;GET&#34;</span>)
+    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Handle</span>(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">router</span>)
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">h</span> <span style="color:#a6e22e">Handler</span>) <span style="color:#a6e22e">Div</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">vars</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Vars</span>(<span style="color:#a6e22e">r</span>)
+    <span style="color:#a6e22e">a</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;a&#34;</span>]
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;b&#34;</span>]
+
+    <span style="color:#a6e22e">ai</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">a</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusInternalServerError</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#a6e22e">bi</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">b</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusInternalServerError</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">bi</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotAcceptable</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">ai</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> { 
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotAcceptable</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    
+    <span style="color:#a6e22e">DoPost</span>(<span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">fileServer</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/save/calc&#34;</span>, <span style="color:#e6db74">&#34;a/b&#34;</span>)
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">w</span>, <span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#a6e22e">ai</span><span style="color:#f92672">/</span><span style="color:#a6e22e">bi</span>)
+}
+</code></pre></div><ul>
+<li>Handler 구조체에 fileServer 변수를 추가했다. 여기에는 app02 서버의 주소가 저장된다.</li>
+<li>매개변수로 app02 서버를 받도록 Handler.Init() 메서드를 수정했다.</li>
+</ul>
+<p>Test 코드도 수정했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Init</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">logfile</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">OpenFile</span>(<span style="color:#e6db74">&#34;/tmp/test.log&#34;</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_RDWR</span>|<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_CREATE</span>|<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">O_APPEND</span>, <span style="color:#ae81ff">0755</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+
+    <span style="color:#a6e22e">FileServer</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">TestApiServer</span>{}
+    <span style="color:#a6e22e">fileServerAddr</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">FileServer</span>.<span style="color:#a6e22e">Run</span>()
+    <span style="color:#a6e22e">h</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Handler</span>{}
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">Init</span>(<span style="color:#a6e22e">fileServerAddr</span>)
+    <span style="color:#a6e22e">server</span> = <span style="color:#a6e22e">httptest</span>.<span style="color:#a6e22e">NewServer</span>(<span style="color:#a6e22e">handlers</span>.<span style="color:#a6e22e">CombinedLoggingHandler</span>(<span style="color:#a6e22e">logfile</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">DefaultServeMux</span>))
+    <span style="color:#a6e22e">testUrl</span> = <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">URL</span>
+}
+</code></pre></div><p>TestApiServer의 바인드 주소를 읽어서 Handler.Init() 메서드에 넘기도록 테스트 코드를 수정했다. 이제 테스트를 실행하면 TestAPIServer가 실행되고, Div 메서드가 TestAPIServer의 save api를 호출하는 것을 볼 수 있을 거다.</p>
+<p>이 테스트는 완전하지 않다. Div의 DoPost 호출 부분을 충분히 테스트하지 않았기 때문이다. 테스트 커버리지를 높이려면, DoPost를 호출하는 별도의 메서드를 만들어서 메서드의 입/출력을 테스트 할 수 있도록 해야 한다.</p>
+<p>여기에서 중요한 점은 <strong>테스트를 쉽게 하기 위해서 메서드들을 수정</strong>했다는 점이다. TDD에서는 코드에 맞는 테스트를 하는게 아니고, 테스트에 맞는 코드를 만든다.</p>
+<h2 id="목업-vs-직접-구성">목업 vs 직접 구성</h2>
+<p>예제로 삼았던 ping API 서버는 외부 소프트웨어의 도움 없이 작동한다. 하지만 현실에서 이런 코드를 찾기는 어렵다. 마이에스큐엘(Mysql), 몽고디비(Mongodb), 주키퍼(zookeeper), 레디스(Redis) 등 수많은 다른 애플리케이션들과 통신을 한다. 어떻게 테스트 해야 할까.</p>
+<p>연동 애플리케이션과 서버를 모두 구축해서 테스트 하는 방법이 있다. 마이에스큐엘, 몽고디비, 레디스.. 등등을 모두 설치해서 테스트 하는 거다. 이 방법의 단점은 상당히 귀찮다는 것이다. 혼자 하는 개발하는 하고 있다면 좀 귀찮아도 해볼만 하지만, 여럿이 개발한다면 애로사항이 꽃필 것이다. 이외에도 데이터베이스 오류 상황에서, 소프트웨어가 어떻게 작동할지를 테스트하기가 쉽지 않다는 것도 문제다.</p>
+<p>이 문제는 <strong>mocks/stubs</strong>으로 모의 객체를 만들어서 테스트하는 것으로 테스트 커버리지는 늘리면서도 테스트 시간을 줄일 수 있다.</p>
+<p>결론부터 말하자면 난 목업을 이용하지 않고 있다. 작동하는 소프트웨어들과 직접 연동해서 테스트 한다. 개발/테스트 환경 구축의 번거로움은.. 글쎄 나는 (데이터베이스를 설치하고 설정하는) 정도의 번거로움은 감수해야 하고, 감수한 만큼 개발자에게 이득이 있다고 생각하는 입장이다. 그리고 세상이 좋아졌다. VM, Container, Vagrant 등을 이용하면 개발환경을 손쉽게 구성하고 배포, 공유 할 수 있다.</p>
+<h2 id="테스트-커버리지">테스트 커버리지</h2>
+<p>테스트에 대한 품질은 테스트 커버리지로 측정 할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># go test -cover</span>
+PASS
+coverage: 100.0% of statements
+ok  	bitbucket.org/dream_yun/handlertest/handler	0.004s
+</code></pre></div><p>모든 코드를 완전히 테스트 하고 있다. 이 예제로는 테스트 커버리지를 확인하기가 애매모호해서, API를 추가했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// package handler
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">h</span> <span style="color:#a6e22e">Handler</span>) <span style="color:#a6e22e">Div</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">vars</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Vars</span>(<span style="color:#a6e22e">request</span>)
+    <span style="color:#a6e22e">a</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;a&#34;</span>]
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#34;b&#34;</span>]
+
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotAcceptable</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotAcceptable</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#a6e22e">ia</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">a</span>)
+    <span style="color:#a6e22e">ib</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">b</span>)
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprint</span>(<span style="color:#a6e22e">w</span>)
+}
+</code></pre></div><p>지금은 코드를 먼저 만들었지만 TDD의 원칙을 정확히 따르려면, 테스트 코드를 먼저 만들고 나서 코드를 만들어야 할 것이다. 다만 MSA의 경우에는 API단위로 하는 일이 특정되기 때문에, 코드를 먼저 만들고 테스트 코드를 만드는 것도 괜찮은 방법이라고 생각한다. <strong>TDD를 위한 TDD</strong>가 문제다라는 주장이 나오는 이유를 생각해보자. 완전한 방법, 완전한 툴은 없다. 자신의 역량과 환경에 적절하게 응용해서 사용해야 한다.</p>
+<p>유닛 테스트를 돌려보자. 테스트 커버리지가 떨어진 걸 확인 할 수 있을 것이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># go test -cover</span>
+PASS
+coverage: 21.7% of statements
+ok  	bitbucket.org/dream_yun/handlertest/handler	0.004s
+</code></pre></div><p>Div 메서드에 대한 테스트 코드를 만들어서 커버리지를 올리기로 했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Div</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">testUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/div/4/2&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusOK</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Code</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#e6db74">&#34;2&#34;</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Content</span>)
+    
+    <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">testUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/div/4/a&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusInternalServerError</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Code</span>, <span style="color:#e6db74">&#34;Invalide argument&#34;</span>)
+    
+    <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">testUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/div/0/4&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotAcceptable</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Code</span>, <span style="color:#e6db74">&#34;Invalide argument&#34;</span>)
+    
+    <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">DoGet</span>(<span style="color:#a6e22e">testUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/div/4/0&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Nil</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">err</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+    <span style="color:#a6e22e">assert</span>.<span style="color:#a6e22e">Equal</span>(<span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotAcceptable</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">Code</span>, <span style="color:#e6db74">&#34;Invalide argument&#34;</span>)
+}   
+<span style="color:#e6db74">`</span><span style="color:#e6db74">`</span><span style="color:#e6db74">`</span><span style="color:#e6db74">go
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">`</span><span style="color:#e6db74">`</span><span style="color:#e6db74">`</span><span style="color:#a6e22e">sh</span>
+<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">cover</span>
+<span style="color:#a6e22e">PASS</span>
+<span style="color:#a6e22e">coverage</span>: <span style="color:#ae81ff">91.3</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">statements</span>
+<span style="color:#a6e22e">ok</span>  	<span style="color:#a6e22e">bitbucket</span>.<span style="color:#a6e22e">org</span><span style="color:#f92672">/</span><span style="color:#a6e22e">dream_yun</span><span style="color:#f92672">/</span><span style="color:#a6e22e">handlertest</span><span style="color:#f92672">/</span><span style="color:#a6e22e">handler</span>	<span style="color:#ae81ff">0.005</span><span style="color:#a6e22e">s</span>
+}}}
+</code></pre></div><p>테스트 커버리지는 &ldquo;이 소프트웨어는 적어도 이 정도의 코드 영역에 대해서 테스트 하고 있다&quot;는 것을 알려준다. 특히 코드에 대한 리펙토링이나 기능 추가시 필요한 품질을 측정하는데 매우 좋은 자료가 된다. 예를 들어 현재 릴리즈된 소프트웨어의 커버리지가 90%일 경우, 수정된 코드의 커버리지를 90%로 맞춘다면 적어도 이전에 테스트했던 내용들은 모두 테스트 했으며, 이전 수준에서의 품질을 유지 하고 있다고 예상 할 수 있을 것 이다.</p>
+<p>스타트업의 경우 서비스의 품질보다 출시 시기가 중요한 경우가 많다. 이 경우 소위 <strong>기술부채</strong>라는 명목으로 품질을 희생하는 경우가 많은데,  나중에 기술부채를 제거하기 위해서 엄청난 시간과 노력을 투입해야 할 수 있다. 개발 환경을 갖추지 못한 상태에서 급하게 기술부채를 제거 할 경우 곤욕을 치를 수 있고, 서비스의 발목을 잡을 수도 있다.</p>
+<p>테스트 코드는 리펙토링과 설계변경을 쉽게 할 수 있도록 도와준다. 테스트 커버리지를 관리하는 것으로 일관성 있는 품질을 달성 할 수 있다. 유닛 테스트를 이용해서 기술 부채를 관리 할 수 있다.</p>
+<p>테스트 커버리지의 목표를 90%로 잡았다고 가정해 보자. 91.3 % 이니 이 정도면 충분하다고 생각 할 수 있겠으나 그렇지 않다. <strong>서비스의 보안수준은 가장 약한 보안 고리에 의해서 결정된다.</strong> 서비스 품질 역시 마찬가지로 가장 약한 고리가 서비스의 전체 품질을 결정 한다. 따라서 테스트 하지 않은 부분이 서비스에 중요한 영향을 미칠 수 있는 지 점검 해야 한다. 위의 정보로는 어느 부분이 테스트가 안됐는지를 확인 할 수 없다.</p>
+<p>테스트 커버리지 레포트를 만들어 보자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">coverprofile</span>=<span style="color:#a6e22e">coverage</span>.<span style="color:#a6e22e">out</span> 
+<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">tool</span> <span style="color:#a6e22e">cover</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">html</span>=<span style="color:#a6e22e">coverage</span>.<span style="color:#a6e22e">out</span>
+</code></pre></div><p><strong>-coverprofile</strong> 옵션을 이용하면 테스트한 코드 영역에 대한 레포트가 만들어진다. 일반 텍스트 파일인데, <strong>tool cover</strong> 명령을 이용해서 html 파일로 변환 할 수 있다.</p>
+<p><img src="https://ryudmq.by3302.livefilestore.com/y3mJYLhYTZWyMa4UE1wfN3H-D-RKFA6M7rnil_bUWKMDXdP86xNzJ77MkFXFGN32oS68Pjw5yDOVed1st1toTzjOtip0WaCuWJhEhT5pN8B7b3s3YVrUT9T2ixkHFWHBpM8IgHKykDGGRg5bo_7KA5p-8Ju9AGn4AX4vE0T8xv3vME?width=660&amp;height=432&amp;cropmode=none" alt="go cover html 화면"></p>
+<p><strong>strconv.Atoi()</strong> 메서드에 대한 테스트가 빠져있음을 알 수 있다. 이에 대해서  &ldquo;Div API는 클라이언트가 숫자(0-9)가 아닌 다른 값을 보낼 수도 있으므로, 에러 체크가 필요하다. 그리고 변수 a, b에 대한 타당성(숫자인지, int64 범위의 값인지 등)을 검사하는 코드도 추가해야 한다&quot;라는 평가를 할 수 있을 것이다.</p>
+<h2 id="gocov">gocov</h2>
+<p>go에서 제공하는 기본 툴도 쓸만하긴 하지만, 레포팅 기능이 썩 맘에 들지 않는다. 그래서 <strong>gocov</strong>라는 툴을 이용해서 레포트를 만들기로 했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># go get github.com/axw/gocov/gocov</span>
+<span style="color:#75715e"># go get github.com/matm/gocov-html</span>
+</code></pre></div><p><strong>gocov test</strong>를 이용해서 커버리지 데이터파일을 만든다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># gocov test ./ &gt; handler.json</span>
+ok  	bitbucket.org/dream_yun/handlertest/handler	0.005s	coverage: 91.3% of statements
+</code></pre></div><p>handler.json을 html 파일로 변환한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># gocov-html handler.json &gt; handler.html</span>
+</code></pre></div><p>브라우저로 읽어보자.</p>
+<p><img src="https://ryscvq.by3302.livefilestore.com/y3miXS8j97x5BezCReIZYH2BNOnlXESm33jhcUAzj_wBD2JzF_k12xyAOv0aKwUj1EhFHkdVZ4bDYFR9Jgvk3TxacSU-W-TU0Xg2MUm1C_i4F-rtt0OqVQr2aDwtRToqAXndvtyN8u6aQHEN8DWVFneg32NSTz71iH8RhcDyMmmqZU?width=660&amp;height=477&amp;cropmode=none" alt="gocov 이미지 1"></p>
+<p><img src="https://rytnsa.by3302.livefilestore.com/y3mdq3P4WAWJGSzJnwg1NuQ0Ck4zue-ttulK2zZ2fPppUVuAe-AMqOLrWK4YVUXoFbQ_rQxH3kL1LEJgSFH8MZP68u57aqPCnxJ3AY9AATwCjtCHHBDc_fV3n6BgAZy_SdNCC57KNiavbNIMchRgDbi0_CbpZYrCMso5989qPFUJSU?width=660&amp;height=477&amp;cropmode=none" alt="gocov 이미지 2"></p>
+<p>훨씬 보기 좋아졌다.</p>
+<h2 id="젠킨스와의-통합">젠킨스와의 통합</h2>
+<p>이미 젠킨스를 통해서 테스트를 자동화 하고 있다. 여기에 레포트만 추가하면 된다.</p>
+<p>젠킨스에 웹 서버를 설치하고 gocov test, gocov-html 과정에서 나온 html 결과물을 웹 서버 디렉토리에 저장해서 레포팅 하는 방법도 있다. 하지만 레포팅 결과물이 젠킨스 대시보드와 분리된다는 점이 썩 맘에 들지 않는다. 그리고 gocov-html은 <strong>현재 상태</strong>만 보여준다는 문제가 있다. 테스트 결과를 평가 하기 위해서는 이전 테스트 결과도 함께 볼 수 있어야 한다. 그래서 젠킨스의 코드 테스트 커버리지 레포팅 플러그인인 <a href="http://cobertura.github.io/cobertura">Cobertura</a>를 사용하기로 했다. Cobertura는 자바코드의 커버리지를 측정하기 위해서 만들어진 툴이지만 XML 포멧만 맞춘다면 다른 언어에도 문제없이 사용 할 수 있다.</p>
+<p>gocov의 결과를 xml로 출력하기 위해서 gocov-xml을 설치했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># go get github.com/AlekSi/gocov-xml</span>
+</code></pre></div><p>아래와 같이 테스트커버리지 결과를 xml 문서로 출력할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># gocov test ./ | gocov-xml &gt; coverage.xml</span>
+</code></pre></div><p>젠킨스에 cobertura 플러그인을 설치하는 과정은 <a href="http://www.joinc.co.kr/w/man/12/jenkins">Go언어와 Jenkins</a>문서를 참고하자. 아래는 적용 결과다.</p>
+<p><img src="http://marcelog.github.io/articles/cobertura_example_covertool.png" alt="coberatura 레포팅"></p>
+<h2 id="tdd-통합-프로세스">TDD 통합 프로세스</h2>
+<p>MSA 모델을 따르는 소프트웨어의 개발에서 배포 단계까지의 테스트 방식을 정리해 보자.</p>
+<p><img src="https://docs.google.com/drawings/d/18iqVYcMa8_en8Ro2OjwhnTIujD7cdPCPwxtoNNtNHy0/pub?w=882&amp;h=469" alt="TDD 통합 프로세스"></p>
+<p>개발 단계에서는 <strong>화이트 박스 테스트</strong>와 <strong>블랙 박스 테스트</strong>를 함께 사용한다. 직접 제어하고 테스트 할 수 있는 코드들은 화이트 박스 테스트의 대상이다. 애플리케이션을 구성하고 있는 핸들러와 핸들러에서 호출하는 메서드들이다.</p>
+<p>다른 애플리케이션과 (REST API로) 연결된 코드의 경우에는 블랙 박스 테스트를 진행한다. 해당 애플리케이션 개발자로 부터 API 규격을 받아서, 입력과 출력을 테스트 하는 방식이다. <strong>httptesting</strong>을 이용해서 블랙 박스 테스트를 위한 웹 서버를 띄우면 된다. 입력과 출력의 사양은 연동 애플리케이션의 패키지를 그대로 사용할테니, 문서의 내용과 코드가 맞지 않는다고 해도 문제될게 없다. 그냥 패키지를 참고해서 개발해도 된다. 연동 애플리케이션의 규격이 변경될 경우 테스트에러가 떨어질테니 개발단계에서 문제를 해결 할 수 있게 된다.</p>
+<p>통합 단계에서는 연동 테스트까지 진행한다. 최신 버전의 애플리케이션을 실행 하고, 직접 API를 전송해서 테스트 하는 방식이다.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+<div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/golangkorea/vim-go/" title="vim-go를 이용한 go 개발 환경 구축"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/golangkorea/go-walkthrough/encoding-json-package/" title="Go 둘러보기 - encoding/json 패키지" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1582179501"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582179501"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582179501"></script>
+    <script src="/js/jquery.sticky.js?1582179501"></script>
+    <script src="/js/featherlight.min.js?1582179501"></script>
+    <script src="/js/highlight.pack.js?1582179501"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582179501"></script>
+    <script src="/js/learn.js?1582179501"></script>
+    <script src="/js/hugo-learn.js?1582179501"></script>
+
+    <link href="/mermaid/mermaid.css?1582179501" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582179501"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54433728-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54433728-4');
+</script>
+
+  </body>
+</html>
+

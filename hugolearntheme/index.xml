@@ -10,5 +10,14 @@
 	<atom:link href="https://devbj.com/hugolearntheme/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>사용팁</title>
+      <link>https://devbj.com/hugolearntheme/mytips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/hugolearntheme/mytips/</guid>
+      <description>그냥 쓰다보면 꼭 그대로 잘 안되고 걸린다. 필요한 내용을 정리해 두자. 🥢 Hugo 활용시 팁 정리 _index.md 파일은 .Kind 는 .section 으로 선택되고, 레이아웃은 list.html 이 선택되어 변환된다. 테마</description>
+    </item>
+    
   </channel>
 </rss>

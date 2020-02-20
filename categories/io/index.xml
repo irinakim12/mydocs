@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IO on DevBJ.com</title>
+    <link>https://devbj.com/categories/io/</link>
+    <description>Recent content in IO on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 26 Oct 2016 02:30:33 +0900</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/categories/io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 둘러보기 - io 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/io-package/</link>
+      <pubDate>Wed, 26 Oct 2016 02:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/io-package/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: io package를 번역한 글입니다. Go는 바이트(bytes)를 사용하여 작업하기 위해 만들어진 프로그래밍 언어이다. 바이트의 리스트</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3393 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.64.0" />
+    <meta name="google-site-verification" content="22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ" />
+<meta name="description" content="Documentation for Hugo Learn Theme">
+<meta name="author" content="Bongjun Hur">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Go의 주요 특징들 :: DevBJ.com</title>
+
+    
+    <link href="/css/nucleus.css?1582179500" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582179500" rel="stylesheet">
+    <link href="/css/hybrid.css?1582179500" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582179500" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582179500" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582179500" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582179500" rel="stylesheet">
+    <link href="/css/theme.css?1582179500" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582179500" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1582179500" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1582179500"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<style type="text/css">
+.adslot_1 { display:inline-block; width: 320px; height: 50px; }
+@media (max-width: 400px) { .adslot_1 { display: none; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+#adsection {
+    margin:1em;
+}
+</style>
+<script data-ad-client="ca-pub-3059347231702682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  </head>
+  <body class="" data-url="/golangkorea/go-start/feature/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/"><img src="/images/logo.png" /></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1582179500"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582179500"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/devbj.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1582179500"></script>
+
+<div style="margin:10px;">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="1238597657"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/">
+          <b>1. </b>Blog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/thought/" title="Thought" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/thought/">
+          <b>1. </b>Thought
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/button/" title="Button" class="dd-item ">
+        <a href="/blog/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/expand/" title="Expand" class="dd-item ">
+        <a href="/blog/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/blog/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/" title="WizFi360" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/wizfi360/">
+          <i class='fab fa-github'></i> Learn WizFi360
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/wizfi360/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/" title="Learn Theme for Hugo" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/">
+          <i class='fab fa-github'></i> About Learn Theme
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/mytips/" title="사용팁" class="dd-item ">
+        <a href="/hugolearntheme/mytips/">
+        사용팁
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/requirements/" title="Requirements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/requirements/">
+          Requirements
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/installation/">
+          Installation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/configuration/" title="Configuration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/configuration/">
+          Configuration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/style-customization/" title="Style customization" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/style-customization/">
+          Style customization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/" title="Content" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/">
+          <b>2. </b>Content
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/pages/" title="Pages organization" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/pages/">
+          Pages organization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/archetypes/" title="Archetypes" class="dd-item ">
+        <a href="/hugolearntheme/cont/archetypes/">
+        Archetypes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/markdown/" title="Markdown syntax" class="dd-item ">
+        <a href="/hugolearntheme/cont/markdown/">
+        Markdown syntax
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/menushortcuts/" title="Menu extra shortcuts" class="dd-item ">
+        <a href="/hugolearntheme/cont/menushortcuts/">
+        Menu extra shortcuts
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/icons/" title="Icons and logos" class="dd-item ">
+        <a href="/hugolearntheme/cont/icons/">
+        Icons and logos
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/i18n/" title="Multilingual and i18n" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/i18n/">
+          Multilingual and i18n
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/tags/" title="Tags" class="dd-item ">
+        <a href="/hugolearntheme/cont/tags/">
+        Tags
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/" title="Shortcodes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/">
+          <b>3. </b>Shortcodes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/attachments/" title="Attachments" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/attachments/">
+        Attachments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/button/" title="Button" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/" title="Children" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/">
+          Children
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/" title="page 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/">
+          page 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/" title="page 1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/">
+          page 1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/" title="page 1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/">
+          page 1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" title="page 1-1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">
+          page 1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" title="page 1-1-1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">
+          page 1-1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/" title="page 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-2/">
+          page 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3.fr/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3.fr/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-3/" title="page 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-3/">
+          page 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test.fr/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test.fr/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/expand/" title="Expand" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/notice/" title="Notice" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/notice/">
+        Notice
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/siteparam/" title="Site param" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/siteparam/">
+        Site param
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/" title="GoLang Korea" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/golangkorea/">
+          GoLang Korea
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-json-package/" title="Go 둘러보기 - encoding/json 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-json-package/">
+        Go 둘러보기 - encoding/json 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-package/" title="Go 둘러보기 - encoding 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-package/">
+        Go 둘러보기 - encoding 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/bytes-strings-packages/" title="Go 둘러보기 - bytes &#43; strings 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/bytes-strings-packages/">
+        Go 둘러보기 - bytes &#43; strings 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/io-package/" title="Go 둘러보기 - io 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/io-package/">
+        Go 둘러보기 - io 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/structuring-applications-in-go/" title="Go에서 애플리케이션 설계하기" class="dd-item ">
+        <a href="/golangkorea/structuring-applications-in-go/">
+        Go에서 애플리케이션 설계하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/object-oriented/" title="Go와 객체지향" class="dd-item ">
+        <a href="/golangkorea/go-start/object-oriented/">
+        Go와 객체지향
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part6/" title="Golang의 내부, 6부: 부트스트래핑과 메모리 할당자" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part6/">
+        Golang의 내부, 6부: 부트스트래핑과 메모리 할당자
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part5/" title="Golang의 내부, 5부: 런타임 부트스트랩" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part5/">
+        Golang의 내부, 5부: 런타임 부트스트랩
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part4/" title="Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part4/">
+        Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part3/" title="Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part3/">
+        Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part2/" title="Golang의 내부, 2부: Go 컴파일러 들여다 보기" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part2/">
+        Golang의 내부, 2부: Go 컴파일러 들여다 보기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part1/" title="Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part1/">
+        Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/resources/" title="Golang의 내부, 0부: 부록" class="dd-item ">
+        <a href="/golangkorea/golang-internals/resources/">
+        Golang의 내부, 0부: 부록
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/feature/" title="Go의 주요 특징들" class="dd-item active">
+        <a href="/golangkorea/go-start/feature/">
+        Go의 주요 특징들
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/getting-start/" title="Go언어 시작하기" class="dd-item ">
+        <a href="/golangkorea/go-start/getting-start/">
+        Go언어 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/how-to-contribute-content/" title="시리즈 #5 - 사이트에 블로그 올리는 방법" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/how-to-contribute-content/">
+        시리즈 #5 - 사이트에 블로그 올리는 방법
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/taxonomy-basic/" title="시리즈 #4 - 분류(Taxonomy)기능 사용하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/taxonomy-basic/">
+        시리즈 #4 - 분류(Taxonomy)기능 사용하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/theme-customizing/" title="시리즈 #3 - 사이트 테마 개발하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/theme-customizing/">
+        시리즈 #3 - 사이트 테마 개발하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/content-basic/" title="시리즈 #2 - 컨텐츠 제작 기초" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/content-basic/">
+        시리즈 #2 - 컨텐츠 제작 기초
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/getting-started/" title="시리즈 #1 - Hugo 시작하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/getting-started/">
+        시리즈 #1 - Hugo 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/overview/" title="Hugo 입문 - 개요" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/overview/">
+        Hugo 입문 - 개요
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/vim-go/" title="vim-go를 이용한 go 개발 환경 구축" class="dd-item ">
+        <a href="/golangkorea/vim-go/">
+        vim-go를 이용한 go 개발 환경 구축
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/tdd-with-golang/" title="Golang 프로젝트에 TDD 도입하기" class="dd-item ">
+        <a href="/golangkorea/tdd-with-golang/">
+        Golang 프로젝트에 TDD 도입하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/bjnhur/mydocs"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://devbj.com/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    <div class='copyright'>
+      <p>&copy; 2019 DevBJ.com All Rights Reserved.</p>
+    </div>
+    <p>Thanks Hugo & hugo-theme-learn theme</p>
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/bjnhur/mydocs/edit/master/content/GoLangKorea/go-start/feature.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/golangkorea/'>GoLang Korea</a> > Go의 주요 특징들
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#단순함">단순함</a></li>
+    <li><a href="#클라우드와-친한-go-언어">클라우드와 친한 go 언어</a></li>
+    <li><a href="#struct를-이용한-객체지향">struct를 이용한 객체지향</a></li>
+    <li><a href="#에러-처리">에러 처리</a></li>
+    <li><a href="#동시성-프로그래밍">동시성 프로그래밍</a></li>
+    <li><a href="#인터페이스">인터페이스</a>
+      <ul>
+        <li><a href="#웹-프로그래밍">웹 프로그래밍</a></li>
+        <li><a href="#유닛테스트">유닛테스트</a></li>
+        <li><a href="#문서화">문서화</a></li>
+        <li><a href="#마치며">마치며</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        <div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<div class="tags">
+
+  <a class="tag-link" href="/tags/beginning">beginning</a>
+
+</div>
+
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Go의 주요 특징들
+            </h1>
+          
+
+        
+
+
+
+<h2 id="단순함">단순함</h2>
+<p>Go 언어는 단순함(simplicity)과 실용성(pragmatism)을 지향하는 언어로 이 두가지 철학이 다른 모든 것들 보다 상위에 있다. go 언어에 없는 것들을 보자.</p>
+<ul>
+<li>패턴매칭</li>
+<li>함수 프로그래밍 : 어느 정도 특징을 가지고 있기는 하지만 지향점은 아니다.</li>
+<li>immutable variables</li>
+<li>Option types : 값외에 유효한지, 초기화가 됐는지 등의 추가적인 정보를 설정할 수 있다.</li>
+<li>예외(exception)가 없다.</li>
+<li>클래스도 없다.</li>
+<li>제너릭(generics)를 지원하지도 않는다.</li>
+</ul>
+<p>현대적인 언어들이라면 당연히 가지고 있음직한 굵직한 특성들을 가지고 있지 않다. 심지어 &ldquo;Go는 40년 동안의 프로그래밍 언어에 대한 연구를 던져버린 유일한 언어&quot;라고 평가를 받기도 한다(제너릭의 경우 지원하려는 움직임이 있는 것 같기는 하다). 그리고 이러한 철학을 그대로 하고 있는데, 1.0 버전이 나온 이후 1.7 까지 문법적인 변화가 거의 없다.</p>
+<p>1.0 이 나온게 2012년이니 5년 동안 변한게 없다는 이야기다. 따라서 개발자는 호환성 문제에서 자유로우며, 기술에 대한 숙련도를 꾸준히 유지 할 수 있다. 단순함을 포기하지 않기 때문에 가능한 일이다. <a href="https://golang.org/doc/devel/release.html">Go release History</a>에서 버전별 변경점을 찾아 볼 수 있는데, 버그 수정, 지원 플랫폼, 툴 추가, 컴파일러 변경, 가비지 컬랙터 효율화 등 언어 내적인 것들이 대부분이다.</p>
+<p>계속 단순함을 유지하면서, 언어적인 발전이 가능 할 것인지에 대한 의구심을 가질 수 있다. 이렇게 생각해보자. 복싱은 주먹을 사용하는 격투기 중 최고로 평가받고 있다. 그런데 복싱이 가지고 있는 기술이라는게 스트레이트, 잽, 어퍼, 훅 4가지 밖에 없다. 기술이 적기 때문에 시작하기가 쉽고 반복훈련을 통해서 빠르게 기량을 높일 수 있다. 그리고 직관적인 만큼 실전에서의 응용이 용이하다.</p>
+<p>Go 언어도 마찬가지다. 1-2주면 언어의 거의 모든 기능에 익숙해질 수 있으며, 반복 훈련을 통해서 빠르게 기량을 높일 수 있다. 코드가 직관적이기 때문에 코드를 만들고 읽는게 쉬우며 그만큼 실전에 빠르게 써먹을 수 있다.</p>
+<p>물론 언어의 단순함이 모든 경우에 장점이 될 수는 없을 것이다. Go 언어는 시스템, 네트워크 프로그램 특히 클라우드 환경에서 작동하는 프로그램의 개발에는 강력한 면모를 보여주지만 모바일, 데스크탑 애플리케이션에도 강점을 보여줄지는 의문이다(애초에 이쪽은 별로 신경을 쓰고 있지 않기 때문에 판단하기는 애매모호하긴 하다).</p>
+<h2 id="클라우드와-친한-go-언어">클라우드와 친한 go 언어</h2>
+<p>단순함과 이로부터 파생되는 특징은 클라우드 환경에 잘 맞는 경향이 있다. 분산환경은 시스템이 분산된다는 의미외에 소프트웨어가 분산된다는 의미도 있다. 이런 환경에서는 소프트웨어들이 많은 기능을 가지고 있을 필요가 없다. 필수적인 기능만 가진 여러 소프트웨어들이 서로 데이터를 주고 받는 식으로 작동을 하는게 더 효율적이다. 이런 소프트웨어 운영 모델은 리눅스에서 찾아볼 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># ps aux | grep chorm | grep -v grep | awk &#39;{print $2}&#39; | xargs kill</span> 
+</code></pre></div><p>ps로 프로세스 목록을 출력하면 grep으로 chrom 프로세스의 정보만 가져오고, awk를 이용해서 <strong>PID</strong>를 읽어서 kill로 죽이는 일을 하는 스크립트다. 클라우드환경에서 뜨는 <strong>MSA</strong>(go언어를 이용한 MSA 문서를 만들어봐야 겠다.)가 이런 방식으로 작동한다.</p>
+<p>클라우드는 컴퓨터와 네트워크, 운영체제를 하나로 통합한다. 이런 환경에서 프로그래밍 언어의 버전, 라이브러리 의존성을 신경쓰면서 애플리케이션을 배포하는 건 굉장히 어려운 일이다. 최근 도커(docker)가 핫한 것도 운영체제 등 주변환경이 어떻든지 간에 자유롭게 배포 할 수 있고, 동일하게 작동 할 것을 보장해 주기 때문이다.</p>
+<p>Go 언어로도 이런 개발 &amp; 배포 환경을 만들 수 있다. 도커와 함께 클라우드를 위한 컨테이너 솔류션을 만들고 싶다면 Go는 최고의 선택이 될 것이다.</p>
+<h2 id="struct를-이용한-객체지향">struct를 이용한 객체지향</h2>
+<p>Go는 클래스와 객체가 없다. 그렇다고 해서 객체지향 언어가 아니라고 하기도 그렇다. 원래 객체지향이라는 것은 프로그래밍 방법론으로 언어와 상관이 있는 것은 아니다. C언어로도 객체지향을 할 수 있고, C++로도 절차지향을 할 수 있다. 다만 얼마나 객체지향 프로그래밍을 잘 지원하느냐에 대한 차이는 있는데, 표면적으로는 클래스와 객체가 있는지를 기준으로 삼는 경우가 많다. 상속역시 지원하지 않는다. Go는 전통적인 의미에서의 객체지향 언어라고 하기는 애매모호 하다.</p>
+<p>하지만 메서드를 만들 수 있으며, interface를 이용해서 다형성을 구현 할 수도 있다. <strong>composition</strong>으로 상속을 대신 할 수도 있다. 뭔가 편법을 동원한다는 느낌이 들 수도 있겠지만, 객체지향에 있어서 반드시 무엇을 해야 한다는 어떤 규칙은 없다. Sandi Metz은 이렇게 말하고 있다. &ldquo;객체지향에 있어서 클래스와 상속은 옵션이며, 한 문제는 다양한 방법으로 풀 수 있다.&rdquo;</p>
+<p>struct는 하나 이상의 필드들로 구성된 데이터 타입으로 레코드 형식의 데이터 그룹을 만들기 위해서 사용한다. 개인 정보를 다루는 애플리케이션을 개발한다면 아래와 같은 <strong>person</strong> 스트럭처를 만들 수 있을 것이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">person</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">age</span>  <span style="color:#66d9ef">int</span>
+}
+</code></pre></div><p>소프트웨어 공학에서 기본적으로 클래스는 속성과 메서드의 모음으로 표현된다. 파이썬의 경우를 보자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>:
+    minAge <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">def</span> __init__(self, name, age):
+        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+        self<span style="color:#f92672">.</span>age <span style="color:#f92672">=</span> age
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Hello</span>(self):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hello. My name is </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> self<span style="color:#f92672">.</span>name)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">MyAge</span>(self):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">My age is </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> self<span style="color:#f92672">.</span>age)
+</code></pre></div><p>minAge와 self.name, self.age라는 속성과 Hello, MyAge라는 메서드를 가지는 Person 클래스를 만들었다. 일반적으로 알고 있는 클래스의 모습이다.</p>
+<p>반면 go는 struct와 메서드가 서로 분리된다. 위의 파이썬 코드를 go 코드로 만들어봤다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Person</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">minAge</span> <span style="color:#66d9ef">int</span>
+    <span style="color:#a6e22e">name</span>   <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">age</span>    <span style="color:#66d9ef">int</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#a6e22e">Person</span>) <span style="color:#a6e22e">Hello</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Hello. My name is %s\n&#34;</span>, <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">name</span>)
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#a6e22e">Person</span>) <span style="color:#a6e22e">MyAge</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;My age is %d\n&#34;</span>, <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">age</span>)
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">yundream</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Person</span>{<span style="color:#a6e22e">minAge</span>: <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">name</span>: <span style="color:#e6db74">&#34;yundream&#34;</span>, <span style="color:#a6e22e">age</span>: <span style="color:#ae81ff">33</span>}
+    <span style="color:#a6e22e">yundream</span>.<span style="color:#a6e22e">Hello</span>()
+    <span style="color:#a6e22e">yundream</span>.<span style="color:#a6e22e">MyAge</span>()
+}
+</code></pre></div><p><a href="https://play.golang.org/p/Slj3hhovW4">Playground</a></p>
+<p>뭔가 굉장히 낯설어 보인다. 일단 캡슐화는 지원한다. 보통 <strong>private, public</strong> 키워드를 이용하는데, Go언어에는 이런게 없다. 대신 대/소 문자로 구분을 한다. 대문자로 시작하면 public, 소문자로 시작하면 private가 되는 식이다.  private 변수나 메서드는 패키지 내에서만 사용 할 수 있다.</p>
+<p>메서드가 구조체와 분리되기 때문에, 이 메서드가 어느 구조체에 연결된 것인지를 구분해야 한다. **수신자(receiver - func 키워드와 함수명 사이에 위치한다)**를 이용해서, 연결된 구조체를 확인 할 수 있다. 메서드는 <strong>.</strong> 연산자를 이용해서 호출 할 수 있다.</p>
+<p>Go는 생성자가 없다. 예제에서 처럼, 구조체를 생성 할 때 초기값을 할당 하거나 혹은 구조체 객체의 포인터를 반환하는 <strong>New</strong> 함수를 만들어서 사용한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">minAge</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">age</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Person</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Person</span>{<span style="color:#a6e22e">minAge</span>: <span style="color:#a6e22e">minAge</span>, <span style="color:#a6e22e">name</span>: <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>: <span style="color:#a6e22e">age</span>}
+}
+</code></pre></div><h2 id="에러-처리">에러 처리</h2>
+<p>Go는 예외(execption)가 없다. C언어와 같이 반환 값이 에러인지 아닌지를 비교하는 방법으로 에러를 처리한다. 대신 에러만을 전문적으로 처리하는 <strong>error</strong> 타입을 내장하고 있다. Go 프로그램은 error 값을 검사하는 것으로 에러 상태를 확인 할 수 있다.</p>
+<p>또한 go는 두 개 이상의 값을 반환 할 수 있다. 이 특징을 이용하면 실행 반환 값과 에러를 함께 넘기는 방식으로 에러를 처리할 수 있다. 예를 들어 os.Open 함수는 열린 파일의 데이터를 담고 있는 File 구조체와 error를 함께 반환한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Open</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">file</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">File</span>, <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>)
+</code></pre></div><p>코드에서는 error 값이 &ldquo;nil&quot;인지 아닌지로 에러를 검사한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">f</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>)
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;File open error : &#34;</span>, <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">Error</span>())
+    <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
+}
+<span style="color:#75715e">// 파일 처리
+</span></code></pre></div><p>예외 처리가 없기 때문에 C 언어처럼 모든 에러 리턴에 대한 코드를 만들어야 한다. 함수를 만들다 보면 에러처리 코드가 절반이상을 차지하는 것을 심심찮게 볼 수 있다.</p>
+<p>개발자는 <strong>errors</strong> 패키지를 이용해서 직접 에러를 만들 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;errors&#34;</span>
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;os&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">YourLevel</span>(<span style="color:#a6e22e">point</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">error</span>) {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">point</span> &lt; <span style="color:#ae81ff">0</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;Level: 레벨 값은 0보다 커야 합니다.&#34;</span>)
+    }
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">point</span> &gt; <span style="color:#ae81ff">255</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;Level: 레벨 값은 255보다 작아야 합니다.&#34;</span>)
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">point</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">10</span>, <span style="color:#66d9ef">nil</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">level</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">YourLevel</span>(<span style="color:#ae81ff">25</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Error &#34;</span>, <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">Error</span>())
+        <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
+    }
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;당신의 레벨은 %d 입니다.\n&#34;</span>, <span style="color:#a6e22e">level</span>)
+}
+</code></pre></div><p><a href="https://play.golang.org/p/zKZHQ7Obm1">Playground</a></p>
+<p>실제 코드에서는 아래와 같이 에러 케이스를 정의해서 사용한다. 위 코드를 약간 수정했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">StatusPointUnderZero</span> = <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;Level: 레벨 값은 0보다 커야 합니다.&#34;</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">StatusPointOverflow</span> = <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;Level: 레벨 값은 255보다 작아야 합니다.&#34;</span>)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">YourLevel</span>(<span style="color:#a6e22e">point</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">error</span>) {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">point</span> &lt; <span style="color:#ae81ff">0</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">StatusPointUnberZero</span>
+    }   
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">point</span> &gt; <span style="color:#ae81ff">255</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">StatusPointOverflow</span>
+    }   
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">point</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">10</span>, <span style="color:#66d9ef">nil</span>
+}   
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">level</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">YourLevel</span>(<span style="color:#ae81ff">25</span>)
+    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">err</span> {
+    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">StatusPointUnberZero</span>:
+        <span style="color:#75715e">// 에러처리 코드
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">StatusPointOverflow</span>:
+        <span style="color:#75715e">// 에러처리코드
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">default</span>:
+        <span style="color:#75715e">// 에러처리 코드
+</span><span style="color:#75715e"></span>    }  
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;당신의 레벨은 %d 입니다.\n&#34;</span>, <span style="color:#a6e22e">level</span>)
+}
+</code></pre></div><p>다른 예제를 이용해서 <strong>error</strong>를 이용한 에러 처리가 가지는 장점을 살펴보자. 아래 프로그램은 입력 값이 양수인지 음수인지를 검사한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#75715e">// Positive returns true if the number is positive, false if it is negative.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Positive</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">bool</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span> &gt; <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Check</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) {
+        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">Positive</span>(<span style="color:#a6e22e">n</span>) {
+                <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is positive&#34;</span>)
+        } <span style="color:#66d9ef">else</span> {
+                <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is negative&#34;</span>)
+        }
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">Check</span>(<span style="color:#ae81ff">1</span>)
+	<span style="color:#a6e22e">Check</span>(<span style="color:#ae81ff">0</span>)
+	<span style="color:#a6e22e">Check</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+}
+</code></pre></div><p><a href="https://play.golang.org/p/oMfSuAqw74">Playground</a></p>
+<p>프로그램의 실행 결과다. 버그를 가지고 있음을 알 수 있다.</p>
+<pre><code>1 is positive
+0 is positive
+-1 is negative
+</code></pre><p>0은 양수도 아니고 음수도 아니다. 양수, 음수, 0 이렇게 3개의 상태를 가지기 때문에 boolean 으로는 이들 상태를 처리 할 수없다.</p>
+<p>Go언어는 2개 이상의 반환 값을 가질 수 있으므로, 0인지를 측정 할 수 있는 값을 반환하면 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// 입력값이 0일 경우 두번째 리턴값으로 false를 반환한다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Positive</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">bool</span>, <span style="color:#66d9ef">bool</span>) {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>, <span style="color:#66d9ef">false</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span> &gt; <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#66d9ef">true</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Check</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) {
+    <span style="color:#a6e22e">pos</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Positive</span>(<span style="color:#a6e22e">n</span>)
+    <span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">ok</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is neither&#34;</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">pos</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is positive&#34;</span>)
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is negative&#34;</span>)
+    }
+}
+</code></pre></div><p>프로그램을 실행해보자. 버그가 잡혔다.</p>
+<pre><code>1 is positive
+0 is neither
+-1 is negative
+</code></pre><p>문제없이 작동하지만 좋은 코드는 아니다. 일단 직관적이지 않다. 코드를 열어 보기 전에는 두 개의 boolean 반환 값이 무엇을 의미하는지 알 수가 없다. error를 이용해서 0 값을 예외처리 하도록 바꿔보자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Positive</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">bool</span>, <span style="color:#66d9ef">error</span>) {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>, <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;undefined&#34;</span>)
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span> &gt; <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#66d9ef">nil</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Check</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) {
+    <span style="color:#a6e22e">pos</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Positive</span>(<span style="color:#a6e22e">n</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">err</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">pos</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is positive&#34;</span>)
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>, <span style="color:#e6db74">&#34;is negative&#34;</span>)
+    }
+}
+</code></pre></div><p>하는 일은 차이가 없으나 코드가 명료해졌다.</p>
+<h2 id="동시성-프로그래밍">동시성 프로그래밍</h2>
+<p>Go에서 제공하는 고루틴이라고 기능을 이용해서 다른 함수를 동시에 실행 할 수 있다. 쓰레드와 비슷하게 작동한다. Go에서 고루틴은 **일급 객체(first class)**로 정수(integer)나 실수(floating point number)와 같은 데이터 타입과 동급으로 취급한다. 일급객체에 대해서는 <a href="https://en.wikipedia.org/wiki/First-class_citizen">wikipedia 문서 </a>를 참고하자. 아래 예제 코드를 보자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">int</span>) {
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">id</span>, <span style="color:#e6db74">&#34;:&#34;</span>, <span style="color:#a6e22e">i</span>)
+    }
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">f</span>(<span style="color:#ae81ff">0</span>)
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">input</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Scanln</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">input</span>)
+}
+</code></pre></div><p>go 키워드 뒤에 동시 실행할 함수를 두면, 해당 함수를 실행하는 고루틴이 만들어진다. 고루틴과 main함수는 서로 독립적으로 진행이 된다. main 함수가 고루틴 보다 먼저 종료 할 수 있기 때문에 <strong>Scanln</strong> 함수를 이용해서 기다리게 했다.</p>
+<p>10개의 고루틴을 만들어보자. 그냥 go를 열번 호출하면 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ go run goroutine.go 
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">2</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">3</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">4</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">5</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">6</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">7</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">8</span>
+<span style="color:#ae81ff">0</span> : <span style="color:#ae81ff">9</span>
+</code></pre></div><p>채널(channel)은 고루틴들 간에 데이터를 교환하기 위해서 사용한다. Go도 공유 잠금을 지원하기는 하지만 메시지 교환방식을 선호한다. 아래는 고루틴간 ping 메시지를 교환하는 간단한 프로그램이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;time&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">pinger</span>(<span style="color:#a6e22e">c</span> <span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>) {
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+        <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;ping&#34;</span>
+    }
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">pingPrinter</span>(<span style="color:#a6e22e">c</span> <span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>) {
+    <span style="color:#66d9ef">for</span> {
+        <span style="color:#a6e22e">msg</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">msg</span>)
+        <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span>)
+    }
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span> = make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>)
+
+    <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">pinger</span>(<span style="color:#a6e22e">c</span>)
+    <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">pingPrinter</span>(<span style="color:#a6e22e">c</span>)
+
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">input</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Scanln</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">input</span>)
+}
+</code></pre></div><p><strong>chan</strong> 키워드를 이용해서 채널 타입 데이터를 만들 수 있다. 채널은 메시지를 주고 받는 통로 역할을 하는데 struct를 포함한 모든 종류의 데이터들을 주고 받을 수 있다. 코드에서는 string 타입 데이터를 위한 채널을 만들었다.</p>
+<p><strong>&lt;-</strong> 연산자를 이용해서 채널에 데이터를 쓰거나 읽을 수 있다. **c &lt;- &ldquo;ping&rdquo;**는 채널에 &ldquo;ping&quot;을 쓰겠다는 의미고, <strong>msg := &lt;-c</strong>는 채널에서 읽은 데이터를 msg에 저장하겠다는 의미다.</p>
+<h2 id="인터페이스">인터페이스</h2>
+<p>인터페이스는 <strong>메서드</strong>들의 모음으로 간단히 정의 할 수 있다. 또한 그 자체로 하나의 타입이기도 하다. 메서드들의 형태만 정의하고, 구현은 외부에 맡기는 방식으로 유연한 코드를 만들 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;math&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Shape</span> <span style="color:#66d9ef">interface</span> {
+    <span style="color:#a6e22e">Area</span>() <span style="color:#66d9ef">float64</span>
+    <span style="color:#a6e22e">Type</span>()
+}
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Rectangle</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">width</span>  <span style="color:#66d9ef">float64</span>
+    <span style="color:#a6e22e">height</span> <span style="color:#66d9ef">float64</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#a6e22e">Rectangle</span>) <span style="color:#a6e22e">Area</span>() <span style="color:#66d9ef">float64</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">height</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#a6e22e">Rectangle</span>) <span style="color:#a6e22e">Type</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;I&#39;m rectangle&#34;</span>)
+}
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Circle</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">radius</span> <span style="color:#66d9ef">float64</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#a6e22e">Circle</span>) <span style="color:#a6e22e">Area</span>() <span style="color:#66d9ef">float64</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">Pi</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">radius</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">radius</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#a6e22e">Circle</span>) <span style="color:#a6e22e">Type</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;I&#39;m circle&#34;</span>)
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">rec</span> <span style="color:#f92672">:=</span> []<span style="color:#a6e22e">Shape</span>{
+        <span style="color:#a6e22e">Rectangle</span>{<span style="color:#a6e22e">width</span>: <span style="color:#ae81ff">10</span>, <span style="color:#a6e22e">height</span>: <span style="color:#ae81ff">20</span>},
+        <span style="color:#a6e22e">Circle</span>{<span style="color:#a6e22e">radius</span>: <span style="color:#ae81ff">12</span>},
+    }
+
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">rec</span> {
+        <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Type</span>()
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Area :&#34;</span>, <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Area</span>())
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;===========&#34;</span>)
+    }
+} 
+</code></pre></div><p>실행 결과</p>
+<pre><code>I'm rectangle
+Area : 200
+===========
+I'm circle
+Area : 452.3893421169302
+===========
+</code></pre><h3 id="웹-프로그래밍">웹 프로그래밍</h3>
+<p>Go는 특히 MSA모델의 웹 애플리케이션 개발을 잘 지원한다. 기본으로 지원하는 <strong>net/http</strong>와 <a href="http://www.gorillatoolkit.org/">gorilla</a>만으로도 훌륭하게 작동하는 웹 애플리케이션 서버를 개발 할 수 있다. 다른 프레임워크를 사용할 필요가 없다. <a href="http://www.joinc.co.kr/w/man/12/golang/HTTPPerf">그리고 성능도 매우 뛰어나다</a>.</p>
+<p>아래는 net/http와 gorilla를 이용해서 만든 간단한 웹 애플리케이션 서버다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;github.com/gorilla/mux&#34;</span>
+    <span style="color:#e6db74">&#34;net/http&#34;</span>
+    <span style="color:#e6db74">&#34;strconv&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">hello</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">w</span>, <span style="color:#e6db74">&#34;Hello world&#34;</span>)
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Vars</span>(<span style="color:#a6e22e">r</span>)
+    <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">v</span>[<span style="color:#e6db74">&#34;a&#34;</span>])
+    <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">v</span>[<span style="color:#e6db74">&#34;b&#34;</span>])
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">w</span>, <span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#a6e22e">a</span><span style="color:#f92672">+</span><span style="color:#a6e22e">b</span>)
+}
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">h</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">NewRouter</span>()
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/hello&#34;</span>, <span style="color:#a6e22e">hello</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;GET&#34;</span>)
+    <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/sum/{a}/{b}&#34;</span>, <span style="color:#a6e22e">sum</span>).<span style="color:#a6e22e">Methods</span>(<span style="color:#e6db74">&#34;GET&#34;</span>)
+    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Handle</span>(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#a6e22e">h</span>)
+    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ListenAndServe</span>(<span style="color:#e6db74">&#34;:3000&#34;</span>, <span style="color:#66d9ef">nil</span>)
+}
+</code></pre></div><p>군더더기를 찾아볼 수 없는 단순하고 이해하기 쉬운 코드다.</p>
+<h3 id="유닛테스트">유닛테스트</h3>
+<p>Go언어는 분산환경에 최적화된 측면이 있다. 분산환경에서는 테스트해야 할 기능이 명확하기 때문에 유닛테스트의 효과를 크게 누릴 수 있다. 특히 Go 언어는 <strong>Simple is best</strong> 철학을 지향하기 때문에, 유닛테스트의 활용이 중요하다. Go가 유닛테스트를 기본으로 제공하는 것도 이런 이유 때문일 것이다.</p>
+<p>유닛 테스트를 위해서 <strong>mymath</strong>라는 간단한 패키지를 만들었다. 이 코드는 <a href="https://github.com/yundream/mymath">github</a>에서 다운로드 할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">mymath</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;errors&#34;</span>
+)
+
+<span style="color:#66d9ef">var</span> (
+    <span style="color:#a6e22e">StatusDivideZero</span> = <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;Divide zero&#34;</span>)
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Div</span>(<span style="color:#a6e22e">a</span> <span style="color:#66d9ef">float64</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">float64</span>) (<span style="color:#66d9ef">float64</span>, <span style="color:#66d9ef">error</span>) {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">StatusDivideZero</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">b</span>, <span style="color:#66d9ef">nil</span>
+}
+</code></pre></div><p>아래는 테스트 코드다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">mymath</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;testing&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Test_Div</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+    <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Div</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">StatusDivideZero</span> {
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Error</span>(<span style="color:#e6db74">&#34;Divide zero&#34;</span>)
+    }
+    <span style="color:#a6e22e">v</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Div</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">2</span> {
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;10/5 = 2 but &#34;</span>, <span style="color:#a6e22e">v</span>)
+    }
+}
+</code></pre></div><p><strong>go test</strong> 명령을 실행하면, 현재 패키지 디렉토리에 있는 파일에서 테스트 코드를 찾아서 실행 한다. 함수의 이름이 <strong>Test</strong> 로 시작하고 *testing.T 를 매개변수로 사용하면 테스트 함수인 것으로 간주한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">test</span>
+<span style="color:#a6e22e">PASS</span>
+<span style="color:#a6e22e">ok</span>  	<span style="color:#a6e22e">github</span>.<span style="color:#a6e22e">com</span><span style="color:#f92672">/</span><span style="color:#a6e22e">yundream</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mymath</span>	<span style="color:#ae81ff">0.001</span><span style="color:#a6e22e">s</span>
+</code></pre></div><p><strong>-cover</strong> 옵션을 이용하면 테스트 커버리지 레포팅도 할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">cover</span>
+<span style="color:#a6e22e">PASS</span>
+<span style="color:#a6e22e">coverage</span>: <span style="color:#ae81ff">100.0</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">statements</span>
+<span style="color:#a6e22e">ok</span>  	<span style="color:#a6e22e">github</span>.<span style="color:#a6e22e">com</span><span style="color:#f92672">/</span><span style="color:#a6e22e">yundream</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mymath</span>	<span style="color:#ae81ff">0.001</span><span style="color:#a6e22e">s</span>
+</code></pre></div><p>Go는 함수 단위의 유닛 테스트 도구 뿐만 아니라 웹 애플리케이션 서버 단위의 테스트 툴도 제공한다. 직접 웹 서버를 실행해서 핸들러들을 테스트하고 커버리지를 측정하는 식으로 작동한다. 웹 애플리케이션 서버 개발 편에서 자세히 다뤄볼 계획이다.</p>
+<h3 id="문서화">문서화</h3>
+<p>코드 문서화 도구까지 기본 툴로 제공하고 있다.</p>
+<h3 id="마치며">마치며</h3>
+<p>여기에서는 Go 언어의 주요 특징들만 간단하게 살펴봤다. 자세한 내용들은 주제별로 따로 다루도록 하겠다.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+<div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/golangkorea/golang-internals/resources/" title="Golang의 내부, 0부: 부록"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/golangkorea/go-start/getting-start/" title="Go언어 시작하기" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1582179500"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582179500"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582179500"></script>
+    <script src="/js/jquery.sticky.js?1582179500"></script>
+    <script src="/js/featherlight.min.js?1582179500"></script>
+    <script src="/js/highlight.pack.js?1582179500"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582179500"></script>
+    <script src="/js/learn.js?1582179500"></script>
+    <script src="/js/hugo-learn.js?1582179500"></script>
+
+    <link href="/mermaid/mermaid.css?1582179500" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582179500"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54433728-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54433728-4');
+</script>
+
+  </body>
+</html>
+

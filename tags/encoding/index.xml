@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encoding on DevBJ.com</title>
+    <link>https://devbj.com/tags/encoding/</link>
+    <description>Recent content in Encoding on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 03 Dec 2016 01:02:26 +0900</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/tags/encoding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 둘러보기 - encoding/json 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</link>
+      <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: encoding/json package를 번역한 글입니다. 좋든 나쁘든, JSON은 인터넷의 인코딩이다. 이것의 공식적인 정의는 냅킨 뒷면에 쓸 수 있을 정도로 간단</description>
+    </item>
+    
+    <item>
+      <title>Go 둘러보기 - encoding 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</link>
+      <pubDate>Wed, 09 Nov 2016 15:33:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: encoding package를 번역한 글입니다. 우리는 이제까지 로우(raw) 바이트 스트림과 제한된 바이트 슬라이스를 다뤄봤지만 단순히 바이트만을</description>
+    </item>
+    
+  </channel>
+</rss>

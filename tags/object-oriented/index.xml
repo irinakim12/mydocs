@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object Oriented on DevBJ.com</title>
+    <link>https://devbj.com/tags/object-oriented/</link>
+    <description>Recent content in Object Oriented on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 00:51:06 +0900</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/tags/object-oriented/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go와 객체지향</title>
+      <link>https://devbj.com/golangkorea/go-start/object-oriented/</link>
+      <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-start/object-oriented/</guid>
+      <description>객체지향 프로그래밍 Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을</description>
+    </item>
+    
+  </channel>
+</rss>

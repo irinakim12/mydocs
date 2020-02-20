@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on DevBJ.com</title>
+    <link>https://devbj.com/tags/blog/</link>
+    <description>Recent content in Blog on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 23 Aug 2016 23:25:55 -0400</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>시리즈 #5 - 사이트에 블로그 올리는 방법</title>
+      <link>https://devbj.com/golangkorea/hugo-intro/how-to-contribute-content/</link>
+      <pubDate>Tue, 23 Aug 2016 23:25:55 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/hugo-intro/how-to-contribute-content/</guid>
+      <description>사이트에 블로그 올리는 방법 Golang Korean Community 사이트는 깃헙의 golangkorea Organization의 웹사이트로 GitHub Pages를 이용해 제작되고 있습니다. 현존하는 Static Site Gene</description>
+    </item>
+    
+    <item>
+      <title>시리즈 #4 - 분류(Taxonomy)기능 사용하기</title>
+      <link>https://devbj.com/golangkorea/hugo-intro/taxonomy-basic/</link>
+      <pubDate>Tue, 23 Aug 2016 23:25:44 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/hugo-intro/taxonomy-basic/</guid>
+      <description>분류(Taxonomy)기능 사용하기 사이트에 컨텐트가 많아 질 수록 고민이 생깁니다. 비숫한 주제의 컨텐트를 한 곳에 나열해 주는 페이지를 만들수는 없는가? 순</description>
+    </item>
+    
+    <item>
+      <title>시리즈 #3 - 사이트 테마 개발하기</title>
+      <link>https://devbj.com/golangkorea/hugo-intro/theme-customizing/</link>
+      <pubDate>Tue, 23 Aug 2016 23:25:30 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/hugo-intro/theme-customizing/</guid>
+      <description>사이트 테마 개발하기 시리즈 1 마지막에 hugo-octopress 테마를 사용하여 처음으로 사이트를 구축한 기억을 하실 겁니다. 사이트를 구축하기 전에 Hugo에서 사용할 수 있는 테마가</description>
+    </item>
+    
+    <item>
+      <title>시리즈 #2 - 컨텐츠 제작 기초</title>
+      <link>https://devbj.com/golangkorea/hugo-intro/content-basic/</link>
+      <pubDate>Tue, 23 Aug 2016 23:25:04 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/hugo-intro/content-basic/</guid>
+      <description>컨텐츠 제작 기초 컨텐츠를 제작하면서 꼭 알아야 할 몇가지 개념을 정리하겠습니다. 컨텐츠의 조직적인 관리 (Organization) 사이트가 많은 양의 컨텐츠를 보유하게 되면서 조직적인 관</description>
+    </item>
+    
+    <item>
+      <title>시리즈 #1 - Hugo 시작하기</title>
+      <link>https://devbj.com/golangkorea/hugo-intro/getting-started/</link>
+      <pubDate>Tue, 23 Aug 2016 23:24:55 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/hugo-intro/getting-started/</guid>
+      <description>Hugo 시작하기 Hugo는 Go로 제작되고 하나의 실행파일로 배포됩니다. 다양한 설치 방법이 있지만 우선 Package Manager를 쓰시는 분들을 중심으로 살펴보겠습니다</description>
+    </item>
+    
+    <item>
+      <title>Hugo 입문 - 개요</title>
+      <link>https://devbj.com/golangkorea/hugo-intro/overview/</link>
+      <pubDate>Tue, 23 Aug 2016 22:35:57 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/hugo-intro/overview/</guid>
+      <description>Hugo는 현존하는 가장 빠른 정적 사이트 제너레이터(Static Site Generator)로 알려져 있습니다. 기능적인 측면에서도 여타 동적 사이트 제너레이</description>
+    </item>
+    
+  </channel>
+</rss>
