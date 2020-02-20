@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://devbj.com/thought/</loc>
+    <loc>https://devbj.com/blog/</loc>
+    <lastmod>2020-02-19T20:01:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/blog/thought/</loc>
     <lastmod>2020-02-19T20:01:43+09:00</lastmod>
   </url>
   
@@ -109,6 +114,10 @@
   </url>
   
   <url>
+    <loc>https://devbj.com/blog/button/</loc>
+  </url>
+  
+  <url>
     <loc>https://devbj.com/hugolearntheme/shortcodes/button/</loc>
   </url>
   
@@ -121,7 +130,15 @@
   </url>
   
   <url>
+    <loc>https://devbj.com/blog/expand/</loc>
+  </url>
+  
+  <url>
     <loc>https://devbj.com/hugolearntheme/shortcodes/expand/</loc>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/blog/mermaid/</loc>
   </url>
   
   <url>
