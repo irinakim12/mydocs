@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>W600</title>
+      <link>https://devbj.com/w600/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/w600/</guid>
+      <description>W600-SDK Overview WizFi360 is based on the W600 chip which features ARM Cortex-M3 with 1MB on-chip flash and freeRTOS kernel. This page includes the software development kit (SDK) files, documents, and usage method. This SDK has integrated WizFi360 hardware driver (BSP), RTOS, TCP/IP protocol, Wi-Fi Protocol and other public function modules.
+ Software SDK  Official SDK from chip vendor  Download link - WizFi360 Chip SDK (wm_sdk_w60x_g3.02.00_190729.zip)     Software SDK User Manual Basic  SDK User Manual V1.</description>
+    </item>
+    
+    <item>
       <title>Archetypes</title>
       <link>https://devbj.com/hugolearntheme/cont/archetypes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
