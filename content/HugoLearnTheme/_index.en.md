@@ -5,6 +5,7 @@ chapter: true
 #pre: "<b>1. </b>"
 pre: "<i class='fab fa-github'></i> "
 menuTitle: About Learn Theme
+categories: ["web"]
 ---
 
 # Hugo learn theme

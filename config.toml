@@ -9,6 +9,17 @@ theme = "hugo-theme-learn"
 #themesdir = "."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
+enableRobotsTXT = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  subcategory = "subcategories"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [params]
   editURL = "https://github.com/bjnhur/mydocs/edit/master/content/"
