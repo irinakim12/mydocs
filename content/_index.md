@@ -6,7 +6,9 @@ title: Home
 
 # Home
 
-여기는 홈화면입니다.
+## 페이지 리스트
+
+{{% children page="current" style="li" showhidden="true" description="true" depth=1 sort=none %}}
 
 ## 🍳**Remove a git submodule**
 

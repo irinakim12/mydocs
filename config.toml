@@ -1,6 +1,8 @@
 baseURL = "https://devbj.com/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
+hasCJKLanguage = true
+summaryLength = 70
 
 title = "DevBJ.com"
 theme = "hugo-theme-learn"
