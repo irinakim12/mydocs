@@ -30,6 +30,7 @@ env:
   - GH_REPO: mydocs
   - GH_SRC: master
   - GH_DST: gh-pages
+  - GG_PUBID: pub-3059347231702682
 
 # Deploy to GitHub pages
 #deploy:
