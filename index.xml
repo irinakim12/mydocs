@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>Go 둘러보기 - bytes &#43; strings 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/bytes-strings-packages/</link>
+      <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/bytes-strings-packages/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: bytes + strings packages를 번역한 글입니다. 우린 지난번 포스트에서 바이트 스트림을 다뤄봤는데 가끔은 제한적인 범위에서, 인메모리 바이트 슬</description>
+    </item>
+    
+    <item>
+      <title>Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조</title>
+      <link>https://devbj.com/golangkorea/golang-internals/part1/</link>
+      <pubDate>Tue, 13 Sep 2016 13:18:28 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/part1/</guid>
+      <description>이 블로그 시리즈는 기본적인 Go 언어특성에 이미 익숙하며 좀 더 심도있게 내부구조를 알고자 하는 독자들을 위해 쓰여졌다. 이 포스트는 Go언어의 소스코드의 구조와 Go</description>
+    </item>
+    
+    <item>
+      <title>Go언어 시작하기</title>
+      <link>https://devbj.com/golangkorea/go-start/getting-start/</link>
+      <pubDate>Sun, 28 Aug 2016 15:10:07 +0830</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-start/getting-start/</guid>
+      <description>Go 언어에 대해서 구글이 2009년에 만든 비교적 새로운 프로그래밍 언어다. 2009년이면 거의 7년 이상된 구닥다리 언어잖아? 라고 생각 할 수 있겠으나, Rub</description>
+    </item>
+    
+    <item>
       <title>시리즈 #1 - Hugo 시작하기</title>
       <link>https://devbj.com/golangkorea/hugo-intro/getting-started/</link>
       <pubDate>Tue, 23 Aug 2016 23:24:55 -0400</pubDate>
@@ -30,12 +57,66 @@
     </item>
     
     <item>
+      <title>Go 둘러보기 - encoding/json 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</link>
+      <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: encoding/json package를 번역한 글입니다. 좋든 나쁘든, JSON은 인터넷의 인코딩이다. 이것의 공식적인 정의는 냅킨 뒷면에 쓸 수 있을 정도로 간단</description>
+    </item>
+    
+    <item>
+      <title>Golang의 내부, 2부: Go 컴파일러 들여다 보기</title>
+      <link>https://devbj.com/golangkorea/golang-internals/part2/</link>
+      <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/part2/</guid>
+      <description>독자는 인터페이스 레퍼런스를 통해 변수를 사용할 경우 Go 런타임내에서 어떤 일이 있는지 정확하게 알고 있는가? 이 질문에 쉽게 답할 수 없는 이유는 어떤 인터페이스를 구</description>
+    </item>
+    
+    <item>
+      <title>Go의 주요 특징들</title>
+      <link>https://devbj.com/golangkorea/go-start/feature/</link>
+      <pubDate>Mon, 12 Sep 2016 13:10:03 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-start/feature/</guid>
+      <description>단순함 Go 언어는 단순함(simplicity)과 실용성(pragmatism)을 지향하는 언어로 이 두가지 철학이 다른 모든 것들 보다 상위에 있다. go 언어</description>
+    </item>
+    
+    <item>
       <title>시리즈 #2 - 컨텐츠 제작 기초</title>
       <link>https://devbj.com/golangkorea/hugo-intro/content-basic/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:04 -0400</pubDate>
       
       <guid>https://devbj.com/golangkorea/hugo-intro/content-basic/</guid>
       <description>컨텐츠 제작 기초 컨텐츠를 제작하면서 꼭 알아야 할 몇가지 개념을 정리하겠습니다. 컨텐츠의 조직적인 관리 (Organization) 사이트가 많은 양의 컨텐츠를 보유하게 되면서 조직적인 관</description>
+    </item>
+    
+    <item>
+      <title>Go 둘러보기 - encoding 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</link>
+      <pubDate>Wed, 09 Nov 2016 15:33:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: encoding package를 번역한 글입니다. 우리는 이제까지 로우(raw) 바이트 스트림과 제한된 바이트 슬라이스를 다뤄봤지만 단순히 바이트만을</description>
+    </item>
+    
+    <item>
+      <title>Go와 객체지향</title>
+      <link>https://devbj.com/golangkorea/go-start/object-oriented/</link>
+      <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-start/object-oriented/</guid>
+      <description>객체지향 프로그래밍 Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을</description>
+    </item>
+    
+    <item>
+      <title>Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치</title>
+      <link>https://devbj.com/golangkorea/golang-internals/part3/</link>
+      <pubDate>Sat, 17 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/part3/</guid>
+      <description>오늘은 Go 링커와 오브젝트 파일, 그리고 재배치(relocations)에 대해 얘기해 보자. 이런 것들이 독자들과 무슨 상관이 있을까? 만약 독자가 어떤 대형 프</description>
     </item>
     
     <item>
@@ -48,12 +129,39 @@
     </item>
     
     <item>
+      <title>Go 둘러보기 - io 패키지</title>
+      <link>https://devbj.com/golangkorea/go-walkthrough/io-package/</link>
+      <pubDate>Wed, 26 Oct 2016 02:30:33 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-walkthrough/io-package/</guid>
+      <description>Go Walkthrough 시리즈의 Go Walkthrough: io package를 번역한 글입니다. Go는 바이트(bytes)를 사용하여 작업하기 위해 만들어진 프로그래밍 언어이다. 바이트의 리스트</description>
+    </item>
+    
+    <item>
+      <title>Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터</title>
+      <link>https://devbj.com/golangkorea/golang-internals/part4/</link>
+      <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/part4/</guid>
+      <description>오늘은, Func 구조에 대해 좀 더 자세히 들여다 보고 어떻게 가비지 컬렉션이 작동하는지 몇가지 자세한 내용을 논하겠다. 이 포스트는 Golang의 내부, 3부: 링커,</description>
+    </item>
+    
+    <item>
       <title>시리즈 #4 - 분류(Taxonomy)기능 사용하기</title>
       <link>https://devbj.com/golangkorea/hugo-intro/taxonomy-basic/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:44 -0400</pubDate>
       
       <guid>https://devbj.com/golangkorea/hugo-intro/taxonomy-basic/</guid>
       <description>분류(Taxonomy)기능 사용하기 사이트에 컨텐트가 많아 질 수록 고민이 생깁니다. 비숫한 주제의 컨텐트를 한 곳에 나열해 주는 페이지를 만들수는 없는가? 순</description>
+    </item>
+    
+    <item>
+      <title>Golang의 내부, 5부: 런타임 부트스트랩</title>
+      <link>https://devbj.com/golangkorea/golang-internals/part5/</link>
+      <pubDate>Mon, 19 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/part5/</guid>
+      <description>부트스트래핑 과정은 Go의 런타임이 어떻게 작동하는지를 이해하는데 열쇠와 같은 구실을 한다. Go와 함께 앞으로 나아가고자 한다면 반드시 배워야한다. 그래서 G</description>
     </item>
     
     <item>
@@ -73,6 +181,15 @@
       <guid>https://devbj.com/w600/</guid>
       <description>W600-SDK Overview WizFi360 is based on the W600 chip which features ARM Cortex-M3 with 1MB on-chip flash and freeRTOS kernel. This page includes the software development kit (SDK) files, documents, and usage method. This SDK has integrated WizFi360 hardware driver (BSP), RTOS, TCP/IP protocol, Wi-Fi Protocol and other public function modules.
  Software SDK  Official SDK from chip vendor  Download link - WizFi360 Chip SDK (wm_sdk_w60x_g3.02.00_190729.zip)     Software SDK User Manual Basic  SDK User Manual V1.</description>
+    </item>
+    
+    <item>
+      <title>Golang의 내부, 6부: 부트스트래핑과 메모리 할당자</title>
+      <link>https://devbj.com/golangkorea/golang-internals/part6/</link>
+      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/part6/</guid>
+      <description>이 포스트는 Golang 내부 시리즈의 연속이다. Go 런타임을 자세히 이해하는데 열쇠와 같은 부트스트랩 과정을 살펴볼 것이다. 이번에는 시작하는 순서의 두번째 부분을 섭렵해</description>
     </item>
     
     <item>
@@ -144,129 +261,12 @@ List all the tags In the config.toml file you can add a shortcut to display all 
     </item>
     
     <item>
-      <title>Go 둘러보기 - encoding/json 패키지</title>
-      <link>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</link>
-      <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</guid>
-      <description>Go Walkthrough 시리즈의 Go Walkthrough: encoding/json package를 번역한 글입니다. 좋든 나쁘든, JSON은 인터넷의 인코딩이다. 이것의 공식적인 정의는 냅킨 뒷면에 쓸 수 있을 정도로 간단</description>
-    </item>
-    
-    <item>
-      <title>Go 둘러보기 - encoding 패키지</title>
-      <link>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</link>
-      <pubDate>Wed, 09 Nov 2016 15:33:33 +0900</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</guid>
-      <description>Go Walkthrough 시리즈의 Go Walkthrough: encoding package를 번역한 글입니다. 우리는 이제까지 로우(raw) 바이트 스트림과 제한된 바이트 슬라이스를 다뤄봤지만 단순히 바이트만을</description>
-    </item>
-    
-    <item>
-      <title>Go 둘러보기 - bytes &#43; strings 패키지</title>
-      <link>https://devbj.com/golangkorea/go-walkthrough/bytes-strings-packages/</link>
-      <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-walkthrough/bytes-strings-packages/</guid>
-      <description>Go Walkthrough 시리즈의 Go Walkthrough: bytes + strings packages를 번역한 글입니다. 우린 지난번 포스트에서 바이트 스트림을 다뤄봤는데 가끔은 제한적인 범위에서, 인메모리 바이트 슬</description>
-    </item>
-    
-    <item>
-      <title>Go 둘러보기 - io 패키지</title>
-      <link>https://devbj.com/golangkorea/go-walkthrough/io-package/</link>
-      <pubDate>Wed, 26 Oct 2016 02:30:33 +0900</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-walkthrough/io-package/</guid>
-      <description>Go Walkthrough 시리즈의 Go Walkthrough: io package를 번역한 글입니다. Go는 바이트(bytes)를 사용하여 작업하기 위해 만들어진 프로그래밍 언어이다. 바이트의 리스트</description>
-    </item>
-    
-    <item>
       <title>Go에서 애플리케이션 설계하기</title>
       <link>https://devbj.com/golangkorea/structuring-applications-in-go/</link>
       <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
       
       <guid>https://devbj.com/golangkorea/structuring-applications-in-go/</guid>
       <description>Structuring Applications in Go을 번역한 글입니다. 개요 Go를 배울 때 가장 어려웠던 부분은 애플리케이션을 어떻게 설계하는가였다. Go 이전에, 나는 Rails 애플리케이션을 만들었었는데</description>
-    </item>
-    
-    <item>
-      <title>Go와 객체지향</title>
-      <link>https://devbj.com/golangkorea/go-start/object-oriented/</link>
-      <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-start/object-oriented/</guid>
-      <description>객체지향 프로그래밍 Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 6부: 부트스트래핑과 메모리 할당자</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part6/</link>
-      <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/part6/</guid>
-      <description>이 포스트는 Golang 내부 시리즈의 연속이다. Go 런타임을 자세히 이해하는데 열쇠와 같은 부트스트랩 과정을 살펴볼 것이다. 이번에는 시작하는 순서의 두번째 부분을 섭렵해</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 5부: 런타임 부트스트랩</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part5/</link>
-      <pubDate>Mon, 19 Sep 2016 16:20:29 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/part5/</guid>
-      <description>부트스트래핑 과정은 Go의 런타임이 어떻게 작동하는지를 이해하는데 열쇠와 같은 구실을 한다. Go와 함께 앞으로 나아가고자 한다면 반드시 배워야한다. 그래서 G</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part4/</link>
-      <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/part4/</guid>
-      <description>오늘은, Func 구조에 대해 좀 더 자세히 들여다 보고 어떻게 가비지 컬렉션이 작동하는지 몇가지 자세한 내용을 논하겠다. 이 포스트는 Golang의 내부, 3부: 링커,</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part3/</link>
-      <pubDate>Sat, 17 Sep 2016 16:20:29 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/part3/</guid>
-      <description>오늘은 Go 링커와 오브젝트 파일, 그리고 재배치(relocations)에 대해 얘기해 보자. 이런 것들이 독자들과 무슨 상관이 있을까? 만약 독자가 어떤 대형 프</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 2부: Go 컴파일러 들여다 보기</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part2/</link>
-      <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/part2/</guid>
-      <description>독자는 인터페이스 레퍼런스를 통해 변수를 사용할 경우 Go 런타임내에서 어떤 일이 있는지 정확하게 알고 있는가? 이 질문에 쉽게 답할 수 없는 이유는 어떤 인터페이스를 구</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part1/</link>
-      <pubDate>Tue, 13 Sep 2016 13:18:28 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/part1/</guid>
-      <description>이 블로그 시리즈는 기본적인 Go 언어특성에 이미 익숙하며 좀 더 심도있게 내부구조를 알고자 하는 독자들을 위해 쓰여졌다. 이 포스트는 Go언어의 소스코드의 구조와 Go</description>
-    </item>
-    
-    <item>
-      <title>Go의 주요 특징들</title>
-      <link>https://devbj.com/golangkorea/go-start/feature/</link>
-      <pubDate>Mon, 12 Sep 2016 13:10:03 +0900</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-start/feature/</guid>
-      <description>단순함 Go 언어는 단순함(simplicity)과 실용성(pragmatism)을 지향하는 언어로 이 두가지 철학이 다른 모든 것들 보다 상위에 있다. go 언어</description>
-    </item>
-    
-    <item>
-      <title>Go언어 시작하기</title>
-      <link>https://devbj.com/golangkorea/go-start/getting-start/</link>
-      <pubDate>Sun, 28 Aug 2016 15:10:07 +0830</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/go-start/getting-start/</guid>
-      <description>Go 언어에 대해서 구글이 2009년에 만든 비교적 새로운 프로그래밍 언어다. 2009년이면 거의 7년 이상된 구닥다리 언어잖아? 라고 생각 할 수 있겠으나, Rub</description>
     </item>
     
     <item>

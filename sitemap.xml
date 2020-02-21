@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://devbj.com/golangkorea/go-walkthrough/bytes-strings-packages/</loc>
+    <lastmod>2016-11-02T18:30:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/golang-internals/part1/</loc>
+    <lastmod>2016-09-13T13:18:28-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/go-start/getting-start/</loc>
+    <lastmod>2016-08-28T15:10:07+08:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://devbj.com/golangkorea/hugo-intro/getting-started/</loc>
     <lastmod>2016-08-23T23:24:55-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/go-walkthrough/</loc>
+    <lastmod>2016-08-23T22:35:57-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/go-start/</loc>
+    <lastmod>2016-08-23T22:35:57-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -30,6 +65,27 @@
   </url>
   
   <url>
+    <loc>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</loc>
+    <lastmod>2016-12-03T01:02:26+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/golang-internals/part2/</loc>
+    <lastmod>2016-09-15T05:53:48-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/go-start/feature/</loc>
+    <lastmod>2016-09-12T13:10:03+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://devbj.com/golangkorea/hugo-intro/content-basic/</loc>
     <lastmod>2016-08-23T23:25:04-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -37,8 +93,43 @@
   </url>
   
   <url>
+    <loc>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</loc>
+    <lastmod>2016-11-09T15:33:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/go-start/object-oriented/</loc>
+    <lastmod>2016-10-02T00:51:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/golang-internals/part3/</loc>
+    <lastmod>2016-09-17T16:20:29-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://devbj.com/golangkorea/hugo-intro/theme-customizing/</loc>
     <lastmod>2016-08-23T23:25:30-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/go-walkthrough/io-package/</loc>
+    <lastmod>2016-10-26T02:30:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/golang-internals/part4/</loc>
+    <lastmod>2016-09-18T16:20:29-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -60,6 +151,13 @@
   <url>
     <loc>https://devbj.com/blog/thought/</loc>
     <lastmod>2020-02-19T20:01:43+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/golang-internals/part5/</loc>
+    <lastmod>2016-09-19T16:20:29-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -98,6 +196,13 @@
   
   <url>
     <loc>https://devbj.com/wizfi360/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://devbj.com/golangkorea/golang-internals/part6/</loc>
+    <lastmod>2016-09-20T16:20:29-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -245,13 +350,6 @@
   </url>
   
   <url>
-    <loc>https://devbj.com/golangkorea/go-walkthrough/encoding-json-package/</loc>
-    <lastmod>2016-12-03T01:02:26+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://devbj.com/tags/golang/</loc>
     <lastmod>2016-12-03T01:02:26+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -266,13 +364,6 @@
   </url>
   
   <url>
-    <loc>https://devbj.com/golangkorea/go-walkthrough/encoding-package/</loc>
-    <lastmod>2016-11-09T15:33:33+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://devbj.com/tags/bytes/</loc>
     <lastmod>2016-11-02T18:30:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -281,13 +372,6 @@
   
   <url>
     <loc>https://devbj.com/categories/bytes/</loc>
-    <lastmod>2016-11-02T18:30:33+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/go-walkthrough/bytes-strings-packages/</loc>
     <lastmod>2016-11-02T18:30:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -315,7 +399,7 @@
   </url>
   
   <url>
-    <loc>https://devbj.com/golangkorea/go-walkthrough/io-package/</loc>
+    <loc>https://devbj.com/categories/io/</loc>
     <lastmod>2016-10-26T02:30:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -323,13 +407,6 @@
   
   <url>
     <loc>https://devbj.com/tags/io/</loc>
-    <lastmod>2016-10-26T02:30:33+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/categories/io/</loc>
     <lastmod>2016-10-26T02:30:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -359,13 +436,6 @@
   <url>
     <loc>https://devbj.com/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</loc>
     <lastmod>2016-10-10T21:11:16+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/go-start/object-oriented/</loc>
-    <lastmod>2016-10-02T00:51:06+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -406,13 +476,6 @@
   </url>
   
   <url>
-    <loc>https://devbj.com/golangkorea/golang-internals/part6/</loc>
-    <lastmod>2016-09-20T16:20:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://devbj.com/tags/internals/</loc>
     <lastmod>2016-09-20T16:20:29-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -436,20 +499,6 @@
   <url>
     <loc>https://devbj.com/categories/%ED%95%B5%ED%82%B9/</loc>
     <lastmod>2016-09-20T16:20:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/golang-internals/part5/</loc>
-    <lastmod>2016-09-19T16:20:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/golang-internals/part4/</loc>
-    <lastmod>2016-09-18T16:20:29-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -483,21 +532,7 @@
   </url>
   
   <url>
-    <loc>https://devbj.com/golangkorea/golang-internals/part3/</loc>
-    <lastmod>2016-09-17T16:20:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://devbj.com/tags/compiler/</loc>
-    <lastmod>2016-09-15T05:53:48-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/golang-internals/part2/</loc>
     <lastmod>2016-09-15T05:53:48-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -506,13 +541,6 @@
   <url>
     <loc>https://devbj.com/tags/structure/</loc>
     <lastmod>2016-09-15T05:53:48-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/golang-internals/part1/</loc>
-    <lastmod>2016-09-13T13:18:28-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -527,20 +555,6 @@
   <url>
     <loc>https://devbj.com/tags/beginning/</loc>
     <lastmod>2016-09-12T13:10:03+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/go-start/feature/</loc>
-    <lastmod>2016-09-12T13:10:03+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://devbj.com/golangkorea/go-start/getting-start/</loc>
-    <lastmod>2016-08-28T15:10:07+08:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -567,14 +581,14 @@
   </url>
   
   <url>
-    <loc>https://devbj.com/categories/development/</loc>
+    <loc>https://devbj.com/tags/development/</loc>
     <lastmod>2016-08-22T22:57:14+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://devbj.com/tags/development/</loc>
+    <loc>https://devbj.com/categories/development/</loc>
     <lastmod>2016-08-22T22:57:14+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>beginning on DevBJ.com</title>
-    <link>https://devbj.com/tags/beginning/</link>
-    <description>Recent content in beginning on DevBJ.com</description>
+    <title>Go 시작하기 on DevBJ.com</title>
+    <link>https://devbj.com/golangkorea/go-start/</link>
+    <description>Recent content in Go 시작하기 on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 12 Sep 2016 13:10:03 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Aug 2016 22:35:57 -0400</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/beginning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://devbj.com/golangkorea/go-start/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,6 +27,15 @@
       
       <guid>https://devbj.com/golangkorea/go-start/feature/</guid>
       <description>단순함 Go 언어는 단순함(simplicity)과 실용성(pragmatism)을 지향하는 언어로 이 두가지 철학이 다른 모든 것들 보다 상위에 있다. go 언어</description>
+    </item>
+    
+    <item>
+      <title>Go와 객체지향</title>
+      <link>https://devbj.com/golangkorea/go-start/object-oriented/</link>
+      <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/go-start/object-oriented/</guid>
+      <description>객체지향 프로그래밍 Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을</description>
     </item>
     
   </channel>
