@@ -3,7 +3,7 @@
 title = "Go 둘러보기 - bytes + strings 패키지"
 draft = false
 date = "2016-11-02T18:30:33+09:00"
-
+weight = 1
 tags = ["Golang", "Bytes", "Strings", "Package"]
 categories = ["번역", "Bytes", "Strings"]
 series = ["Go  Walkthrough"]
@@ -45,7 +45,7 @@ buf[3] = 5  // []byte{1,2,3,5}
 이는 크기 조절이 가능하므로 축소 또는 확장이 가능하다:
 
 ```go
-buf = buf[:2]           // []byte{1,2}           
+buf = buf[:2]           // []byte{1,2}
 buf = append(buf, 100)  // []byte{1,2,100}
 ```
 

@@ -1,7 +1,8 @@
 +++
 date = "2016-08-28T15:10:07+08:30"
-draft = false 
+draft = false
 title = "Go언어 시작하기"
+weight = 1
 tags = ["beginning", "install"]
 categories=["How-to"]
 series=["Go 시작하기"]
@@ -13,7 +14,7 @@ authors=["Sangbae Yun"]
 
 Python이나 Java와 같은 범용 프로그래밍 언어이며, 시스템 프로그래밍과 네트워크 프로그램의 개발을 목표로 만들어진 언어다. 비교적 최근에 만들어진 언어답게 C++, Java, Python 언어들의 장점을 상당 부분 수용했다. 이렇게 보면 최신 프로그래밍 언어들의 트랜드를 따를 것 같지만 코드는 **C 언어**와 매우 비슷한 느낌을 준다.
 
-C 언어 처럼 컴파일이 되며, 컴파일 시간에 타입을 체크하는 정적 타입 언어다. 그리고 C 언어처럼 단순하다. 약 25개 정도의 키워드만이 제공되는데, 실제 코드를 만들다 보면 10개 내외의 키워드 만으로 프로그래밍이 가능하다. 아래 go 언어가 제공하는 키워드들이다.  
+C 언어 처럼 컴파일이 되며, 컴파일 시간에 타입을 체크하는 정적 타입 언어다. 그리고 C 언어처럼 단순하다. 약 25개 정도의 키워드만이 제공되는데, 실제 코드를 만들다 보면 10개 내외의 키워드 만으로 프로그래밍이 가능하다. 아래 go 언어가 제공하는 키워드들이다.
 ```
 break        default      func         interface    select
 case         defer        go           map          struct
@@ -29,7 +30,7 @@ Go 언어는 **동시성(concurrency)**를 잘 지원하는 것으로 유명하�
 
 Go 언어를 사용하다보면, 웹 애플리케이션을 만들기가 매우 편하다는 느낌을 받게 된다. 특히 **MSA(Microservice Architecture)**와 **REST(Representational State Transfer)** 모델의 애플리케이션을 쉽게 만들 수 있다. 루비나 파이선 같은 언어의 경우 다양한 **웹 프레임워크**중에서 선택을 고민하게 마련인데, Go 언어는 기본으로 제공하는 **net/http** 패키지로 충분하다. 물론 Go 언어도 다양한 마이크로 프레임워크와 풀 프레임워크를 제공하긴 하지만 이런 프레임워크를 쓰면, "왜 프레임워크를 쓰세요 ? 그냥 기본(net/http) 패키지 쓰세요"라는 말을 들을 정도로 강력하다.
 
-대규모의 분산 시스템을 유지해야 하는 구글의 요구를 위해서 웹 개발 관련 패키지가 강력해진 것 같다.  
+대규모의 분산 시스템을 유지해야 하는 구글의 요구를 위해서 웹 개발 관련 패키지가 강력해진 것 같다.
 ## Go 시작하기
 ### Go 설치
 [golang.org](https://golang.org/dl/)에서 운영체제별로 Go 언어를 다운로드 할 수 있다. 2016년 8월 현재 최신 버전은 1.7이다. 압축을 푼 다음 **/usr/local** 디렉토리로 복사했다.
@@ -76,7 +77,7 @@ go get github.com/mattn/go-sqlite3
 │       └── github.com
 │           └── mattn
 │               └── go-sqlite3.a
-├── src 
+├── src
 |   └── github.com
 |       └── mattn
 |           └── go-sqlite3
@@ -84,12 +85,12 @@ go get github.com/mattn/go-sqlite3
 |               ├── backup_test.go
 |               ├── callback.go
 |               ├── callback_test.go
-└── bin 
+└── bin
 ```
 패키지의 경로가 github 경로인 것을 확인 할 수 있다. 물론 인터넷에 연결하지 않고도 프로젝트를 수행 할 수는 있지만 제대로 go 프로그래밍을 하려면 인터넷과 github 계정이 필요하다. 아래 주요 디렉토리의 용도를 정리했다.
 
   * src : 패키지의 소스코드가 위치한다.
-  * pkg : 패키지의 소스코드를 빌드해서 만들어진 라이브러리 파일(.a - ar archive 파일)이 위치한다. go-sqlite3.a 파일이 보일 것이다. 
+  * pkg : 패키지의 소스코드를 빌드해서 만들어진 라이브러리 파일(.a - ar archive 파일)이 위치한다. go-sqlite3.a 파일이 보일 것이다.
   * bin : 패키지가 main 함수를 포함할 경우 실행 파일이 만들어 지는데, 이들 실행파일이 복사된다. go-sqlite3는 실행파일이 없으므로 bin에 파일이 복사되지 않는다.
 
 아래에서 다룰 Hello World 프로젝트도 github 기반으로 진행 할 것이다. github 계정이 없다면 지금 계정을 만들자. 내가 사용하고 있는 github 계정은 **yundream** 이다.
@@ -100,7 +101,7 @@ Hello World 프로젝트를 시작하기 위해서 내가 사용하는 github �
 $ go get github.com/yundream/helloworld
 package github.com/yundream/helloworld: no buildable Go source files in /home/yundream/golang/src/github.com/yundream/helloworld
 ```
-지금은 README.md 파일만 있으므로 빌드 할 수 있는 go 파일이 없다는 경고메시지뜰 것이다. 무시하자. **GOPATH** 환경에 등록된 /home/yundream/golang 디렉토리 밑에 패키지를 다운로드(README.md) 해서 설치하는 것을 확인 할 수 있을 것이다. 디렉토리로 이동해서 helloworld.go 파일을 만들어보자.  
+지금은 README.md 파일만 있으므로 빌드 할 수 있는 go 파일이 없다는 경고메시지뜰 것이다. 무시하자. **GOPATH** 환경에 등록된 /home/yundream/golang 디렉토리 밑에 패키지를 다운로드(README.md) 해서 설치하는 것을 확인 할 수 있을 것이다. 디렉토리로 이동해서 helloworld.go 파일을 만들어보자.
 ```go
 package main
 
@@ -113,9 +114,9 @@ func main() {
 }
 
 ```
-터미널에 "Hello World"를 출력하는 간단한 프로그램이다. go run 명령으로 실행해보자. 
+터미널에 "Hello World"를 출력하는 간단한 프로그램이다. go run 명령으로 실행해보자.
 ```
-$ go run main.go 
+$ go run main.go
 Hello World
 ```
 go run은 임시디렉토리에서 코드를 컴파일 하고 실행하는 일을 한다. go가 컴파일 언어임에도 불구하고 (컴파일 시간이 매우빠르다)유저 입장에서는 인터프리터 언어처럼 사용 할 수 있다. python 같은 언어에 비해서는 즉시성이 떨어지기는 하지만 왠만한 프로젝트에서는 굳이 컴파일 과정을 거치지 않고도 바로 바로 실행 할 수 있다.
@@ -125,7 +126,7 @@ go run은 임시디렉토리에서 코드를 컴파일 하고 실행하는 일�
 $ go build
 $ ls
 README.md  helloworld  main.go
-$ ./helloworld 
+$ ./helloworld
 Hello World
 ```
 이제 소스코드를 살펴보자. C 언어와 매우 비슷하다는 느낌을 받을 것이다.
@@ -155,7 +156,7 @@ fmt.Println("Hello World")
 ```
 **fmt**는 패키지 이름으로 해석하자면 fmt 패키지가 가지고 있는 **Println** 함수를 사용해서 "Hello World"를 출력하라는 의미가 된다.
 
-빌드 성공까지 끝냈다면 main.go를 github 저장소에 push하자. 그리고 go get 으로 다시 패키지를 다운로드 해보자. go get으로 패키지를 설치 하면 소스코드들은 $GOPATH/src 밑에 설치된다. 만약 패키지가 실행 가능한 코드 즉 main 함수를 포함하고 있다면 빌드를 수행하고 그 결과를 $GOPATH:/bin 에 복사한다. 
+빌드 성공까지 끝냈다면 main.go를 github 저장소에 push하자. 그리고 go get 으로 다시 패키지를 다운로드 해보자. go get으로 패키지를 설치 하면 소스코드들은 $GOPATH/src 밑에 설치된다. 만약 패키지가 실행 가능한 코드 즉 main 함수를 포함하고 있다면 빌드를 수행하고 그 결과를 $GOPATH:/bin 에 복사한다.
 ```sh
 # $GOPATH/bin/helloworld
 Hello World
@@ -166,7 +167,7 @@ go 프로젝트를 진행하다 보면, go get을 이용해서 go 기반의 소�
 만약 패키지를 지우고 싶다면 $GOPATH/src로 이동해서 패키지 디렉토리를(이 경우 $GOPATH/src/github.com/yundream/helloworld) 지워주기만 하면 된다.
 
 ### 첫 번째 패키지 개발
-이제 라이브러리 타입의 패키지를 만들어 보자. 패키지의 이름은 **stringutil**로 문자열 조작과 관련된 함수들을 만들 것이다. 
+이제 라이브러리 타입의 패키지를 만들어 보자. 패키지의 이름은 **stringutil**로 문자열 조작과 관련된 함수들을 만들 것이다.
 ```go
 package stringutil
 
@@ -178,9 +179,9 @@ func Reverse(s string) string {
 	return string(r)
 }
 ```
-Reverse 함수 하나만을 포함하고 있다. 매개변수로 받은 문자를 뒤집어서 반환하는 일을 한다. 
+Reverse 함수 하나만을 포함하고 있다. 매개변수로 받은 문자를 뒤집어서 반환하는 일을 한다.
 
-github 계정에 stringutil 저장소를 만들고 stringutil.go 파일을 push 한후, go get 으로 패키지를 다운로드하자. 
+github 계정에 stringutil 저장소를 만들고 stringutil.go 파일을 push 한후, go get 으로 패키지를 다운로드하자.
 ```sh
 # go get github.com/yundream/stringutil
 ```
@@ -196,8 +197,8 @@ stringutil는 라이브러리 타입의 패키지로 빌드한 결과는 pkg/ �
 /home/yundream/golang/pkg/linux_amd64/github.com/yundream/stringutil.a: current ar archive
 ```
 
-이제 helloworld 패키지에서 stringutil 패키지를 임포트해서 함수를 사용 할 수 있다. 
-```go  
+이제 helloworld 패키지에서 stringutil 패키지를 임포트해서 함수를 사용 할 수 있다.
+```go
 import (
     "fmt"
     "github.com/yundream/stringutil"
@@ -211,7 +212,7 @@ func main() {
 ```
 실행해 보면 stringutil.Reverse 함수가 작동하는 걸 확인할 수 있다.
 ```sh
-# go run main.go 
+# go run main.go
 Hello World !!
 FEDCBA
 ```
@@ -221,7 +222,7 @@ Go 언어에서 라이브러리 타입의 패키지들은 **.a(정적 라이브�
 
 이 방법은 패키징이 단순해지며, 운영체제의 동적 라이브러리와의 호환문제에서 자유롭기 때문에 배포가 쉬워진다는 장점이 있다. 대신 라이브러리 코드가 포함되므로 코드가 더 커지고, 취약점이 있는 라이브러리에 대한 체크와 업데이트가 쉽지 않다는 문제가 있다. 특정 라이브러리에서 어떤 취약점이 발견됐다면, 해당 라이브러리를 포함한 모든 애플리케이션을 재 빌드 해야 한다.
 
-현대적인 애플리케이션들이 공유 라이브러리를 선호한다는 점에서 시대에 역행한다는 생각을 가질 수 있을 것이다. 이러한 방식을 선택한 이유를 생각해봐야 한다. 구글은 프라이빗한 클라우드 환경에서 작동하는 시스템 애플리케이션의 개발을 위해서 go 언어를 사용하고 있다. 다양한 운영체제와 운영 환경등을 가지고 있는 클라우드 환경에 애플리케이션을 배포하기 위해서는 외부 의존성을 없애고 빠르게 배포하는게 더 나을 것 이다. 프라이빗한 네트워크에서 실행되며, 직접 서비스에 관여하는 일도 없을 테니 취약점에 대한 대응 문제도 그리 심각하지 않을 것이다. 
+현대적인 애플리케이션들이 공유 라이브러리를 선호한다는 점에서 시대에 역행한다는 생각을 가질 수 있을 것이다. 이러한 방식을 선택한 이유를 생각해봐야 한다. 구글은 프라이빗한 클라우드 환경에서 작동하는 시스템 애플리케이션의 개발을 위해서 go 언어를 사용하고 있다. 다양한 운영체제와 운영 환경등을 가지고 있는 클라우드 환경에 애플리케이션을 배포하기 위해서는 외부 의존성을 없애고 빠르게 배포하는게 더 나을 것 이다. 프라이빗한 네트워크에서 실행되며, 직접 서비스에 관여하는 일도 없을 테니 취약점에 대한 대응 문제도 그리 심각하지 않을 것이다.
 
 클라우드와 같은 분산된 환경에서는 go 언어의 방식이 더 나을 수 있다.
 

@@ -3,7 +3,7 @@
 title = "Go 둘러보기 - io 패키지"
 draft = false
 date = "2016-10-26T02:30:33+09:00"
-
+weight = 4
 tags = ["Golang", "IO", "Package"]
 categories = ["번역", "IO"]
 series = ["Go  Walkthrough"]
@@ -33,7 +33,7 @@ io 패키지는 표준 라이브러리 내에서 가장 기본적인 패키지 �
 
 ```go
 type Reader interface {
-    Read(p []byte) (n int, err error)    
+    Read(p []byte) (n int, err error)
 }
 ```
 > byte : [byte](https://golang.org/pkg/builtin/#byte), int : [int](https://golang.org/pkg/builtin/#int), error : [error](https://golang.org/pkg/builtin/#error)

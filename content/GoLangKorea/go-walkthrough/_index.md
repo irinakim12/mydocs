@@ -1,16 +1,16 @@
 +++
 date = "2016-08-23T22:35:57-04:00"
 draft = false
-title = "Golang의 내부"
+title = "Go 둘러보기"
 weight = 1
 #chapter = true
 tags = ["Golang", "Internals", "Compiler", "Structure"]
 categories = ["번역", "핵킹"]
-series = ["Golang  Internals"]
+series = ["Go  Walkthrough"]
 
 +++
 
-Go 언어 내부
+Go 둘러보기
 
 ## 페이지 리스트
 

@@ -3,7 +3,7 @@
 title = "Go 둘러보기 - encoding/json 패키지"
 draft = false
 date = "2016-12-03T01:02:26+09:00"
-
+weight = 2
 tags = ["Golang", "Encoding"]
 categories = ["번역", "Encoding"]
 series = ["Go  Walkthrough"]
@@ -15,7 +15,7 @@ toc = true
 
 > [Go Walkthrough](https://medium.com/go-walkthrough) 시리즈의 [Go Walkthrough: encoding/json package](https://medium.com/go-walkthrough/go-walkthrough-encoding-json-package-9681d1d37a8f#.eszbi1cjw)를 번역한 글입니다.
 
-좋든 나쁘든, JSON은 인터넷의 인코딩이다. 이것의 공식적인 정의는 냅킨 뒷면에 쓸 수 있을 정도로 간단하지만 이는 문자열, 숫자, 부울, 널(nulls), 맵(maps) 그리고 배열을 인코딩 할 수 있다. 이러한 간결함 덕에, 모든 언어는 JSON 파서를 가지고 있다. 
+좋든 나쁘든, JSON은 인터넷의 인코딩이다. 이것의 공식적인 정의는 냅킨 뒷면에 쓸 수 있을 정도로 간단하지만 이는 문자열, 숫자, 부울, 널(nulls), 맵(maps) 그리고 배열을 인코딩 할 수 있다. 이러한 간결함 덕에, 모든 언어는 JSON 파서를 가지고 있다.
 
 Go에서의 구현체는 [encoding/json](https://golang.org/pkg/encoding/json/)이라고 하는 패키지이며 이는 Go 객체에 대한 JSON 인코딩을 원활하게 추가할 수 있도록 해준다. 그러나, 광범위하게 리플렉션을 사용함으로써, *encoding/json* 은 가장 많이 사용되는 패키지중 하나임에도 불구하고 이해하기 어려운 패키지중 하나이다. 우리는 이 패키지가 어떻게 동작하는지에 대해 자세히 살펴볼 볼 것이다. 패키지의 사용법뿐만 아니라 내부 함수들이 어떻게 동작하는지도 살펴볼 것이다.
 
@@ -97,7 +97,7 @@ type Marshaler interface {
 ```
 > byte : [byte](https://golang.org/pkg/builtin/#byte), error: [error](https://golang.org/pkg/builtin/#error)
 
-만약 구현하고 있다면 마샬링은 타입에 따라 결정된다. 이는 타입중 하나가 [json](https://golang.org/pkg/encoding/json/) 패키지의 리플렉션 기반 인코더로 처리할 수 없는 특별한 JSON 표현식을 가진 경우 매우 유용하다.  
+만약 구현하고 있다면 마샬링은 타입에 따라 결정된다. 이는 타입중 하나가 [json](https://golang.org/pkg/encoding/json/) 패키지의 리플렉션 기반 인코더로 처리할 수 없는 특별한 JSON 표현식을 가진 경우 매우 유용하다.
 
 다음으로, 인코더는 타입이 encoding.[TextMarshaler](https://golang.org/pkg/encoding/#TextMarshaler)을 구현하고 있는지 확인한다:
 
@@ -130,7 +130,7 @@ type User struct {
 
 * 필드 키 이름을 바꾼다. 많은 JSON 키는 카멜케이스이므로 이에 일치하도록 이름을 바꾸는것은 중요할 수 있다.
 * *omitempty* 플래그는 빈 값을 갖는 비구조체 필드들을 하도록 설정할 수 있다.
-* *string* 플래그는 필드가 문자열로 인코딩 되도록 강제하는데 사용될 수 있다. 예를 들면, 정수가 문자열로 인코딩 되도록 강제할 수 있다. 
+* *string* 플래그는 필드가 문자열로 인코딩 되도록 강제하는데 사용될 수 있다. 예를 들면, 정수가 문자열로 인코딩 되도록 강제할 수 있다.
 
 ### 재귀 처리
 
@@ -151,7 +151,7 @@ type Decoder strcut {}
 func NewDecoder(r io.Reader) *Decoder
 func (dec *Decoder) Decode(v interface{}) error
 ```
-> io : [io](https://golang.org/pkg/io/), Reader : [Reader](https://golang.org/pkg/io/#Reader), Decoder : [Decoder](https://golang.org/pkg/io/#Reader), error : [error](https://golang.org/pkg/builtin/#error) 
+> io : [io](https://golang.org/pkg/io/), Reader : [Reader](https://golang.org/pkg/io/#Reader), Decoder : [Decoder](https://golang.org/pkg/io/#Reader), error : [error](https://golang.org/pkg/builtin/#error)
 
 또는 json.[Unmarshal]() 함수를 사용해 바이트 슬라이스로부터 디코딩 할 수 있다:
 
@@ -170,7 +170,7 @@ func Unmarshal(data []byte, v interface{}) error
 
 ### 버퍼 미리보기
 
-스캐닝의 흥미로운 부분은 버퍼 미리보기이다. JSON은 "LL(1)으로 파싱가능"하며 이는 스캐닝하는데 딱 하나의 바이트 버퍼만 필요하다는 의미이다. 이 버퍼는 다음 바이트를 미리 보는데 사용된다. 
+스캐닝의 흥미로운 부분은 버퍼 미리보기이다. JSON은 "LL(1)으로 파싱가능"하며 이는 스캐닝하는데 딱 하나의 바이트 버퍼만 필요하다는 의미이다. 이 버퍼는 다음 바이트를 미리 보는데 사용된다.
 
 예를 들면, 숫자 스캐닝 함수는 숫자가 아닌 문자를 찾을 때까지 바이트를 계속 읽을 것이다. 그러나, 스트림으로부터 문자를 이미 읽었기 때문에 다른 스캐닝 함수가 사용할 수 있도록 이를 버퍼에서 빼줘야 한다. 이게 바로 버퍼 미리보기가 필요한 이유이다.
 
@@ -307,7 +307,7 @@ json 패키지는 상당수의 에러 타입을 가지고 있다. 아래에 인�
 
 몇 년 전 나는 리플렉션을 완전히 피하기 위해 컴파일 시 특정 타입별 인코더와 디코더를 생성해주는 [megajson](https://github.com/benbjohnson/megajson)라는 툴을 개발했었다. 이는 인코딩과 디코딩을 훨씬 빠르게 만들어주었다. 그러나, 이 툴은 개념 증명이었으며 지원의 한계가 있어 결국 버려졌다.
 
-운좋게도, [Paul Querna](http://paul.querna.org/)이 동일한 일을 하지만 훨씬 나은 [ffjson](https://github.com/pquerna/ffjson)이라는 구현체를 만들었다. JSON 인코딩과 디코딩 성능을 향상시키고자 한다면 이 툴을 강력히 추천한다. 
+운좋게도, [Paul Querna](http://paul.querna.org/)이 동일한 일을 하지만 훨씬 나은 [ffjson](https://github.com/pquerna/ffjson)이라는 구현체를 만들었다. JSON 인코딩과 디코딩 성능을 향상시키고자 한다면 이 툴을 강력히 추천한다.
 
 <br>
 

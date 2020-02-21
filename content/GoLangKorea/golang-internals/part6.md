@@ -3,7 +3,7 @@
 title = "Golang의 내부, 6부: 부트스트래핑과 메모리 할당자"
 draft = false
 date = "2016-09-20T16:20:29-04:00"
-
+weight = 6
 tags = ["Golang", "Internals", "runtime", "bootstrap", "memory", "allocator"]
 categories = ["번역", "핵킹"]
 series = ["Golang  Internals"]

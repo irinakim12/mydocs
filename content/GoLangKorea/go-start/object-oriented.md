@@ -3,6 +3,7 @@ authors = ["Sangbae Yun"]
 date = "2016-10-02T00:51:06+09:00"
 draft = false
 categories = ["How-to"]
+weight = 3
 tags = ["Object Oriented","struct"]
 series=["Go 시작하기"]
 title = "Go와 객체지향"
@@ -10,11 +11,11 @@ toc = false
 +++
 
 ## 객체지향 프로그래밍
-Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을 가지고 있다. 단일 상속도 없고 당연히 다중 상속도 없다. 왠지 객체지향스럽지 않은 언어로 보일 수 있겠지만 **충분히 객체지향적**이다. 그냥 좀 다른 방법으로 객체를 지향하고 있을 따름이다. 
+Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을 가지고 있다. 단일 상속도 없고 당연히 다중 상속도 없다. 왠지 객체지향스럽지 않은 언어로 보일 수 있겠지만 **충분히 객체지향적**이다. 그냥 좀 다른 방법으로 객체를 지향하고 있을 따름이다.
 
   * struct가 클래스를 대신한다. 다른 OOP에서의 클래스와는 달리 non-virtual(real) 메서드로만 구성된다.
-  * receiver로 구조체와 함수를 연결 해서 메서드를 구현한다. 
-  * 네임스페이스(namespacing)는 exports로 대신한다.  
+  * receiver로 구조체와 함수를 연결 해서 메서드를 구현한다.
+  * 네임스페이스(namespacing)는 exports로 대신한다.
   * 인터페이스(interfaces)로 다형성을 구현할 수 있다. 다른 OOP에서는 필드 없이, virtual 메서드로만 구성된 클래스 형태로 구현된다.
   * embedding으로 상속을 대신한다. 객체지향의 composition 모델과 비슷하다.
 Go 언어를 이용한 객체지향 프로그래밍 기술에 대해서 살펴보자.
@@ -37,14 +38,14 @@ class Rectangle
    field Name: string
    field Width: float64
    field Height: float64
-   method Area() 
+   method Area()
        return this.Width * this.Height
 ```
 Go는 구조체 내에 메서드를 포함 할 수 없다. 구조체 바깥에 만들어지며, **리시버(receiver)**를 이용해서 어느 구조체의 메서드인지를 정의 할 수 있다. 아래 그림은 리시버를 이용해서 구조체와 함수가 연결되는 과정을 묘사하고 있다.
 
 ![receiver](https://docs.google.com/drawings/d/1rBOgYujGOIy9EL6U040nCSCC61pwzFe-BhoWNkVoksU/pub?w=756&h=205)
 
-리시버는 ***Value 리시버***와 ***포인터 리시버*** 두 가지 타입이 있다. 아래 코드를 보자. 
+리시버는 ***Value 리시버***와 ***포인터 리시버*** 두 가지 타입이 있다. 아래 코드를 보자.
 ```go
 package main
 
@@ -121,7 +122,7 @@ func main() {
 ```
 [코드 실행](https://play.golang.org/p/xPeyGF7wIc)
 
-New() 함수를 실행해서 Rectangle 객체를 만들었다. 
+New() 함수를 실행해서 Rectangle 객체를 만들었다.
 
 두 번째로 구조체의 초기화 문법을 이용해서 직접 객체를 만드는 방법이 있다.
 ```go
@@ -130,13 +131,13 @@ func main() {
     myRectangle := Rectangle{Name:"Rect-A", Width:12.5, Height:13.5}
 }
 ```
-구조체 초기화 문법을 이용 하면, 필드의 값을 초기화 할 수 있다. 초기화 하지 않는 필드들은 **기본 값(zero-value)**으로 초기화 된다. float64는 0, string은 "", 포인터는 nil로 초기화 된다. 예를 들어서 위 코드의 yourRectangle의 경우 Height와 Width가 0으로 초기화 되기 때문에 yourRectangle.Area()는 0을 반환 할 것이다.  
+구조체 초기화 문법을 이용 하면, 필드의 값을 초기화 할 수 있다. 초기화 하지 않는 필드들은 **기본 값(zero-value)**으로 초기화 된다. float64는 0, string은 "", 포인터는 nil로 초기화 된다. 예를 들어서 위 코드의 yourRectangle의 경우 Height와 Width가 0으로 초기화 되기 때문에 yourRectangle.Area()는 0을 반환 할 것이다.
 
-마지막으로 Go의 new()내장 함수를 이용하는 방법이 있다. 
+마지막으로 Go의 new()내장 함수를 이용하는 방법이 있다.
 ```go
 func new(Type) *Type
 ```
-new 함수를 호출하고 나면, 메모리를 할당하고 포인터를 반환한다. 필드의 값들은 기본 값으로 초기화 된다. c++의 new와 사용방법이 비슷하다. 
+new 함수를 호출하고 나면, 메모리를 할당하고 포인터를 반환한다. 필드의 값들은 기본 값으로 초기화 된다. c++의 new와 사용방법이 비슷하다.
 ```go
 func main() {
     myRectangle := new(Rectangle)
@@ -214,22 +215,22 @@ func (part *Part) SetName(name string) {
     part.name = name
 }
 ```
-이렇게 대/소문자만으로 public 메서드와 private(internal 필드 혹은 메서드)를 결정 할 수 있다. 
+이렇게 대/소문자만으로 public 메서드와 private(internal 필드 혹은 메서드)를 결정 할 수 있다.
 
 ## 상속(Inheritance)과 composition
-객체지향 디자인은 클래스 간의 관계를 구성하는 것에서 시작한다. 클래스간의 관계는 **상속(Inheritance)**과 **컴포지션(composition)** 두 가지 방법으로 구성 할 수 있다. 
+객체지향 디자인은 클래스 간의 관계를 구성하는 것에서 시작한다. 클래스간의 관계는 **상속(Inheritance)**과 **컴포지션(composition)** 두 가지 방법으로 구성 할 수 있다.
 
 상속은 아래 처럼 묘사 할 수 있다.
 
 ![OOP에서의 상속](https://docs.google.com/drawings/d/1AZ2UiAJt44aWogpg6th_v3u0C0CeOK7g2Pofi1iWBQ8/pub?w=631&h=420)
 
-이 그림은 **원형 클래스의 특징을 물려 받은 하위 원형 클래스를 만들 겠다**라는 의미를 내포하고 있다. 이때 상위 클래스를 부모 클래스, 하위 클래스를 자식 클래스라고 부른다. 이렇게 **계층적(hierarchy)**으로 클래스 간에 관계를 구성하는 방법은 다른 분야에서도 널리 사용한다. 생물학 시간에 배웠을 **종 > 속 > 과 > 목 > 강 > 문 > 계**가 전형적인 형태다. 
+이 그림은 **원형 클래스의 특징을 물려 받은 하위 원형 클래스를 만들 겠다**라는 의미를 내포하고 있다. 이때 상위 클래스를 부모 클래스, 하위 클래스를 자식 클래스라고 부른다. 이렇게 **계층적(hierarchy)**으로 클래스 간에 관계를 구성하는 방법은 다른 분야에서도 널리 사용한다. 생물학 시간에 배웠을 **종 > 속 > 과 > 목 > 강 > 문 > 계**가 전형적인 형태다.
 
 컴포지션은 부모클래스를 호출해서 포함 하는, 즉 **embedding**하는 방식으로 클래스 관계를 구성한다. 다중 상속의 경우 composition 모델은 두 개 이상의 부모 클래스를 embedding 하면 된다. 상속은 **IS - A Relationship**, 컴포지션은 **Has a Relationship** 으로 그 관계를 묘사 할 수 있다. 아래 그림은 composition 모델을 그리고 있다.
 
 ![Has a relicationship](https://docs.google.com/drawings/d/1xorVqrumZRT-EqCbW5cdBiD0Lj0yyZkp8sPGh3JeVEw/pub?w=631&h=420)
 
-MountainBike, RoadBike, TandemBike가 Bicycle 스크럭처를 embedding 하는 방식으로 클래스 관계를 구성한 코드다. 
+MountainBike, RoadBike, TandemBike가 Bicycle 스크럭처를 embedding 하는 방식으로 클래스 관계를 구성한 코드다.
 ```go
 package main
 
@@ -314,7 +315,7 @@ func main() {
 
 }
 ```
-Camera와 Phone의 기능을 가진(상속받은) SmartPhone 구조체를 만들었다. 그냥 embeded 한 것으로 상속의 주요 기능들을 구현했다. 이제 코드를 약간 수정해서 Phone과 Camera에 모델명을 설정해 보자. 
+Camera와 Phone의 기능을 가진(상속받은) SmartPhone 구조체를 만들었다. 그냥 embeded 한 것으로 상속의 주요 기능들을 구현했다. 이제 코드를 약간 수정해서 Phone과 Camera에 모델명을 설정해 보자.
 ```go
 func main() {
     myPhone := SmartPhone{
@@ -377,7 +378,7 @@ func main() {
 [코드 실행](https://play.golang.org/p/NJEhR5cFC5)
 
 ## 다중 상속과 다이아몬드 문제
-다중 상속은 직관적이고 사용하기 편하지만 **죽음의 다이아몬드**라는 골치아픈 문제가 있기 때문에, 별로 권장하지 않는다. 아래 그림을 보자. 
+다중 상속은 직관적이고 사용하기 편하지만 **죽음의 다이아몬드**라는 골치아픈 문제가 있기 때문에, 별로 권장하지 않는다. 아래 그림을 보자.
 
 ![죽음의 다이아몬드](https://docs.google.com/drawings/d/1p8IlZrB_xPgfdm-ilM_rU_Vn3CHp2MMspNTk-RE-5e4/pub?w=457&h=464)
 
@@ -429,13 +430,13 @@ func main() {
 ```
 [코드 실행](https://play.golang.org/p/tpXfrM8-cw)
 
-셀렉터를 이용 해서 모호함을 없애고 있다. 
+셀렉터를 이용 해서 모호함을 없애고 있다.
 
 
 ## Structs와 Interface
 Go의 구조체는 non-virtual 메서드만 가질 수 있다. 가상 메서드(virtual method)를 만들려면 **interface**를 이용해야 한다. Go에서 interface는 오로지  가상 메서드로만 구성 할 수 있다. 아래 Go interface의 특징을 정리했다.
 
-  * interface는 하나의 타입으로 변수(var)와 매개변수(parameter)로 쓸 수 있다.  
+  * interface는 하나의 타입으로 변수(var)와 매개변수(parameter)로 쓸 수 있다.
   * interface의 구현은 concret class(struct)에서 이루어진다. concret class는 구상 클래스라고 번역한다.
   * interface는 다른 interface에 상속(embed)할 수 있다.
 
@@ -443,9 +444,9 @@ Go의 구조체는 non-virtual 메서드만 가질 수 있다. 가상 메서드(
 
 ![인터페이스 예제](https://docs.google.com/drawings/d/1jsBTAaIeUs9jxoa8jOdX0fL3CjIm_8ElmSLJ3eUU3nk/pub?w=378&h=281)
 
-나는 범용 위키애플리케이션을 만들려고 한다. 이 애플리케이션은 MediaWiki의 문법뿐만 아니라 마크다운(MarkDown) 문법도 처리를 할 수 있어야 한다. 필요 할 경우 모니위키(Moniwiki) 등 다른 위키 문법들까지 처리 할 수 있게 만들려고 한다. 플러그인 방식으로 확장을 하게 될테다. 
+나는 범용 위키애플리케이션을 만들려고 한다. 이 애플리케이션은 MediaWiki의 문법뿐만 아니라 마크다운(MarkDown) 문법도 처리를 할 수 있어야 한다. 필요 할 경우 모니위키(Moniwiki) 등 다른 위키 문법들까지 처리 할 수 있게 만들려고 한다. 플러그인 방식으로 확장을 하게 될테다.
 
-나는 Wiki interface를 만들고, 위키문서를 HTML로 변환하기 위한 **Parser()**메서드를 등록했다. 개발자는 새로운 위키 파서가 필요할 경우 구조체를 만들고 **Parser()** 메서드만 만들면 된다. 
+나는 Wiki interface를 만들고, 위키문서를 HTML로 변환하기 위한 **Parser()**메서드를 등록했다. 개발자는 새로운 위키 파서가 필요할 경우 구조체를 만들고 **Parser()** 메서드만 만들면 된다.
 ```go
 package main
 
@@ -501,7 +502,7 @@ func DoSomething(v interface{}) {
     // ...
 }
 ```
-DoSomething는 **빈 인터페이스 타입인 v**를 매개변수로 취하고 있다. 여기에 인터페이스 타입의 값을 넘기면, Go언어는 런타임에 형 변환(Type conversion - 언제나 가능한 건 아니다)을 한 후, 정적 타입의 값으로 변경해서 넘긴다. 아래 예제를 보자. 
+DoSomething는 **빈 인터페이스 타입인 v**를 매개변수로 취하고 있다. 여기에 인터페이스 타입의 값을 넘기면, Go언어는 런타임에 형 변환(Type conversion - 언제나 가능한 건 아니다)을 한 후, 정적 타입의 값으로 변경해서 넘긴다. 아래 예제를 보자.
 ```go
 package main
 
@@ -522,7 +523,7 @@ func main() {
 ```
 [코드 실행](https://play.golang.org/p/4DuBoi2hJU)
 
-코드를 실행하려 하면 **main.go:15: cannot use names (type []string) as type []interface {} in argument to PrintAll** 에러가 떨어진다. 타입이 맞지 않기 때문이다. 아래와 같이 타입을 맞춰줘야 한다. 
+코드를 실행하려 하면 **main.go:15: cannot use names (type []string) as type []interface {} in argument to PrintAll** 에러가 떨어진다. 타입이 맞지 않기 때문이다. 아래와 같이 타입을 맞춰줘야 한다.
 ```go
 package main
 
@@ -554,11 +555,11 @@ func main() {
 ```
 [코드 실행](https://play.golang.org/p/h7RA5hfMad)
 
-빈 인터페이스를 적절하게 사용하는 메서드로 **fmt.Printf**가 있다. Printf 메서드는 다양한 타입의 값을 매개변수로 받아서 처리해야 하는데 이 때 빈 인터페이스를 사용한다. 
+빈 인터페이스를 적절하게 사용하는 메서드로 **fmt.Printf**가 있다. Printf 메서드는 다양한 타입의 값을 매개변수로 받아서 처리해야 하는데 이 때 빈 인터페이스를 사용한다.
 ```go
 func Printf(format string, a ...interface{}) (n int, err error)
 ```
-빈 인터페이스를 이용해서 하나의 메서드로 여러 데이터를 처리하는 예제 코드다. 
+빈 인터페이스를 이용해서 하나의 메서드로 여러 데이터를 처리하는 예제 코드다.
 ```go
 package main
 

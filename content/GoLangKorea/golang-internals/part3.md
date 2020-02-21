@@ -3,7 +3,7 @@
 title = "Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치"
 draft = false
 date = "2016-09-17T16:20:29-04:00"
-
+weight = 3
 tags = ["Golang", "Internals", "linker", "object file", "relocations"]
 categories = ["번역", "핵킹"]
 series = ["Golang  Internals"]

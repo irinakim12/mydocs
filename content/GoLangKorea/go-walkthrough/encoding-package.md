@@ -3,7 +3,7 @@
 title = "Go 둘러보기 - encoding 패키지"
 draft = false
 date = "2016-11-09T15:33:33+09:00"
-
+weight = 3
 tags = ["Golang", "Encoding"]
 categories = ["번역", "Encoding"]
 series = ["Go  Walkthrough"]
@@ -66,7 +66,7 @@ Go 표준 라이브러리에서, 우리는 두 가지의 분리되었지만 서�
 
 ```go
 type BinaryMarshaler interface {
-        MarshalBinary() (data []byte, err error)   
+        MarshalBinary() (data []byte, err error)
 }
 
 type BinaryUnmashaler interface {
@@ -108,7 +108,7 @@ Go를 시작할 때 처음으로 사용하게될 패키지는 아마 [fmt](https
 
 만약 더 나은 성능이 필요하다면 문자열 변환 패키지인 [strconv](https://golang.org/pkg/strconv/)을 사용함으로써 템플레이팅을 피할 수 있다. 이는 기본적인 포맷팅 그리고 문자열, 정수, 실수, 그리고 부울을 위한 스캐닝을 제공하는 로우 레벨 패키지이며 매우 빠르다.
 
-Go 자체와 함께 이 패키지들은 여러분이 UTF-8의 문자열을 인코딩함을 가정한다. 표준 라이브러리에서 유니코드가 아닌 문자의 인코딩 지원이  미약한건 지난 수년간에 걸쳐 UTF-8의 표준이 인터넷의 많은 부분을 빠르게 지배하고 있기 때문에 가능하거나 [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)가 Go와 UTF-8의 공동개발자이기 때문에 가능한일 일 것이다. 누가 아는가? 나는 운좋게도 여태까지 Go에서 비 UTF-8의 인코딩을 처리할 필요가 전혀 없었다. 그러나, [unicode/utf16](https://golang.org/pkg/unicode/utf16/), [encoding/ascii85](https://golang.org/pkg/encoding/ascii85/), 그리고 [golang.org/x/text](https://godoc.org/golang.org/x/text) 패키지 트리에 몇가지 인코딩 지원이 있긴하다. *"x"* 패키지 트리는 Go 프로젝트의 일부로 엄청난 패키지들을 많이 포함하고 있지만 [Go 1 호환성 요건](https://golang.org/doc/go1compat)으로는 적용되지 않는다. 
+Go 자체와 함께 이 패키지들은 여러분이 UTF-8의 문자열을 인코딩함을 가정한다. 표준 라이브러리에서 유니코드가 아닌 문자의 인코딩 지원이  미약한건 지난 수년간에 걸쳐 UTF-8의 표준이 인터넷의 많은 부분을 빠르게 지배하고 있기 때문에 가능하거나 [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike)가 Go와 UTF-8의 공동개발자이기 때문에 가능한일 일 것이다. 누가 아는가? 나는 운좋게도 여태까지 Go에서 비 UTF-8의 인코딩을 처리할 필요가 전혀 없었다. 그러나, [unicode/utf16](https://golang.org/pkg/unicode/utf16/), [encoding/ascii85](https://golang.org/pkg/encoding/ascii85/), 그리고 [golang.org/x/text](https://godoc.org/golang.org/x/text) 패키지 트리에 몇가지 인코딩 지원이 있긴하다. *"x"* 패키지 트리는 Go 프로젝트의 일부로 엄청난 패키지들을 많이 포함하고 있지만 [Go 1 호환성 요건](https://golang.org/doc/go1compat)으로는 적용되지 않는다.
 
 정수 인코딩을 위해, [encoding/binary](https://golang.org/pkg/encoding/binary/) 패키지는 큰 엔디안과 작은 엔디안 인코딩뿐만 아니라 가변 길이의 인코딩도 제공한다. 엔디안이란 바이트가 디스크에 쓰여지는 순서를 가리키는 말이다. 예를 들면, *1,000* (16진법으로는 *0x03E8*) 의 *uint16* 표현식은 두 바이트 *03* 과*E8* 의 조합으로 이루어진다. 큰 엔디안 인코딩에서는 바이트가 "03 E8"의 순서로 쓰여진다. 작은 엔디안에서는 "E8 03"으로 순서가 뒤바뀐다. 많은 일반적인 CPU 아키텍처는 작은 엔디안을 사용한다. 그러나, 큰 엔디안은 보통 네트워크를 통해 바이트를 전송할 때 사용된다. 큰 엔디안은 그래서 *(네트워크 바이트 순서) network byte order* 라고도 한다.
 
@@ -128,7 +128,7 @@ Go는 또한 [gob](https://golang.org/pkg/encoding/gob/)라고 하는 자체적�
 
 마지막으로, [encding/asn1](https://golang.org/pkg/encoding/asn1/)라는 패키지가 있다. 문서에는 제한된 정보만 있고 패키지에는 오직 25페이지의 텍스트로 이루어진 [layman의 ANS.1 가이드](http://luca.ntop.org/Teaching/Appunti/asn1.html)에 대한 링크만 있다. ANS.1은 특히 SSL/TLS의 X.509 인증서에 많이 사용되는 복잡한 객체 인코딩 스키마이다.
 
-<br> 
+<br>
 
 ## 결론
 

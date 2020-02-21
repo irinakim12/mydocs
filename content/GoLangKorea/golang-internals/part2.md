@@ -2,7 +2,7 @@
 title = "Golang의 내부, 2부: Go 컴파일러 들여다 보기"
 draft = false
 date = "2016-09-15T05:53:48-04:00"
-
+weight = 2
 tags = ["Golang", "Internals", "Compiler", "Structure"]
 categories = ["번역", "핵킹"]
 series = ["Golang  Internals"]
