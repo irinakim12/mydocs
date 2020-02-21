@@ -2,7 +2,7 @@
 date = "2016-08-23T22:35:57-04:00"
 draft = false
 title = "Hugo 입문 - 개요"
-weight = 1
+weight = 40
 chapter = true
 tags = ["Blog", "Hugo"]
 categories = ["How to"]
