@@ -2,7 +2,7 @@
 date = "2016-08-23T23:25:55-04:00"
 draft = false
 title = "시리즈 #5 - 사이트에 블로그 올리는 방법"
-
+weight = 5
 tags = ["Blog", "Hugo"]
 categories = ["How to"]
 series = ["Hugo Introduction"]

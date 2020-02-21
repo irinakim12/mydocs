@@ -27,6 +27,7 @@ env:
   global:
   - GH_TOKEN: $GITHUB_TOKEN
   - GH_USER: bjnhur
+  - GH_EMAIL: bjnhur@gmail.com
   - GH_REPO: mydocs
   - GH_SRC: master
   - GH_DST: gh-pages

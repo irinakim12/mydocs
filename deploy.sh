@@ -11,8 +11,8 @@ cp -R public $HOME/public
 
 #go to home and setup git
 cd $HOME
-git config --global user.email "bjnhur@gmail.com"
-git config --global user.name "bjnhur"
+git config --global user.email ${GH_EMAIL}
+git config --global user.name ${GH_USER}
 
 #using token clone gh-pages branch
 git clone --quiet --branch=${GH_DST} https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO}.git ${GH_DST} > /dev/null
@@ -24,8 +24,7 @@ cp -Rf $HOME/public/* .
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://${GH_USER}.github.io/${GH_REPO}/)" > README.md
 echo "devbj.com" > CNAME
-echo "google.com, pub-3059347231702682, DIRECT, f08c47fec0942fa0" > ads.txt 
-
+echo "google.com, ${GG_PUBID}, DIRECT, f08c47fec0942fa0" > ads.txt
 
 #add, commit and push files
 git add -f .

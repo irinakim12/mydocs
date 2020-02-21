@@ -2,7 +2,7 @@
 date = "2016-08-23T23:24:55-04:00"
 draft = false
 title = "시리즈 #1 - Hugo 시작하기"
-
+weight = 1
 tags = ["Blog", "Hugo"]
 categories = ["How to"]
 series = ["Hugo Introduction"]
