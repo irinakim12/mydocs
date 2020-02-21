@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Golang의 내부, 0부: 부록</title>
+      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
+      <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
+      <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
+    </item>
+    
+    <item>
       <title>Golang의 내부, 6부: 부트스트래핑과 메모리 할당자</title>
       <link>https://devbj.com/golangkorea/golang-internals/part6/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
@@ -63,15 +72,6 @@
       
       <guid>https://devbj.com/golangkorea/golang-internals/part1/</guid>
       <description>이 블로그 시리즈는 기본적인 Go 언어특성에 이미 익숙하며 좀 더 심도있게 내부구조를 알고자 하는 독자들을 위해 쓰여졌다. 이 포스트는 Go언어의 소스코드의 구조와 Go</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 0부: 부록</title>
-      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
-      <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
-      <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
     </item>
     
   </channel>

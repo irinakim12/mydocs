@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Golang의 내부, 0부: 부록</title>
+      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
+      <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
+      
+      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
+      <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
+    </item>
+    
+    <item>
       <title>Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터</title>
       <link>https://devbj.com/golangkorea/golang-internals/part4/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
@@ -27,15 +36,6 @@
       
       <guid>https://devbj.com/golangkorea/golang-internals/part3/</guid>
       <description>오늘은 Go 링커와 오브젝트 파일, 그리고 재배치(relocations)에 대해 얘기해 보자. 이런 것들이 독자들과 무슨 상관이 있을까? 만약 독자가 어떤 대형 프</description>
-    </item>
-    
-    <item>
-      <title>Golang의 내부, 0부: 부록</title>
-      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
-      <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
-      
-      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
-      <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
     </item>
     
   </channel>
