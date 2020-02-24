@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on DevBJ.com</title>
+    <title>blog on DevBJ.com</title>
     <link>https://devbj.com/tags/blog/</link>
-    <description>Recent content in Blog on DevBJ.com</description>
+    <description>Recent content in blog on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 23 Aug 2016 23:25:55 -0400</lastBuildDate>
@@ -54,6 +54,24 @@
       
       <guid>https://devbj.com/golangkorea/hugo-intro/how-to-contribute-content/</guid>
       <description>사이트에 블로그 올리는 방법 Golang Korean Community 사이트는 깃헙의 golangkorea Organization의 웹사이트로 GitHub Pages를 이용해 제작되고 있습니다. 현존하는 Static Site Gene</description>
+    </item>
+    
+    <item>
+      <title>영어 공부</title>
+      <link>https://devbj.com/blog/2016-08-01-english/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2016-08-01-english/</guid>
+      <description>(수정시간) 2016-09-21 영어학원 온라인영어 화상영어 블로그 만들면서 참고한 글을 정리해 본다. 영어학원 @수내역 랩스어학원 시간당 6만원 정도 물론 20시간씩 하면 15~20% 할</description>
+    </item>
+    
+    <item>
+      <title>지킬 블로그 만들기 - jekyll, github, github pages</title>
+      <link>https://devbj.com/blog/2016-07-21-move-to-jekyll/</link>
+      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2016-07-21-move-to-jekyll/</guid>
+      <description>(수정시간) 2016-08-08 지킬 기반의 블로그 리소스 블로그 만들면서 참고한 글을 정리해 본다. 지킬 기반의 블로그 카카오 기술 블로그 - 베껴오고 있음. 개인적으로 css 이런것도</description>
     </item>
     
   </channel>

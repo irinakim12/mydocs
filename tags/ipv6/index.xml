@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPv6 on DevBJ.com</title>
+    <link>https://devbj.com/tags/ipv6/</link>
+    <description>Recent content in IPv6 on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/tags/ipv6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IPv6 WebServer example with WIZnet W6100 chip</title>
+      <link>https://devbj.com/blog/2019-03-05-webserver-adafruit/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2019-03-05-webserver-adafruit/</guid>
+      <description>(Modified) 2019-03-03 WebServer Example WebServer-Adafruit (https://github.com/WIZnet-ArduinoEthernet/WebServer-Adafruit) W6100의 IPv4, IPv6 Dual Stack을 이용한 WebServer Example 입니다. Browser로 접속하면 Host의 IPv4 또는 IPv6 주소가 Adafruit의 OLED SSD130</description>
+    </item>
+    
+  </channel>
+</rss>

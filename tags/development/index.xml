@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on DevBJ.com</title>
+    <title>development on DevBJ.com</title>
     <link>https://devbj.com/tags/development/</link>
-    <description>Recent content in Development on DevBJ.com</description>
+    <description>Recent content in development on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 22 Aug 2016 22:57:14 +0900</lastBuildDate>
@@ -27,6 +27,15 @@
       
       <guid>https://devbj.com/golangkorea/tdd-with-golang/</guid>
       <description>여기에서 사용한 테스트 코드는 Bitbucket 에서 다운로드 할 수 있다. TDD 클라우드와 MSA와 REST의 등장으로 TDD가 재조명 받고 있다. TDD를 제대로 적용하려면 상당</description>
+    </item>
+    
+    <item>
+      <title>Makefile 분석</title>
+      <link>https://devbj.com/blog/2016-07-26-makefile/</link>
+      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2016-07-26-makefile/</guid>
+      <description>(수정시간) 2016-07-26 마크다운 연습도 할 겸 아래글 내용을 가져옵니다. 오래된 글이라 새로 적어두는 것도 의미가 있진 않을까요? 개인용 블로그이니 조금 이해해 주시길..</description>
     </item>
     
   </channel>

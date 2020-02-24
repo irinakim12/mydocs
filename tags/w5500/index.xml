@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>W5500 on DevBJ.com</title>
+    <link>https://devbj.com/tags/w5500/</link>
+    <description>Recent content in W5500 on DevBJ.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 21 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devbj.com/tags/w5500/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Embedded World 2019</title>
+      <link>https://devbj.com/blog/2019-03-03-embeddedworld2019/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2019-03-03-embeddedworld2019/</guid>
+      <description>(Modified) 2019-03-03 MCU 마이크로칩 클라우드 연동 모듈 신규 출시 30초만에 구성하는 클라우드 솔루션!! 이렇게 광고중 WiFi 모듈을 내장하고, 각 클라우드별 backend reference 를 기본 제공 쉽고 빠른</description>
+    </item>
+    
+    <item>
+      <title>The real products based on Arduino-Ethernet</title>
+      <link>https://devbj.com/blog/2019-01-21-arduino-ethernet-products/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2019-01-21-arduino-ethernet-products/</guid>
+      <description>(Modified) 2019-01-21 Value Added Products based on Arduino Ethernet Shield Arduino Adafruit Industries Sfera Labs S.r.l. DFRobot Elektronik Hannes Jochriem Parallax Inc Electric Imp Controllino Industruino KMP Electronics Ltd mikroe Tindie Arduino Ethernet을 기반으로 한 실제 상용화된 제품들을 소개해 본다. Value Added Products based on Arduino Ethernet Shield</description>
+    </item>
+    
+    <item>
+      <title>List of Arduino Ethernet Shield products</title>
+      <link>https://devbj.com/blog/2019-01-15-arduino-ethernet-shield-list/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2019-01-15-arduino-ethernet-shield-list/</guid>
+      <description>(Modified) 2019-01-15
+ W6100 W5500 W5100S W5100 W5200  Ethernet Shield List What is the &amp;ldquo;Ethernet Shield&amp;rdquo;?  The Arduino Ethernet Shield connects your Arduino to the internet in mere minutes. Just plug this module onto your Arduino board, connect it to your network with an RJ45 cable (not included) and follow a few simple instructions to start controlling your world through the internet. from Ethernet Shield
+ WIZnet - W5100, W5200, W5500, W5100S, W6100 W6100    Name Maker Chipset Product link    W5500    Name Maker Chipset Product link     ARDUINO MKR ETH SHIELD Arduino W5500 Product Link   W5500 Ethernet Shield S(secure) EWBM W5500 Product Link   Arduino Ethernet Shield 2 Arduino W5500 Product Link   W5500 Ethernet Shield WIZnet W5500 Product Link   SweetPea UnoNet+ : Ethernet and NFC in one board ElectronicSweetpeas W5500 Product Link   POE W5500 Ethernet Shield Iteadstudio W5500 Product Link   W5500 Ethernet Shield v1.</description>
+    </item>
+    
+    <item>
+      <title>The state of Arduino Ethernet Library</title>
+      <link>https://devbj.com/blog/2019-01-15-arduino-ethernet/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2019-01-15-arduino-ethernet/</guid>
+      <description>(Modified) 2019-01-15 최근 Arduino Ethernet Library 업데이트 내용과 유용한 몇개의 라이브러리와 관련 예제를 정리해 본다. 라이브러리 정보 최근 업데이트 된 라이브러리 Arduino Ethernet Library v2.0 - Arduino official Runtime</description>
+    </item>
+    
+    <item>
+      <title>W5500 drivers</title>
+      <link>https://devbj.com/blog/2016-09-07-w5500-drivers/</link>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/2016-09-07-w5500-drivers/</guid>
+      <description>(수정시간) 2016-09-07 W5500 Driver open source projects - 오픈소스 AVR-ATmel LPC 시리즈 - NXP LPC11exxx &amp;hellip; W5500으로 이더넷 구현하기 (개발 환경 구축) STM32 시리즈 - ST Microelectronics PIC 시리즈 - Microchips PIC18, PIC24 &amp;hellip; PSoC 시리즈 - Cypress</description>
+    </item>
+    
+  </channel>
+</rss>

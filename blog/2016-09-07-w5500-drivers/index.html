@@ -1,0 +1,3743 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.64.0" />
+    <meta name="google-site-verification" content="22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ" />
+<meta name="description" content="Documentation for Hugo Learn Theme">
+<meta name="author" content="Bongjun Hur">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>W5500 drivers :: DevBJ.com</title>
+
+    
+    <link href="/css/nucleus.css?1582510368" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582510368" rel="stylesheet">
+    <link href="/css/hybrid.css?1582510368" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582510368" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582510368" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582510368" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582510368" rel="stylesheet">
+    <link href="/css/theme.css?1582510368" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582510368" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1582510368" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1582510368"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<style type="text/css">
+.adslot_1 { display:inline-block; width: 320px; height: 50px; }
+@media (max-width: 400px) { .adslot_1 { display: none; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+#adsection {
+    margin:1em;
+}
+</style>
+<script data-ad-client="ca-pub-3059347231702682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  </head>
+  <body class="" data-url="/blog/2016-09-07-w5500-drivers/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/"><img src="/images/logo.png" /></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1582510368"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582510368"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/devbj.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1582510368"></script>
+
+<div style="margin:10px;">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="1238597657"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/blog/">
+          <b>1. </b>Blog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/thought/" title="Thought" class="dd-item
+        
+        
+        
+        ">
+      <a href="/blog/thought/">
+          <b>1. </b>Thought
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-03-05-webserver-adafruit/" title="IPv6 WebServer example with WIZnet W6100 chip" class="dd-item ">
+        <a href="/blog/2019-03-05-webserver-adafruit/">
+        IPv6 WebServer example with WIZnet W6100 chip
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-03-03-embeddedworld2019/" title="Embedded World 2019" class="dd-item ">
+        <a href="/blog/2019-03-03-embeddedworld2019/">
+        Embedded World 2019
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-01-21-arduino-ethernet-products/" title="The real products based on Arduino-Ethernet" class="dd-item ">
+        <a href="/blog/2019-01-21-arduino-ethernet-products/">
+        The real products based on Arduino-Ethernet
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-01-15-arduino-ethernet-shield-list/" title="List of Arduino Ethernet Shield products" class="dd-item ">
+        <a href="/blog/2019-01-15-arduino-ethernet-shield-list/">
+        List of Arduino Ethernet Shield products
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-01-15-arduino-ethernet/" title="The state of Arduino Ethernet Library" class="dd-item ">
+        <a href="/blog/2019-01-15-arduino-ethernet/">
+        The state of Arduino Ethernet Library
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-08-05-drama/" title="드라마 - 미드" class="dd-item ">
+        <a href="/blog/2016-08-05-drama/">
+        드라마 - 미드
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-09-07-w5500-drivers/" title="W5500 drivers" class="dd-item active">
+        <a href="/blog/2016-09-07-w5500-drivers/">
+        W5500 drivers
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-08-31-torrent/" title="추천 토렌트 사이트 - torrent, 자료" class="dd-item ">
+        <a href="/blog/2016-08-31-torrent/">
+        추천 토렌트 사이트 - torrent, 자료
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-08-01-english/" title="영어 공부" class="dd-item ">
+        <a href="/blog/2016-08-01-english/">
+        영어 공부
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-07-26-makefile/" title="Makefile 분석" class="dd-item ">
+        <a href="/blog/2016-07-26-makefile/">
+        Makefile 분석
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-07-21-move-to-jekyll/" title="지킬 블로그 만들기 - jekyll, github, github pages" class="dd-item ">
+        <a href="/blog/2016-07-21-move-to-jekyll/">
+        지킬 블로그 만들기 - jekyll, github, github pages
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/button/" title="Button" class="dd-item ">
+        <a href="/blog/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/expand/" title="Expand" class="dd-item ">
+        <a href="/blog/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/blog/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/" title="WizFi360" class="dd-item
+        
+        
+        
+        ">
+      <a href="/wizfi360/">
+          <i class='fab fa-github'></i> Learn WizFi360
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/basics/" title="Basics" class="dd-item
+        
+        
+        
+        ">
+      <a href="/wizfi360/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/wizfi360/w600/" title="W600" class="dd-item ">
+        <a href="/wizfi360/w600/">
+        W600
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/" title="Learn Theme for Hugo" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/">
+          <i class='fab fa-github'></i> About Learn Theme
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/" title="Basics" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/requirements/" title="Requirements" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/requirements/">
+          Requirements
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/installation/" title="Installation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/installation/">
+          Installation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/configuration/" title="Configuration" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/configuration/">
+          Configuration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/style-customization/" title="Style customization" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/style-customization/">
+          Style customization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/" title="Content" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/">
+          <b>2. </b>Content
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/pages/" title="Pages organization" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/pages/">
+          Pages organization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/i18n/" title="Multilingual and i18n" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/i18n/">
+          Multilingual and i18n
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/archetypes/" title="Archetypes" class="dd-item ">
+        <a href="/hugolearntheme/cont/archetypes/">
+        Archetypes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/markdown/" title="Markdown syntax" class="dd-item ">
+        <a href="/hugolearntheme/cont/markdown/">
+        Markdown syntax
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/menushortcuts/" title="Menu extra shortcuts" class="dd-item ">
+        <a href="/hugolearntheme/cont/menushortcuts/">
+        Menu extra shortcuts
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/icons/" title="Icons and logos" class="dd-item ">
+        <a href="/hugolearntheme/cont/icons/">
+        Icons and logos
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/tags/" title="Tags" class="dd-item ">
+        <a href="/hugolearntheme/cont/tags/">
+        Tags
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/" title="Shortcodes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/">
+          <b>3. </b>Shortcodes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/" title="Children" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/">
+          Children
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/" title="page 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/">
+          page 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/" title="page 1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/">
+          page 1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/" title="page 1-1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/">
+          page 1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" title="page 1-1-1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">
+          page 1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" title="page 1-1-1-1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">
+          page 1-1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/" title="page 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-2/">
+          page 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3.fr/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3.fr/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-3/" title="page 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-3/">
+          page 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test.fr/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test.fr/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/attachments/" title="Attachments" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/attachments/">
+        Attachments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/button/" title="Button" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/expand/" title="Expand" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/notice/" title="Notice" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/notice/">
+        Notice
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/siteparam/" title="Site param" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/siteparam/">
+        Site param
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/mytips/" title="사용팁" class="dd-item ">
+        <a href="/hugolearntheme/mytips/">
+        사용팁
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/" title="GoLang Korea" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/">
+          GoLang Korea
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/go-start/" title="Go 시작하기" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/go-start/">
+          Go 시작하기
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/getting-start/" title="Go언어 시작하기" class="dd-item ">
+        <a href="/golangkorea/go-start/getting-start/">
+        Go언어 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/feature/" title="Go의 주요 특징들" class="dd-item ">
+        <a href="/golangkorea/go-start/feature/">
+        Go의 주요 특징들
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/object-oriented/" title="Go와 객체지향" class="dd-item ">
+        <a href="/golangkorea/go-start/object-oriented/">
+        Go와 객체지향
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/go-walkthrough/" title="Go 둘러보기" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/go-walkthrough/">
+          Go 둘러보기
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/bytes-strings-packages/" title="Go 둘러보기 - bytes &#43; strings 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/bytes-strings-packages/">
+        Go 둘러보기 - bytes &#43; strings 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-json-package/" title="Go 둘러보기 - encoding/json 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-json-package/">
+        Go 둘러보기 - encoding/json 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-package/" title="Go 둘러보기 - encoding 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-package/">
+        Go 둘러보기 - encoding 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/io-package/" title="Go 둘러보기 - io 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/io-package/">
+        Go 둘러보기 - io 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/golang-internals/" title="Golang의 내부" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/golang-internals/">
+          Golang의 내부
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part1/" title="Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part1/">
+        Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part2/" title="Golang의 내부, 2부: Go 컴파일러 들여다 보기" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part2/">
+        Golang의 내부, 2부: Go 컴파일러 들여다 보기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part3/" title="Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part3/">
+        Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part4/" title="Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part4/">
+        Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part5/" title="Golang의 내부, 5부: 런타임 부트스트랩" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part5/">
+        Golang의 내부, 5부: 런타임 부트스트랩
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part6/" title="Golang의 내부, 6부: 부트스트래핑과 메모리 할당자" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part6/">
+        Golang의 내부, 6부: 부트스트래핑과 메모리 할당자
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/resources/" title="Golang의 내부, 0부: 부록" class="dd-item ">
+        <a href="/golangkorea/golang-internals/resources/">
+        Golang의 내부, 0부: 부록
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/hugo-intro/" title="Hugo 입문 - 개요" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/hugo-intro/">
+          Hugo 입문 - 개요
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/getting-started/" title="시리즈 #1 - Hugo 시작하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/getting-started/">
+        시리즈 #1 - Hugo 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/content-basic/" title="시리즈 #2 - 컨텐츠 제작 기초" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/content-basic/">
+        시리즈 #2 - 컨텐츠 제작 기초
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/theme-customizing/" title="시리즈 #3 - 사이트 테마 개발하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/theme-customizing/">
+        시리즈 #3 - 사이트 테마 개발하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/taxonomy-basic/" title="시리즈 #4 - 분류(Taxonomy)기능 사용하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/taxonomy-basic/">
+        시리즈 #4 - 분류(Taxonomy)기능 사용하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/how-to-contribute-content/" title="시리즈 #5 - 사이트에 블로그 올리는 방법" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/how-to-contribute-content/">
+        시리즈 #5 - 사이트에 블로그 올리는 방법
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/structuring-applications-in-go/" title="Go에서 애플리케이션 설계하기" class="dd-item ">
+        <a href="/golangkorea/structuring-applications-in-go/">
+        Go에서 애플리케이션 설계하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/vim-go/" title="vim-go를 이용한 go 개발 환경 구축" class="dd-item ">
+        <a href="/golangkorea/vim-go/">
+        vim-go를 이용한 go 개발 환경 구축
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/tdd-with-golang/" title="Golang 프로젝트에 TDD 도입하기" class="dd-item ">
+        <a href="/golangkorea/tdd-with-golang/">
+        Golang 프로젝트에 TDD 도입하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+          
+
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://github.com/bjnhur/mydocs"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://devbj.com/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    <div class='copyright'>
+      <p>&copy; 2019 DevBJ.com All Rights Reserved.</p>
+    </div>
+    <p>Thanks Hugo & hugo-theme-learn theme</p>
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/bjnhur/mydocs/edit/master/content/Blog/2016-09-07-W5500-drivers.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/blog/'>Blog</a> > W5500 drivers
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#w5500-driver-open-source-projects---오픈소스">W5500 Driver open source projects - 오픈소스</a>
+      <ul>
+        <li><a href="#avr-atmel">AVR-ATmel</a></li>
+        <li><a href="#lpc-시리즈---nxp-lpc11exxx-">LPC 시리즈 - NXP LPC11exxx &hellip;</a></li>
+        <li><a href="#stm32-시리즈---st-microelectronics">STM32 시리즈 - ST Microelectronics</a></li>
+        <li><a href="#pic-시리즈---microchips-pic18-pic24-">PIC 시리즈 - Microchips PIC18, PIC24 &hellip;</a></li>
+        <li><a href="#psoc시리즈---cypress">PSoC 시리즈 - Cypress</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        <div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<div class="tags">
+
+  <a class="tag-link" href="/tags/w5500">W5500</a>
+
+  <a class="tag-link" href="/tags/iot">IoT</a>
+
+  <a class="tag-link" href="/tags/driver">driver</a>
+
+  <a class="tag-link" href="/tags/s/w">S/W</a>
+
+  <a class="tag-link" href="/tags/f/w">F/W</a>
+
+  <a class="tag-link" href="/tags/develop">develop</a>
+
+  <a class="tag-link" href="/tags/embedded">embedded</a>
+
+  <a class="tag-link" href="/tags/it">IT</a>
+
+  <a class="tag-link" href="/tags/mbed">mbed</a>
+
+  <a class="tag-link" href="/tags/ethernet">Ethernet</a>
+
+  <a class="tag-link" href="/tags/w5100">W5100</a>
+
+  <a class="tag-link" href="/tags/arduino">Arduino</a>
+
+  <a class="tag-link" href="/tags/avr">AVR</a>
+
+</div>
+
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              W5500 drivers
+            </h1>
+          
+
+        
+
+
+
+<p>(수정시간) 2016-09-07</p>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="#w5500-driver-open-source-projects-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4">W5500 Driver open source projects - 오픈소스</a>
+<ul>
+<li><a href="#avr-atmel">AVR-ATmel</a></li>
+<li><a href="#lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-nxp-lpc11exxx">LPC 시리즈 - NXP LPC11exxx &hellip;</a>
+<ul>
+<li><a href="#w5500%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95httpblogcahgorgwpp137">W5500으로 이더넷 구현하기 (개발 환경 구축)</a></li>
+</ul>
+</li>
+<li><a href="#stm32-%EC%8B%9C%EB%A6%AC%EC%A6%88-st-microelectronics">STM32 시리즈 - ST Microelectronics</a></li>
+<li><a href="#pic-%EC%8B%9C%EB%A6%AC%EC%A6%88-microchips-pic18-pic24">PIC 시리즈 - Microchips PIC18, PIC24 &hellip;</a></li>
+<li><a href="#psoc-%EC%8B%9C%EB%A6%AC%EC%A6%88-cypress">PSoC 시리즈 - Cypress</a></li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="w5500-driver-open-source-projects---오픈소스">W5500 Driver open source projects - 오픈소스</h2>
+<p>이전에 PSoC W5500 Driver 에 관련된 글을 작성했었다. </p>
+<blockquote>
+<p><a href="http://ts.devbj.com/419">W5500 Ethernet driver for PSoC - FreeRTOS</a></p>
+</blockquote>
+<p>이외에 많은 대중적인 MCU 들이 많이 있는데 관련해서 드라이버 소스들을 정리해 보고자 한다.</p>
+<p>일단, 공식적으로 WIZnet에서 제공하고 있는 통합 라이브러리는 아래와 같다.</p>
+<blockquote>
+<p><a href="https://github.com/Wiznet/ioLibrary_Driver">https://github.com/Wiznet/ioLibrary_Driver</a> ; SOCKET APIs like BSD &amp; WIZCHIP(W5500 / W5300 / W5200 / W5100) Driver</p>
+</blockquote>
+<h3 id="avr-atmel">AVR-ATmel</h3>
+<ul>
+<li>일단 아두이노 소스를 모두 활용할 수 있다.</li>
+</ul>
+<p>Arduino Ethernet Github site</p>
+<p><a href="https://github.com/arduino/Arduino/tree/master/libraries/Ethernet">https://github.com/arduino/Arduino/tree/master/libraries/Ethernet</a></p>
+<ul>
+<li>또다른 아두이노 진영인 arduino.org 의 최신 소스코드 - 여기가 좀 더 W5500 테스트가 많이 되어 있는 것 같다.</li>
+</ul>
+<p><a href="https://github.com/arduino-org/Arduino/tree/ide-org-1.6.1.x/libraries/Ethernet2">https://github.com/arduino-org/Arduino/tree/ide-org-1.6.1.x/libraries/Ethernet2</a></p>
+<p>보드에 같이 올라가 있는 상품도 있고. </p>
+<p><a href="http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo-eth">http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo-eth</a></p>
+<p><img src="http://cfile10.uf.tistory.com/image/25629F4556D5009031FB24" alt=""></p>
+<ul>
+<li>칩 제작사인 위즈네트에서 제공하는 통합 라이브러리</li>
+</ul>
+<p><a href="https://github.com/Wiznet/WIZ_Ethernet_Library">https://github.com/Wiznet/WIZ_Ethernet_Library</a></p>
+<ul>
+<li>통합 라이브러리 이전에 먼저 개발하고 테스트한 공신할 수 있는 <a href="https://github.com/embeddist">embeddist </a>님께서 작성해 주신, </li>
+</ul>
+<ul>
+<li><a href="https://github.com/embeddist/WIZ_Ethernet_Library-IDE1.6.x">WIZ Ethernet Library for Arduino IDE-1.6.4</a></li>
+<li><a href="https://github.com/embeddist/WIZ_Ethernet_Library-IDE1.5.x">WIZ Ethernet Library for Arduino IDE-1.5.</a><input checked="" disabled="" type="checkbox">(<a href="https://github.com/embeddist/WIZ_Ethernet_Library-IDE1.5.x">https://github.com/embeddist/WIZ_Ethernet_Library-IDE1.5.x</a>)</li>
+<li><a href="https://github.com/embeddist/WIZ_Ethernet_Library-IDE1.0.5">WIZ Ethernet Library for Arduino IDE-1.0.5</a></li>
+</ul>
+<ul>
+<li>호주의 뛰어난 개발자 이신 <a href="http://feilipu.me/">Phillip Stevens</a> 가 만드신 freeRTOS &amp; libraries for AVR ATmega 프로젝트 소스, FreeRTOS 포트 정보를 찾는다면 단언코 이 프로젝트가 레퍼런스 1순위. <a href="https://www.kickstarter.com/projects/feilipu/goldilocks-analogue-classic-arduino-audio-superpow/">Goldilocks Analogue</a> 라는 ADC 기능이 기본적으로 탑재되어 있는 Arduino 호환 보드를 개발해서 사업을 하고 있기도 하다.</li>
+</ul>
+<ul>
+<li>
+<p><img src="http://cfile1.uf.tistory.com/image/23098B4256D625F522F1F9" alt=""></p>
+</li>
+<li>
+<p><a href="https://github.com/feilipu/avrfreertos">https://github.com/feilipu/avrfreertos</a></p>
+</li>
+<li>
+<p><a href="https://github.com/feilipu/avrfreertos/tree/master/freeRTOS82x/lib_iinchip">https://github.com/feilipu/avrfreertos/tree/master/freeRTOS82x/lib_iinchip</a></p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/avrfreertos/">https://sourceforge.net/projects/avrfreertos/</a></p>
+</li>
+</ul>
+<ul>
+<li>ehajo 라는 독일업체에서 만든 보드와 예제 코드.</li>
+</ul>
+<ul>
+<li><a href="http://www.ehajo.de/en/boards/ethernet-shield-wiznet-w5500.html">http://www.ehajo.de/en/boards/ethernet-shield-wiznet-w5500.html</a></li>
+<li><a href="https://github.com/ehajo/wiznet">https://github.com/ehajo/wiznet</a></li>
+</ul>
+<ul>
+<li>기타 제작자들의 작품들.</li>
+</ul>
+<ul>
+<li><a href="https://github.com/dansut/Cosa/tree/W5100-W5500/libraries/W5100">https://github.com/dansut/Cosa/tree/W5100-W5500/libraries/W5100</a> (통합드라이버)</li>
+<li><a href="https://github.com/oltzen/W5500Example">https://github.com/oltzen/W5500Example</a> ; 블로그의 위치는 <a href="http://www.oltzen.de/w5500.html">http://www.oltzen.de/w5500.html</a> (독일어, 구글 번역하면 볼 만 함)</li>
+</ul>
+<h3 id="lpc-시리즈---nxp-lpc11exxx-">LPC 시리즈 - NXP LPC11exxx &hellip;</h3>
+<ul>
+<li>위즈네트에서 개발된 W5500 용 EVB, 메인 칩셋으로 NXP사의 LPC 시리즈를 이용하고 있다.</li>
+</ul>
+<p><img src="http://cfile6.uf.tistory.com/image/2104374856D62CC738FDE1" alt=""></p>
+<p><a href="https://github.com/Wiznet/W5500_EVB">https://github.com/Wiznet/W5500_EVB</a></p>
+<p>개발 환경의 구축에 관련된 내용은 <a href="http://wiznetacademy.com/">위즈네트 아카데미</a>(<a href="http://wiznetacademy.com/">http://wiznetacademy.com</a>) 에서 강의를 들어 볼 수 있으며,</p>
+<p><a href="http://wiznetacademy.com/wp/wp-content/uploads/2015/02/WIZnet-Academy-W5500-WebServer.pdf">강의노트 - WIZnet Academy</a> (<a href="http://wiznetacademy.com/wp/wp-content/uploads/2015/02/WIZnet-Academy-W5500-WebServer.pdf">http://wiznetacademy.com/wp/wp-content/uploads/2015/02/WIZnet-Academy-W5500-WebServer.pdf</a>)</p>
+<p>또한 아래 글을 참고해도 된다.</p>
+<h4 id="w5500으로-이더넷-구현하기-개발-환경-구축httpblogcahgorgwpp137"><a href="http://blog.cahg.org/wp/?p=137">W5500으로 이더넷 구현하기 (개발 환경 구축)</a></h4>
+<ul>
+<li><a href="http://wiznxt.tistory.com/294"><img src="http://cfile10.uf.tistory.com/C60x60/2227C84254AB95B6053710" alt="thumbnail">W5500 EVB로 IoT 개발하기 - Echo Server 2015.01.06</a></li>
+<li><a href="http://wiznxt.tistory.com/293"><img src="http://cfile21.uf.tistory.com/C60x60/2109323954AB939E09ABFF" alt="thumbnail">W5500 EVB로 IoT 개발하기 - W5500 Driver porting 2015.01.06</a></li>
+<li><a href="http://wiznxt.tistory.com/292"><img src="http://cfile30.uf.tistory.com/C60x60/2567543454AB90B61B9D49" alt="thumbnail">W5500 EVB로 IoT 개발하기 - 툴 설치편 2015.01.06</a></li>
+</ul>
+<ul>
+<li>ARM 사의 오픈소스개발환경인 <a href="https://www.mbed.com/en/">http://</a><a href="https://www.mbed.com/en/">mbed.com</a> 을 통해서도 많은 예제와 소스코드를 찾을 수 있다.</li>
+</ul>
+<p>먼저 하드웨어는 <a href="https://developer.mbed.org/components/W5500-Ethernet-Kit-for-IoT/">W5500 Ethernet Kit for IoT</a> (<a href="https://developer.mbed.org/components/W5500-Ethernet-Kit-for-IoT/">https://developer.mbed.org/components/W5500-Ethernet-Kit-for-IoT/</a>) 을 사용하면 된다.</p>
+<p><img src="http://cfile1.uf.tistory.com/image/2770194C56D62D9131EEE1" alt=""></p>
+<p>ARM mbed 환경에서는 Cortex-M 시리즈의 칩셋을 기본적으로 제공하고 있으므로 NXP 뿐 아니라 STM32 코드로도 활용이 가능하다.</p>
+<h3 id="stm32-시리즈---st-microelectronics">STM32 시리즈 - ST Microelectronics</h3>
+<ul>
+<li>먼저 WIZnet(<a href="http://wiznet.co.kr/">http://wiznet.co.kr</a>) 에서 제공하고 있는 Web module 의 소스코드를 가장 먼저 레퍼런스 할 수 있다.</li>
+</ul>
+<p><a href="https://github.com/Wiznet/WIZ550web">https://github.com/Wiznet/WIZ550web</a></p>
+<p><a href="https://github.com/Wiznet/WIZ550Web_STM32F103RB_CoIDE">https://github.com/Wiznet/WIZ550Web_STM32F103RB_CoIDE</a> ; 무료 컴파일러 Coocox 버전 (<a href="http://www1.coocox.org/CooCox_CoIDE.htm">http://www1.coocox.org/CooCox_CoIDE.htm</a>)</p>
+<ul>
+<li>Arduino for STM32 Project (<a href="https://github.com/rogerclarkmelbourne/Arduino_STM32">https://github.com/rogerclarkmelbourne/Arduino_STM32</a>) 의 일부 프로젝트로 진행된 라이브러리.</li>
+</ul>
+<p><a href="https://github.com/Serasidis">Vassilis Serasidis</a> 님이 개인적으로 코드사이즈, DHCP 라이브러리를 직접 테스트 하며 완성된 통합 라이브러리 버전이다. 짝짝~~</p>
+<p><a href="https://github.com/Serasidis/Ethernet_STM">https://github.com/Serasidis/Ethernet_STM</a> ; WIZnet W5500, W5200, W5100 ethernet library for 8-bit, 32-bit Arduino and STM32F1 (STM32F103) micro-controllers</p>
+<p>성공스토리는 이 포럼글에서 확인해 볼 수 있다. : &ldquo;<a href="http://www.stm32duino.com/viewtopic.php?t=503">W5500 library is (finally) ported</a>&rdquo;</p>
+<p><img src="http://cfile5.uf.tistory.com/image/244B233A56D6247B20E8DB" alt="">참고로 Arduino STM 프로젝트는 이전에 Maple Project (<a href="http://www.leaflabs.com/about-maple/">http://www.leaflabs.com/about-maple/</a>)에서 생성된 것으로 아두이노 IDE를 ARM 계열에서도 사용해 보자고 하는 운동에서 시작되었다.</p>
+<p>- 국내 개발자, w5500 모듈을 가지고 기본 라이브러리를 활용하여 TCP/IP 서버와 클라이언트를 구현한 KEIL 프로젝트로 아래 링크에서 소스코드를 다운로드 받을 수 있다.</p>
+<p><a href="http://blog.naver.com/kiloy337/40204780449">wiznet ethernet controller w5500 with STM32F10</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="pic-시리즈---microchips-pic18-pic24-">PIC 시리즈 - Microchips PIC18, PIC24 &hellip;</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li>유럽에서 진행되고 있는 통합 EVB 같은 <a href="http://www.mikroe.com/click/eth-wiz/">ETH WIZ click</a></li>
+</ul>
+<p>본 모듈은 <a href="http://www.mikroe.com/">http://www.mikroe.com/</a> 이라는 곳에서 기본 보드와 아주 다양한 기능별 모듈을 제공하여 Prototype 설계를 가능하게 해 준다.</p>
+<p><img src="http://cfile3.uf.tistory.com/image/2610874B56D629752C6F12" alt=""></p>
+<p>그림처럼 아주 깔끔한 형태의 보드를 제공하고 있고, 물론 예제 라이브러리도 아주 고급지게 제공된다.</p>
+<p>물론 아래와 같이 PIC 시리즈를 포함하여 AVR, ARM 소스도 같이 제공하고 있어 다양한 활용이 가능하다.</p>
+<p><a href="http://libstock.mikroe.com/projects/view/1314/eth-wiz-click-board-example">http://libstock.mikroe.com/projects/view/1314/eth-wiz-click-board-example</a></p>
+<p>Examples are written for :</p>
+<ul>
+<li>EasyPIC v7 - <strong>PIC18F45K22</strong></li>
+<li>EasyPIC v7 for dsPIC30 - <strong>dsPIC30F4013</strong></li>
+<li>EasyPIC Fusion v7 - <strong>PIC32MX795F512L</strong></li>
+<li>EasyAVR v7 - <strong>ATmega32</strong></li>
+<li>EasyMX PRO v7 STM32 - <strong>STM32F107VC</strong></li>
+<li>EasyFT90x v7 - <strong>FT900</strong> </li>
+</ul>
+<ul>
+<li>약간 특이하게 아래와 같이 아두이노 호환형태의 보드와 Basic 형태의 코드와 라이브러리를 배포하고 있는 Firewing Project 도 PIC 시리즈를 이용하시는 분들은 참고할 만 하다.</li>
+</ul>
+<p><img src="http://cfile22.uf.tistory.com/image/2260744956D6276C259D29" alt=""></p>
+<p>단, 컴파일러/IDE의 지원이 이곳(<a href="http://www.firewing.info/pmwiki.php?n=Main.HomePage">http://www.firewing.info/pmwiki.php?n=Main.HomePage</a>)에서 유료로? 무료로 받는지는 확인해보고 사용해 보시길.</p>
+<p>W5500 Dirver 페이지는 <a href="http://www.firewing.info/pmwiki.php?n=FirewingUser.W5500">http://www.firewing.info/pmwiki.php?n=FirewingUser.W5500</a> </p>
+<p>- <a href="https://github.com/FeezingCode/pic18_W5500">https://github.com/FeezingCode/pic18_W5500</a></p>
+<h3 id="psoc시리즈---cypress">PSoC 시리즈 - Cypress</h3>
+<p>- <a href="http://ts.devbj.com/419">W5500 Ethernet driver for PSoC - FreeRTOS</a> 여기에 정리를 해 두었다. </p>
+<p>그래도 간략하게, 해당 링크는 </p>
+<blockquote>
+<p><a href="http://www.e2forlife.com/2015/09/its-been-a-while/">http://www.e2forlife.com/2015/09/its-been-a-while/</a></p>
+</blockquote>
+<p>이 페이지에는 W5500 드라이버는 물론이고, FreeRTOS 사용자들을 위해 porting 작업이 완료되어 있는 소스를 공개하고 있다.</p>
+<p>해당 소스의 위치는 </p>
+<blockquote>
+<p>Check out the “example” project at <a href="https://github.com/e2forlife/PSoC-W5500-Example.git">https://github.com/e2forlife/PSoC-W5500-Example.git</a></p>
+</blockquote>
+<p>아직 FreeRTOS 전체적인 프로젝트가 종료되지 않아서 최종 릴리즈 버전은 없지만 </p>
+<p>개발 버전은 자신의 Github을 통해 공유하고 있다. 소스의 위치는 아래 링크를 참고하기 바란다.</p>
+<blockquote>
+<p>프로젝트 페이지 <a href="https://github.com/e2forlife/PSoC-FreeRTOS">https://github.com/e2forlife/PSoC-FreeRTOS</a></p>
+<p>개발 버전 공개페이지 : <a href="https://github.com/e2forlife/PSoC-FreeRTOS/tree/Implement-PSoC5">https://github.com/e2forlife/PSoC-FreeRTOS/tree/Implement-PSoC5</a></p>
+</blockquote>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ghdevbj" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/blog/2016-08-05-drama/" title="드라마 - 미드"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/blog/2016-08-31-torrent/" title="추천 토렌트 사이트 - torrent, 자료" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1582510368"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582510368"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582510368"></script>
+    <script src="/js/jquery.sticky.js?1582510368"></script>
+    <script src="/js/featherlight.min.js?1582510368"></script>
+    <script src="/js/highlight.pack.js?1582510368"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582510368"></script>
+    <script src="/js/learn.js?1582510368"></script>
+    <script src="/js/hugo-learn.js?1582510368"></script>
+
+    <link href="/mermaid/mermaid.css?1582510368" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582510368"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54433728-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54433728-4');
+</script>
+
+  </body>
+</html>
+

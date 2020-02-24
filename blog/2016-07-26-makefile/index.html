@@ -1,0 +1,3811 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.64.0" />
+    <meta name="google-site-verification" content="22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ" />
+<meta name="description" content="Documentation for Hugo Learn Theme">
+<meta name="author" content="Bongjun Hur">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Makefile 분석 :: DevBJ.com</title>
+
+    
+    <link href="/css/nucleus.css?1582510369" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582510369" rel="stylesheet">
+    <link href="/css/hybrid.css?1582510369" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582510369" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582510369" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582510369" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582510369" rel="stylesheet">
+    <link href="/css/theme.css?1582510369" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582510369" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1582510369" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1582510369"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<style type="text/css">
+.adslot_1 { display:inline-block; width: 320px; height: 50px; }
+@media (max-width: 400px) { .adslot_1 { display: none; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+#adsection {
+    margin:1em;
+}
+</style>
+<script data-ad-client="ca-pub-3059347231702682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  </head>
+  <body class="" data-url="/blog/2016-07-26-makefile/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/"><img src="/images/logo.png" /></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1582510369"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582510369"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/devbj.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1582510369"></script>
+
+<div style="margin:10px;">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="1238597657"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/blog/">
+          <b>1. </b>Blog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/thought/" title="Thought" class="dd-item
+        
+        
+        
+        ">
+      <a href="/blog/thought/">
+          <b>1. </b>Thought
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-03-05-webserver-adafruit/" title="IPv6 WebServer example with WIZnet W6100 chip" class="dd-item ">
+        <a href="/blog/2019-03-05-webserver-adafruit/">
+        IPv6 WebServer example with WIZnet W6100 chip
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-03-03-embeddedworld2019/" title="Embedded World 2019" class="dd-item ">
+        <a href="/blog/2019-03-03-embeddedworld2019/">
+        Embedded World 2019
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-01-21-arduino-ethernet-products/" title="The real products based on Arduino-Ethernet" class="dd-item ">
+        <a href="/blog/2019-01-21-arduino-ethernet-products/">
+        The real products based on Arduino-Ethernet
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-01-15-arduino-ethernet-shield-list/" title="List of Arduino Ethernet Shield products" class="dd-item ">
+        <a href="/blog/2019-01-15-arduino-ethernet-shield-list/">
+        List of Arduino Ethernet Shield products
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2019-01-15-arduino-ethernet/" title="The state of Arduino Ethernet Library" class="dd-item ">
+        <a href="/blog/2019-01-15-arduino-ethernet/">
+        The state of Arduino Ethernet Library
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-08-05-drama/" title="드라마 - 미드" class="dd-item ">
+        <a href="/blog/2016-08-05-drama/">
+        드라마 - 미드
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-09-07-w5500-drivers/" title="W5500 drivers" class="dd-item ">
+        <a href="/blog/2016-09-07-w5500-drivers/">
+        W5500 drivers
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-08-31-torrent/" title="추천 토렌트 사이트 - torrent, 자료" class="dd-item ">
+        <a href="/blog/2016-08-31-torrent/">
+        추천 토렌트 사이트 - torrent, 자료
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-08-01-english/" title="영어 공부" class="dd-item ">
+        <a href="/blog/2016-08-01-english/">
+        영어 공부
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-07-26-makefile/" title="Makefile 분석" class="dd-item active">
+        <a href="/blog/2016-07-26-makefile/">
+        Makefile 분석
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/2016-07-21-move-to-jekyll/" title="지킬 블로그 만들기 - jekyll, github, github pages" class="dd-item ">
+        <a href="/blog/2016-07-21-move-to-jekyll/">
+        지킬 블로그 만들기 - jekyll, github, github pages
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/button/" title="Button" class="dd-item ">
+        <a href="/blog/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/expand/" title="Expand" class="dd-item ">
+        <a href="/blog/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/blog/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/" title="WizFi360" class="dd-item
+        
+        
+        
+        ">
+      <a href="/wizfi360/">
+          <i class='fab fa-github'></i> Learn WizFi360
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/wizfi360/basics/" title="Basics" class="dd-item
+        
+        
+        
+        ">
+      <a href="/wizfi360/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/wizfi360/w600/" title="W600" class="dd-item ">
+        <a href="/wizfi360/w600/">
+        W600
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/" title="Learn Theme for Hugo" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/">
+          <i class='fab fa-github'></i> About Learn Theme
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/" title="Basics" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/">
+          <b>1. </b>Basics
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/requirements/" title="Requirements" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/requirements/">
+          Requirements
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/installation/" title="Installation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/installation/">
+          Installation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/configuration/" title="Configuration" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/configuration/">
+          Configuration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/basics/style-customization/" title="Style customization" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/basics/style-customization/">
+          Style customization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/" title="Content" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/">
+          <b>2. </b>Content
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/pages/" title="Pages organization" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/pages/">
+          Pages organization
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/cont/i18n/" title="Multilingual and i18n" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/cont/i18n/">
+          Multilingual and i18n
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/archetypes/" title="Archetypes" class="dd-item ">
+        <a href="/hugolearntheme/cont/archetypes/">
+        Archetypes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/markdown/" title="Markdown syntax" class="dd-item ">
+        <a href="/hugolearntheme/cont/markdown/">
+        Markdown syntax
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/menushortcuts/" title="Menu extra shortcuts" class="dd-item ">
+        <a href="/hugolearntheme/cont/menushortcuts/">
+        Menu extra shortcuts
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/icons/" title="Icons and logos" class="dd-item ">
+        <a href="/hugolearntheme/cont/icons/">
+        Icons and logos
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/cont/tags/" title="Tags" class="dd-item ">
+        <a href="/hugolearntheme/cont/tags/">
+        Tags
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/" title="Shortcodes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/">
+          <b>3. </b>Shortcodes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/" title="Children" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/">
+          Children
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/" title="page 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/">
+          page 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/" title="page 1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/">
+          page 1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/" title="page 1-1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/">
+          page 1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" title="page 1-1-1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">
+          page 1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" title="page 1-1-1-1-1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">
+          page 1-1-1-1-1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/" title="page 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-2/">
+          page 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/children-2/test3.fr/" title="page test 3" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/children-2/test3.fr/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/hugolearntheme/shortcodes/children/children-3/" title="page 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/hugolearntheme/shortcodes/children/children-3/">
+          page 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/children/test.fr/" title="page test" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/children/test.fr/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/attachments/" title="Attachments" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/attachments/">
+        Attachments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/button/" title="Button" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/button/">
+        Button
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/expand/" title="Expand" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/notice/" title="Notice" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/notice/">
+        Notice
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/shortcodes/siteparam/" title="Site param" class="dd-item ">
+        <a href="/hugolearntheme/shortcodes/siteparam/">
+        Site param
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hugolearntheme/mytips/" title="사용팁" class="dd-item ">
+        <a href="/hugolearntheme/mytips/">
+        사용팁
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/" title="GoLang Korea" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/">
+          GoLang Korea
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/go-start/" title="Go 시작하기" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/go-start/">
+          Go 시작하기
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/getting-start/" title="Go언어 시작하기" class="dd-item ">
+        <a href="/golangkorea/go-start/getting-start/">
+        Go언어 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/feature/" title="Go의 주요 특징들" class="dd-item ">
+        <a href="/golangkorea/go-start/feature/">
+        Go의 주요 특징들
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-start/object-oriented/" title="Go와 객체지향" class="dd-item ">
+        <a href="/golangkorea/go-start/object-oriented/">
+        Go와 객체지향
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/go-walkthrough/" title="Go 둘러보기" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/go-walkthrough/">
+          Go 둘러보기
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/bytes-strings-packages/" title="Go 둘러보기 - bytes &#43; strings 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/bytes-strings-packages/">
+        Go 둘러보기 - bytes &#43; strings 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-json-package/" title="Go 둘러보기 - encoding/json 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-json-package/">
+        Go 둘러보기 - encoding/json 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/encoding-package/" title="Go 둘러보기 - encoding 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/encoding-package/">
+        Go 둘러보기 - encoding 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/go-walkthrough/io-package/" title="Go 둘러보기 - io 패키지" class="dd-item ">
+        <a href="/golangkorea/go-walkthrough/io-package/">
+        Go 둘러보기 - io 패키지
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/golang-internals/" title="Golang의 내부" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/golang-internals/">
+          Golang의 내부
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part1/" title="Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part1/">
+        Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part2/" title="Golang의 내부, 2부: Go 컴파일러 들여다 보기" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part2/">
+        Golang의 내부, 2부: Go 컴파일러 들여다 보기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part3/" title="Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part3/">
+        Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part4/" title="Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part4/">
+        Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part5/" title="Golang의 내부, 5부: 런타임 부트스트랩" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part5/">
+        Golang의 내부, 5부: 런타임 부트스트랩
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/part6/" title="Golang의 내부, 6부: 부트스트래핑과 메모리 할당자" class="dd-item ">
+        <a href="/golangkorea/golang-internals/part6/">
+        Golang의 내부, 6부: 부트스트래핑과 메모리 할당자
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/golang-internals/resources/" title="Golang의 내부, 0부: 부록" class="dd-item ">
+        <a href="/golangkorea/golang-internals/resources/">
+        Golang의 내부, 0부: 부록
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/golangkorea/hugo-intro/" title="Hugo 입문 - 개요" class="dd-item
+        
+        
+        
+        ">
+      <a href="/golangkorea/hugo-intro/">
+          Hugo 입문 - 개요
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/getting-started/" title="시리즈 #1 - Hugo 시작하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/getting-started/">
+        시리즈 #1 - Hugo 시작하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/content-basic/" title="시리즈 #2 - 컨텐츠 제작 기초" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/content-basic/">
+        시리즈 #2 - 컨텐츠 제작 기초
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/theme-customizing/" title="시리즈 #3 - 사이트 테마 개발하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/theme-customizing/">
+        시리즈 #3 - 사이트 테마 개발하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/taxonomy-basic/" title="시리즈 #4 - 분류(Taxonomy)기능 사용하기" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/taxonomy-basic/">
+        시리즈 #4 - 분류(Taxonomy)기능 사용하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/hugo-intro/how-to-contribute-content/" title="시리즈 #5 - 사이트에 블로그 올리는 방법" class="dd-item ">
+        <a href="/golangkorea/hugo-intro/how-to-contribute-content/">
+        시리즈 #5 - 사이트에 블로그 올리는 방법
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/structuring-applications-in-go/" title="Go에서 애플리케이션 설계하기" class="dd-item ">
+        <a href="/golangkorea/structuring-applications-in-go/">
+        Go에서 애플리케이션 설계하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/vim-go/" title="vim-go를 이용한 go 개발 환경 구축" class="dd-item ">
+        <a href="/golangkorea/vim-go/">
+        vim-go를 이용한 go 개발 환경 구축
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/golangkorea/tdd-with-golang/" title="Golang 프로젝트에 TDD 도입하기" class="dd-item ">
+        <a href="/golangkorea/tdd-with-golang/">
+        Golang 프로젝트에 TDD 도입하기
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+          
+
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://github.com/bjnhur/mydocs"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://devbj.com/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    <div class='copyright'>
+      <p>&copy; 2019 DevBJ.com All Rights Reserved.</p>
+    </div>
+    <p>Thanks Hugo & hugo-theme-learn theme</p>
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/bjnhur/mydocs/edit/master/content/Blog/2016-07-26-makefile.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/blog/'>Blog</a> > Makefile 분석
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#환경">환경</a></li>
+    <li><a href="#간단한-makefile-만들기">간단한 Makefile 만들기</a></li>
+    <li><a href="#이제부터는-make-로-컴파일-완료">이제부터는 make 로 컴파일 완료</a></li>
+    <li><a href="#특수문자">특수문자</a></li>
+    <li><a href="#확장자-규칙-co">확장자 규칙 .c.o</a></li>
+    <li><a href="#매크로로-치환">매크로로 치환</a></li>
+    <li><a href="#gccmakedep">gccmakedep</a></li>
+    <li><a href="#결언">결언</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        <div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<div class="tags">
+
+  <a class="tag-link" href="/tags/makefile">makefile</a>
+
+  <a class="tag-link" href="/tags/c">c</a>
+
+  <a class="tag-link" href="/tags/c&#43;&#43;">c&#43;&#43;</a>
+
+  <a class="tag-link" href="/tags/build">build</a>
+
+  <a class="tag-link" href="/tags/compile">compile</a>
+
+  <a class="tag-link" href="/tags/development">development</a>
+
+</div>
+
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Makefile 분석
+            </h1>
+          
+
+        
+
+
+
+<p>(수정시간) 2016-07-26 마크다운 연습도 할 겸 아래글 내용을 가져옵니다. 오래된 글이라 새로 적어두는 것도 의미가 있진 않을까요? 개인용 블로그이니 조금 이해해 주시길..</p>
+<blockquote>
+<p><a href="http://forum.falinux.com/zbxe/index.php?document_srl=405822&amp;mid=gcc">원본소스-Makefile 만들기</a></p>
+</blockquote>
+<p>&mdash; 아래 &mdash;</p>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="#%ED%99%98%EA%B2%BD">환경</a></li>
+<li><a href="#%EA%B0%84%EB%8B%A8%ED%95%9C-makefile-%EB%A7%8C%EB%93%A4%EA%B8%B0">간단한 Makefile 만들기</a></li>
+<li><a href="#%EC%9D%B4%EC%A0%9C%EB%B6%80%ED%84%B0%EB%8A%94-make-%EB%A1%9C-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%99%84%EB%A3%8C">이제부터는 make 로 컴파일 완료</a></li>
+<li><a href="#%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90">특수문자</a></li>
+<li><a href="#%ED%99%95%EC%9E%A5%EC%9E%90-%EA%B7%9C%EC%B9%99-co">확장자 규칙 .c.o</a></li>
+<li><a href="#%EB%A7%A4%ED%81%AC%EB%A1%9C%EB%A1%9C-%EC%B9%98%ED%99%98">매크로로 치환</a></li>
+<li><a href="#gccmakedep">gccmakedep</a></li>
+<li><a href="#%EA%B2%B0%EC%96%B8">결언</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="환경">환경</h2>
+<p>설명을 위해 아래와 같이 6개의 소스 파일이 있다고 하겠습니다.</p>
+<ul>
+<li>main.c와 main.h</li>
+<li>tcp.c와 tcp.h</li>
+<li>rs232.c와 rs232.h</li>
+</ul>
+<p>  여기서 생각해야 될 점은 main.c를 언제 컴파일하느냐 하는 것입니다. main.c 는 rs232.c의 함수와 tcp.c의 함수를 사용하기 때문에 main.c 자체가 변경되는 것 외에도 rs232.h와 tcp.h가 변할 때에도 컴파일하는 것이 안전합니다.</p>
+<ul>
+<li>main.c 자체가 수정되었을 경우</li>
+<li>main.h 가 수정되었을 경우</li>
+<li>rs232.h 또는 tcp.h 가 변했을 경우</li>
+</ul>
+<p>  tcp.c와 rs232.c는 자기 자신이 바뀌거나 해당 헤더파일이 변경되면 다시 컴파일이 되도록 합니다. 이제 이를 위한 간단한 Makefile을 보시겠습니다.</p>
+<h2 id="간단한-makefile-만들기">간단한 Makefile 만들기</h2>
+<p>  Makefile 의 구조는 아래와 같습니다.</p>
+<blockquote>
+<p>목표: 아래 명령을 실행하게 되는 모든 조건에 해당되는 파일 목록     실행 명령어</p>
+</blockquote>
+<p>  이와 같은 구조로 필요한 만큼 나열하면 됩니다. 다음은 실제 Makefile 내용입니다.</p>
+<p>명령어 앞에는 반드시 탭 문자로 간격을 띄워야 합니다. 공백으로 띄우시면 make 실행 시 에러가 발생합니다.</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>명령어</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>sample : main.o tcp.o rs232.o</strong></td>
+<td>main.o tcp.o, rs232.o 파일 중 변경되는 파일이 있다면 아래의 명령을 실행합니다.</td>
+</tr>
+<tr>
+<td><strong>gcc -lm -o sample main.o tcp.o rs232.o</strong></td>
+<td>main.o, tcp.o, rs232.o로 실행파일 sample 를 만듭니다.</td>
+</tr>
+<tr>
+<td><strong>sample : main.o tcp.o rs232.o</strong></td>
+<td>main.o tcp.o, rs232.o 파일 중 변경되는 파일이 있다면 아래의 명령을 실행합니다.</td>
+</tr>
+<tr>
+<td><strong>sample : main.o tcp.o rs232.o</strong></td>
+<td>main.o tcp.o, rs232.o 파일 중 변경되는 파일이 있다면 아래의 명령을 실행합니다.</td>
+</tr>
+</tbody>
+</table>
+<p>sample : main.o tcp.o rs232.o     gcc -lm -o sample main.o tcp.o rs232.o  &lt;&ndash; 명령어, 즉 gcc 앞에는 tab 키로 들여 쓰기를 해야합니다.</p>
+<p>main.o : main.c main.h rs232.h tcp.h     gcc -c main.c       &lt;&ndash; sample 에서 링크할 것이므로 여기에서는 -c를 사용하여 컴파일만 하겠습니다.</p>
+<p>tcp.o : tcp.c tcp.h     gcc -c tcp.c</p>
+<p>rs232.o : rs232.c rs232.h    gcc -c rs232.c</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>main.c, main.h, rs232.h tcp.h 파일 중 변경되는 파일이
+있다면 아래의 명령을 실행합니다.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+</blockquote>
+<p>  대충 이해가 되시나요? 뭐야 이거? 하시는 분이 계실지 모르겠습니다. 위이 예제는 아주 무식하지만 직관적으로 바로 이해되는 아주 간단한 Makefile 예제가 되겠습니다.</p>
+<h2 id="이제부터는-make-로-컴파일-완료">이제부터는 make 로 컴파일 완료</h2>
+<p>  이제 쉘에서 make 라는 명령으로 간단히 컴파일하고 실행 파일을 만들 수 있습니다.</p>
+<blockquote>
+<pre><code>make
+</code></pre></blockquote>
+<p>   편하죠? 그런데 Makefile 을 이렇게 만들면 타이핑을 해야할 것이 너무 많지요. 대부분의 프로그래머는 아주 게으릅니다. 타이핑으로 먹고 사는 사람들이 타이핑 많은 거, 좋와하지 않죠.</p>
+<p>  이제, Makefile 만의 매크로를 이용하여 타이핑하는 횟수를 줄여 보겠습니다.</p>
+<h2 id="특수문자">특수문자</h2>
+<table>
+<thead>
+<tr>
+<th>문자</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$@</td>
+<td>목표 이름</td>
+</tr>
+<tr>
+<td>$*</td>
+<td>목표 이름에서 확장자가 없는 이름</td>
+</tr>
+<tr>
+<td>$&lt;</td>
+<td>조건 파일 중 첫번째 파일</td>
+</tr>
+<tr>
+<td>$?</td>
+<td>목표 파일 보다 더 최근에 갱신된 파일 이름</td>
+</tr>
+</tbody>
+</table>
+<p>자, 소개한 매크로를 이용하여 Makefile의 내용을 좀더 간단하게 만들 수 있습니다. 링크하는 부분을 먼저 보겠습니다.</p>
+<pre><code>sample : main.o tcp.o rs232.o     gcc -lm -o &lt;font color=&quot;#000000&quot;&gt;**sample**&lt;/font&gt; main.o tcp.o rs232.o
+</code></pre><p>  여기서 $@는 무엇일까요? 네, sample이 되겠습니다. 그러므로 아래와 같이 수정할 수 있습니다.</p>
+<blockquote>
+<p>sample : main.o tcp.o rs232.o     gcc -lm -o <!-- raw HTML omitted -->**$@**<!-- raw HTML omitted --> main.o tcp.o rs232.o</p>
+</blockquote>
+<p>  이해 되시죠. 이 번에는 $*오 $&lt;, $? 에 대해서 말씀드리겠습니다.</p>
+<blockquote>
+<p>tcp.o : tcp.c tcp.h     gcc -c <!-- raw HTML omitted --><strong>tcp.c</strong><!-- raw HTML omitted --></p>
+</blockquote>
+<p>  $<em>는 목표 이름에서 확장자를 제거한 이름이니까 .o를 뺀 tcp가 되겠습니다. 그러므로 $</em>를 이용하면 이렇게 수정할 수 있습니다</p>
+<blockquote>
+<p>tcp.o : tcp.c tcp.h     gcc -c <!-- raw HTML omitted --><strong>$*.c</strong><!-- raw HTML omitted --></p>
+</blockquote>
+<p>  이해 되시죠? $&lt;는 조건에 열거된 파일 목록 중 첫번재를 의미합니다. 그러므로 $&lt;는 조건 파일인 tcp.c tcp.h 중에서 첫번째 파일의 이름에 해당되므로 tcp.c 가 되겠습니다. 그러므로 아래와 같이 바꿀 수도 있습니다. 저 같은 경우 제일 많이 사용합니다.</p>
+<blockquote>
+<p>tcp.o : tcp.c tcp.h     gcc -c <!-- raw HTML omitted --><strong>$&lt;</strong><!-- raw HTML omitted --></p>
+</blockquote>
+<p>  $? 는 &ldquo;현재 목표 파일 파일 보다 더 최근에 갱신된 파일 이름&quot;을 나타내는 매크로입니다. 뜻은 알겠는데, 도대체 어디에 사용하는지 필요성을 잘 모르겠네요. 여하튼 예로 따져 보변 tcp.o 후에 tcp.h 가 수정되었다면 tcp.h가 된다는 것입니다.</p>
+<h2 id="확장자-규칙-co">확장자 규칙 .c.o</h2>
+<p>  일반적으로 .o 는 .c 로 만들어 지므로 실은 위의 예를 아래와 같이 명령 실행 없이 작성해도 make가 실행이 됩니다.</p>
+<blockquote>
+<p>sample : main.o tcp.o rs232.o     gcc -lm -o $@ main.o tcp.o rs232.o</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+</blockquote>
+<p>  에이~ 그런데 왜 처음부터 복작하게 썼어? 하시겠지만, 이는 $*, $&lt;, $? 를 설명 드리기 위함도 있지만 위와 같이 처리하면 컴파일은 되지만 컴파일에 대한 상세한 옵션을 처리할 수가 없습니다. 위와 같이 Makefile을 작성하고 make 를 실행하면 아마도 아래와 같이 단순한 모습으로 컴파일 될 것입니다.</p>
+<blockquote>
+<p>]$make cc -c -o main.o mainc cc -c -o tcp.o tcp.c cc -c -o rs232.o rs232.c</p>
+</blockquote>
+<p>  요렇게 말이죠. 그러나 컴파일 할 때에는 인클루드 경로명을 지정하는 것과 같은 옵션을 사용해야 합니다. 이렇게 자동으로 진행되는 것만을 의지할 수 없습니다. 그래서 아래와 같이 <strong>.o 를 어떻게 만들어 낼지를 make 에 알려 줍니다</strong>.</p>
+<blockquote>
+<p>sample : main.o tcp.o rs232.o     gcc -lm -o $@ main.o tcp.o rs232.o</p>
+<p><!-- raw HTML omitted -->**.c.o:     gcc -I/home/jwjw/prjs/include -g -c $&lt;**<!-- raw HTML omitted --></p>
+<p>main.o : main.c main.h rs232.h tcp.h tcp.o : tcp.c tcp.h rs232.o : rs232.c rs232.h</p>
+</blockquote>
+<p>  이제 make를 실행하면 아래와 같이 컴파일되는 모습을 보실 수 있습니다.</p>
+<blockquote>
+<p>gcc -I/home/jwjw/prjs/include -g -c main.c gcc -I/home/jwjw/prjs/include -g -c tcp.c gcc -I/home/jwjw/prjs/include -g -c rs232.c gcc -lm -o sample main.o tcp.o rs232.o</p>
+</blockquote>
+<p>  또한 소스 파일이 Makefile과 같은 폴더 안에 있다면 아예 아래와 같이 작성하셔도 컴파일이 됩니다.</p>
+<blockquote>
+<p>sample : main.o tcp.o rs232.o     gcc -lm -o $@ main.o tcp.o rs232.o .c.o:     gcc -I/home/jwjw/prjs/include -g -c $&lt;</p>
+</blockquote>
+<p>  그러나 문제는 <strong>각 소스에 대한 컴파일 조건이 매우 단순해 지게 됩니다</strong>. 즉, main.c 는 main.c 자신이 수정될 때만 컴파일이 됩니다. 위의 예에서 처럼 rs232.h가 수정되거나 아예 관계가 아주 깊은 main.h 가 수정되더라도 main.c 는 재 컴파일이 안됩니다. 소스끼리 관계가 있다며 하단 부분을 서술해 주셔야 합니다.</p>
+<blockquote>
+<p>sample : main.o tcp.o rs232.o     gcc -lm -o $@ main.o tcp.o rs232.o .c.o:     gcc -I/home/jwjw/prjs/include -g -c $&lt;</p>
+<p>main.o: main.c main.h rs232.h rs232.o: rs232.c rs232.h tcp.o: tcp.c tcp.h</p>
+</blockquote>
+<p>  그래도 많이 줄어 들었죠? 그러나 이게 다가 아닙니다.</p>
+<h2 id="매크로로-치환">매크로로 치환</h2>
+<p>  예제의 main.o tcp.o rs232.o 의 파일 이름이 2번 중복되어 있습니다. 두번 타이핑을 해야 하는데, 앞서 말씀드렸듯이 프로그래머는 게으릅니다. 2번~? 귀찮습니다. 아래와 같이 수정해 봅시다.</p>
+<blockquote>
+<p>OBJS = main.o tcp.o rs232.o</p>
+<p>sample : $(OBJS)     gcc -lm -o $@ <!-- raw HTML omitted -->**$(OBJS)**<!-- raw HTML omitted --> .c.o:     gcc -I/home/jwjw/prjs/include -g -c $&lt;</p>
+</blockquote>
+<p> 또는 $^ 를 이용하여 아래와 같이 수정할 수 도 있습니다. <strong>$^는 조건에 있는 모든 파일 이름을 대신하는 매크로</strong>입니다.</p>
+<blockquote>
+<p>OBJS = main.o tcp.o rs232.o</p>
+<p>sample : $(OBJS)     gcc -lm -o $@ <!-- raw HTML omitted --><strong>$^</strong><!-- raw HTML omitted --> .c.o:     gcc -I/home/jwjw/prjs/include -g -c $&lt;</p>
+</blockquote>
+<p> 하는 김에 컴파일 옵션과 링크 옵션도 매크로로 치환해 보겠습니다.</p>
+<blockquote>
+<p>OBJS = main.o tcp.o rs232.o CC = -I/home/jwjw/prjs/include -g -c</p>
+<p>sample : $(OBJS)     gcc -lm -o $@ <!-- raw HTML omitted --><strong>$^</strong><!-- raw HTML omitted --> .c.o:     gcc $(CC) $&lt;</p>
+</blockquote>
+<p> 이렇게 매크로로 치환하여 Makefile 의 윗 행에 모아 두면, 내용 전체를 볼 필요 없이 매크로 부분만 보거나 수정해도 되기 때문에 편리합니다. 이래서 아래와 같이 수정하여 완성할 수 있습니다.</p>
+<blockquote>
+<p>TARGET = sample OBJS = main.o tcp.o rs232.o CC = -I/home/jwjw/prjs/include -g -c</p>
+<p>$(TARGET : $(OBJS)     gcc -lm -o $@ <!-- raw HTML omitted --><strong>$^</strong><!-- raw HTML omitted --> .c.o:     gcc $(CC) $&lt;</p>
+<p>main.o: main.c main.h rs232.h rs232.o: rs232.c rs232.h tcp.o: tcp.c tcp.h</p>
+</blockquote>
+<h2 id="gccmakedep">gccmakedep</h2>
+<p>  다른 것들은 모두 편리하고 좋은 것 같은데, Makefile 하단에 있는 파일 간의 종속에 대한 정보를 모두 타이핑해서 넣어야 할까요? 파일이 많을 경우 어떻게 일일이 입력할 수 있있겠습니까?  당연한 말씀입니다. 게으른 프로그래머에게는 말도 안되죠. 그래서 이와 같은 귀찮은 작업을 make에 떠 넘기겠습니다. 바로 파일간의 의존성을 찾아서 그 내용을 직접 구성해 달라고 요청하는 것이죠.</p>
+<p>  이렇게 파일의 의존성을 검색해서 그 내용을 작성해 주는 것이 gccmakedep 입니다. 아래와 같이 수정해서 make dep를 실행합니다.</p>
+<blockquote>
+<p>TARGET = sample OBJS = main.o tcp.o rs232.o<!-- raw HTML omitted -->**SRCS = $(OBJS:.o=.c)**<!-- raw HTML omitted --> CC = -I/home/jwjw/prjs/include -g -c</p>
+<p>$(TARGET): $(OBJS)     gcc -lm -o $@ $^</p>
+<p>.c.o:     gcc $(CC) $&lt;</p>
+<p><!-- raw HTML omitted -->**dep :     gccmakedep $(SRCS)**<!-- raw HTML omitted --></p>
+</blockquote>
+<p>  이렇게 추가 작성해서 make dep 를 실행하시면 make는 컴파일과 링크 작업 대신에 라벨 dep: 밑의 명령을 실행합니다. 새로 만들어진 <strong>SRCS는 OBJS에 열거된 파일 모록에 대해서 확장자를 .o를 .c로 바뀐 목록을 가지게 됩니다</strong>. gccmakedep는 소스 파일을 가지고 의존성을 검색할 수 있기 때문이죠.</p>
+<blockquote>
+<p>]$ make dep ]$ vi Makefile</p>
+<p>TARGET = sample OBJS = main.o tcp.o rs232.o SRCS = $(OBJS:.o=.c) CC = -I/home/jwjw/prjs/include -g -c     $(TARGET): $(OBJS) gcc -lm -o $@ $^ .c.o:     gcc $(CC) $&lt; dep : gccmakedep $(SRCS)</p>
+<p><!-- raw HTML omitted --># DO NOT DELETE main.o: main.c /usr/include/stdio.h &hellip;&hellip;&hellip; tcp.o: tcp.c<!-- raw HTML omitted --> <!-- raw HTML omitted -->/usr/include/stdio.h &hellip;&hellip;&hellip; rs232.o: rs232.c /usr/include/stdio.h &hellip;&hellip;&hellip;<!-- raw HTML omitted --></p>
+</blockquote>
+<p>  하단에# DO NOT DELETE 행과 함께 밑으로 각 .o 에 대한 관련 파일 목록이 자동으로 생성되는 것을 보실 수 있습니다. 이제 make를 실행하면 위 정보에 맞추어 컴파일하게 됩니다.</p>
+<h2 id="결언">결언</h2>
+<p>  어떻게 이해가 되십니까? 마지막 부분은 매크로로 되어 있어서 암호같이 보이는데, 지금 보시면 암호 풀이가 되시는지 모르겠습니다. 소개해 드린 것 보다 더 편리한 부분도 있습니다만 내용이 너무 많아 질 것 같아서 여기서 줄입니다.  긴 내용을 읽어 주셔서 감사합니다.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ghdevbj" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="adsection">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px;padding:5px;"
+     data-ad-client="ca-pub-3059347231702682"
+     data-ad-slot="8554071818"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/blog/2016-08-01-english/" title="영어 공부"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/blog/2016-07-21-move-to-jekyll/" title="지킬 블로그 만들기 - jekyll, github, github pages" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1582510369"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582510369"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582510369"></script>
+    <script src="/js/jquery.sticky.js?1582510369"></script>
+    <script src="/js/featherlight.min.js?1582510369"></script>
+    <script src="/js/highlight.pack.js?1582510369"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582510369"></script>
+    <script src="/js/learn.js?1582510369"></script>
+    <script src="/js/hugo-learn.js?1582510369"></script>
+
+    <link href="/mermaid/mermaid.css?1582510369" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582510369"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54433728-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54433728-4');
+</script>
+
+  </body>
+</html>
+
