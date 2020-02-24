@@ -1,4 +1,4 @@
-baseURL = "https://devbj.com/"
+baseURL = "https://wizfi.github.io/mydocs/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 hasCJKLanguage = true
@@ -10,7 +10,7 @@ theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 enableRobotsTXT = true
-disqusShortname = "ghdevbj"
+#disqusShortname = "ghdevbj"
 
 [taxonomies]
   category = "categories"
@@ -23,9 +23,9 @@ disqusShortname = "ghdevbj"
   priority = 0.5
 
 [params]
-  editURL = "https://github.com/bjnhur/mydocs/edit/master/content/"
+  editURL = "https://github.com/wizfi/mydocs/edit/master/content/"
   description = "Documentation for Hugo Learn Theme"
-  author = "Bongjun Hur"
+  author = "WizFi"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -39,7 +39,7 @@ home = [ "HTML", "RSS", "JSON"]
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
-url = "https://github.com/bjnhur/mydocs"
+url = "https://github.com/wizfi/mydocs"
 weight = 10
 
 [[menu.shortcuts]]
