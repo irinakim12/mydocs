@@ -11,6 +11,8 @@ chapter: true
 
 Discover what this Hugo theme is all about and the core-concepts behind it.
 
+원래 자동 해놨잖아..
+
 ## ☕ [HTML5] span과 div의 차이
 
 - div 가로폭을 전부 차지함, span 태그 안의 내용만 차지함
