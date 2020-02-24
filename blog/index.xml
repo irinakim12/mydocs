@@ -144,5 +144,14 @@ Flowchart example {{&amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt;}} gra
 graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two]  or you can use this alternative syntax:</description>
     </item>
     
+    <item>
+      <title>노션 페이지 복사하기</title>
+      <link>https://devbj.com/blog/notionpagecopy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devbj.com/blog/notionpagecopy/</guid>
+      <description>노션 페이지 복사하기 노션 페이지 복사하기 생각보다 까다로움, 아예 저자가 공용으로 사용해라고 공유해둔 노션페이지는 그냥 Duplicate 메뉴가 있어서 누르면 끝!! 아래 예제</description>
+    </item>
+    
   </channel>
 </rss>
