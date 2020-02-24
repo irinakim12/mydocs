@@ -1,1 +1,1 @@
-[View live](https://bjnhur.github.io/mydocs/)
+[View live](https://wizfi.github.io/mydocs/)
