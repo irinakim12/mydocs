@@ -26,8 +26,8 @@ after_success:
 env:
   global:
   - GH_TOKEN: $GITHUB_TOKEN
-  - GH_USER: bjnhur
-  - GH_EMAIL: bjnhur@gmail.com
+  - GH_USER: wizfi
+  - GH_EMAIL: wizfi@wiznet.io
   - GH_REPO: mydocs
   - GH_SRC: master
   - GH_DST: gh-pages
