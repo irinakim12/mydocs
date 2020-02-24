@@ -462,14 +462,14 @@
   </url>
   
   <url>
-    <loc>https://wizfi.github.io/mydocs/categories/encoding/</loc>
+    <loc>https://wizfi.github.io/mydocs/tags/encoding/</loc>
     <lastmod>2016-12-03T01:02:26+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://wizfi.github.io/mydocs/tags/encoding/</loc>
+    <loc>https://wizfi.github.io/mydocs/categories/encoding/</loc>
     <lastmod>2016-12-03T01:02:26+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -490,14 +490,14 @@
   </url>
   
   <url>
-    <loc>https://wizfi.github.io/mydocs/tags/bytes/</loc>
+    <loc>https://wizfi.github.io/mydocs/categories/bytes/</loc>
     <lastmod>2016-11-02T18:30:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://wizfi.github.io/mydocs/categories/bytes/</loc>
+    <loc>https://wizfi.github.io/mydocs/tags/bytes/</loc>
     <lastmod>2016-11-02T18:30:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -840,14 +840,14 @@
   </url>
   
   <url>
-    <loc>https://wizfi.github.io/mydocs/tags/vim/</loc>
+    <loc>https://wizfi.github.io/mydocs/categories/vim/</loc>
     <lastmod>2016-08-22T22:57:14+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://wizfi.github.io/mydocs/categories/vim/</loc>
+    <loc>https://wizfi.github.io/mydocs/tags/vim/</loc>
     <lastmod>2016-08-22T22:57:14+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
