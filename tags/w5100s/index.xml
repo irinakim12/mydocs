@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>W5100S on DevBJ.com</title>
-    <link>https://devbj.com/tags/w5100s/</link>
+    <link>https://wizfi.github.io/mydocs/tags/w5100s/</link>
     <description>Recent content in W5100S on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 15 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/w5100s/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/w5100s/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>List of Arduino Ethernet Shield products</title>
-      <link>https://devbj.com/blog/2019-01-15-arduino-ethernet-shield-list/</link>
+      <link>https://wizfi.github.io/mydocs/blog/2019-01-15-arduino-ethernet-shield-list/</link>
       <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/blog/2019-01-15-arduino-ethernet-shield-list/</guid>
+      <guid>https://wizfi.github.io/mydocs/blog/2019-01-15-arduino-ethernet-shield-list/</guid>
       <description>(Modified) 2019-01-15
  W6100 W5500 W5100S W5100 W5200  Ethernet Shield List What is the &amp;ldquo;Ethernet Shield&amp;rdquo;?  The Arduino Ethernet Shield connects your Arduino to the internet in mere minutes. Just plug this module onto your Arduino board, connect it to your network with an RJ45 cable (not included) and follow a few simple instructions to start controlling your world through the internet. from Ethernet Shield
  WIZnet - W5100, W5200, W5500, W5100S, W6100 W6100    Name Maker Chipset Product link    W5500    Name Maker Chipset Product link     ARDUINO MKR ETH SHIELD Arduino W5500 Product Link   W5500 Ethernet Shield S(secure) EWBM W5500 Product Link   Arduino Ethernet Shield 2 Arduino W5500 Product Link   W5500 Ethernet Shield WIZnet W5500 Product Link   SweetPea UnoNet+ : Ethernet and NFC in one board ElectronicSweetpeas W5500 Product Link   POE W5500 Ethernet Shield Iteadstudio W5500 Product Link   W5500 Ethernet Shield v1.</description>

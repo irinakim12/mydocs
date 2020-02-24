@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on DevBJ.com</title>
-    <link>https://devbj.com/tags/jekyll/</link>
+    <link>https://wizfi.github.io/mydocs/tags/jekyll/</link>
     <description>Recent content in jekyll on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 21 Jul 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>지킬 블로그 만들기 - jekyll, github, github pages</title>
-      <link>https://devbj.com/blog/2016-07-21-move-to-jekyll/</link>
+      <link>https://wizfi.github.io/mydocs/blog/2016-07-21-move-to-jekyll/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/blog/2016-07-21-move-to-jekyll/</guid>
+      <guid>https://wizfi.github.io/mydocs/blog/2016-07-21-move-to-jekyll/</guid>
       <description>(수정시간) 2016-08-08 지킬 기반의 블로그 리소스 블로그 만들면서 참고한 글을 정리해 본다. 지킬 기반의 블로그 카카오 기술 블로그 - 베껴오고 있음. 개인적으로 css 이런것도</description>
     </item>
     

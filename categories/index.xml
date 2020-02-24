@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on DevBJ.com</title>
-    <link>https://devbj.com/categories/</link>
+    <link>https://wizfi.github.io/mydocs/categories/</link>
     <description>Recent content in Categories on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 03 Dec 2016 01:02:26 +0900</lastBuildDate>
     
-	<atom:link href="https://devbj.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Encoding</title>
-      <link>https://devbj.com/categories/encoding/</link>
+      <link>https://wizfi.github.io/mydocs/categories/encoding/</link>
       <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/encoding/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/encoding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>번역</title>
-      <link>https://devbj.com/categories/%EB%B2%88%EC%97%AD/</link>
+      <link>https://wizfi.github.io/mydocs/categories/%EB%B2%88%EC%97%AD/</link>
       <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/%EB%B2%88%EC%97%AD/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/%EB%B2%88%EC%97%AD/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bytes</title>
-      <link>https://devbj.com/categories/bytes/</link>
+      <link>https://wizfi.github.io/mydocs/categories/bytes/</link>
       <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/bytes/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/bytes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strings</title>
-      <link>https://devbj.com/categories/strings/</link>
+      <link>https://wizfi.github.io/mydocs/categories/strings/</link>
       <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/strings/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/strings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IO</title>
-      <link>https://devbj.com/categories/io/</link>
+      <link>https://wizfi.github.io/mydocs/categories/io/</link>
       <pubDate>Wed, 26 Oct 2016 02:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/io/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/io/</guid>
       <description></description>
     </item>
     
     <item>
       <title>아키텍처</title>
-      <link>https://devbj.com/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
+      <link>https://wizfi.github.io/mydocs/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
       <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How-to</title>
-      <link>https://devbj.com/categories/how-to/</link>
+      <link>https://wizfi.github.io/mydocs/categories/how-to/</link>
       <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/how-to/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/how-to/</guid>
       <description></description>
     </item>
     
     <item>
       <title>핵킹</title>
-      <link>https://devbj.com/categories/%ED%95%B5%ED%82%B9/</link>
+      <link>https://wizfi.github.io/mydocs/categories/%ED%95%B5%ED%82%B9/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/categories/%ED%95%B5%ED%82%B9/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/%ED%95%B5%ED%82%B9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://devbj.com/categories/development/</link>
+      <link>https://wizfi.github.io/mydocs/categories/development/</link>
       <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/development/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>https://devbj.com/categories/vim/</link>
+      <link>https://wizfi.github.io/mydocs/categories/vim/</link>
       <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/vim/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TDD</title>
-      <link>https://devbj.com/categories/tdd/</link>
+      <link>https://wizfi.github.io/mydocs/categories/tdd/</link>
       <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/tdd/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/tdd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UnitTest</title>
-      <link>https://devbj.com/categories/unittest/</link>
+      <link>https://wizfi.github.io/mydocs/categories/unittest/</link>
       <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
       
-      <guid>https://devbj.com/categories/unittest/</guid>
+      <guid>https://wizfi.github.io/mydocs/categories/unittest/</guid>
       <description></description>
     </item>
     

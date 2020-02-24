@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>S/W on DevBJ.com</title>
-    <link>https://devbj.com/tags/s/w/</link>
+    <link>https://wizfi.github.io/mydocs/tags/s/w/</link>
     <description>Recent content in S/W on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/s/w/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/s/w/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>W5500 drivers</title>
-      <link>https://devbj.com/blog/2016-09-07-w5500-drivers/</link>
+      <link>https://wizfi.github.io/mydocs/blog/2016-09-07-w5500-drivers/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/blog/2016-09-07-w5500-drivers/</guid>
+      <guid>https://wizfi.github.io/mydocs/blog/2016-09-07-w5500-drivers/</guid>
       <description>(수정시간) 2016-09-07 W5500 Driver open source projects - 오픈소스 AVR-ATmel LPC 시리즈 - NXP LPC11exxx &amp;hellip; W5500으로 이더넷 구현하기 (개발 환경 구축) STM32 시리즈 - ST Microelectronics PIC 시리즈 - Microchips PIC18, PIC24 &amp;hellip; PSoC 시리즈 - Cypress</description>
     </item>
     

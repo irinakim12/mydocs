@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assembler on DevBJ.com</title>
-    <link>https://devbj.com/tags/assembler/</link>
+    <link>https://wizfi.github.io/mydocs/tags/assembler/</link>
     <description>Recent content in Assembler on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 12 Sep 2016 13:18:28 -0400</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/assembler/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/assembler/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Golang의 내부, 0부: 부록</title>
-      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/resources/</link>
       <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/resources/</guid>
       <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
     </item>
     

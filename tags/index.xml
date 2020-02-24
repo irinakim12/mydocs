@@ -2,615 +2,615 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on DevBJ.com</title>
-    <link>https://devbj.com/tags/</link>
+    <link>https://wizfi.github.io/mydocs/tags/</link>
     <description>Recent content in Tags on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Arduino</title>
-      <link>https://devbj.com/tags/arduino/</link>
+      <link>https://wizfi.github.io/mydocs/tags/arduino/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/arduino/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/arduino/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IPv6</title>
-      <link>https://devbj.com/tags/ipv6/</link>
+      <link>https://wizfi.github.io/mydocs/tags/ipv6/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/ipv6/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/ipv6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>W6100</title>
-      <link>https://devbj.com/tags/w6100/</link>
+      <link>https://wizfi.github.io/mydocs/tags/w6100/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/w6100/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/w6100/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WIZnet</title>
-      <link>https://devbj.com/tags/wiznet/</link>
+      <link>https://wizfi.github.io/mydocs/tags/wiznet/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/wiznet/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/wiznet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ethernet</title>
-      <link>https://devbj.com/tags/ethernet/</link>
+      <link>https://wizfi.github.io/mydocs/tags/ethernet/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/ethernet/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/ethernet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EW19</title>
-      <link>https://devbj.com/tags/ew19/</link>
+      <link>https://wizfi.github.io/mydocs/tags/ew19/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/ew19/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/ew19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>W5100</title>
-      <link>https://devbj.com/tags/w5100/</link>
+      <link>https://wizfi.github.io/mydocs/tags/w5100/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/w5100/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/w5100/</guid>
       <description></description>
     </item>
     
     <item>
       <title>W5500</title>
-      <link>https://devbj.com/tags/w5500/</link>
+      <link>https://wizfi.github.io/mydocs/tags/w5500/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/w5500/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/w5500/</guid>
       <description></description>
     </item>
     
     <item>
       <title>W5100S</title>
-      <link>https://devbj.com/tags/w5100s/</link>
+      <link>https://wizfi.github.io/mydocs/tags/w5100s/</link>
       <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/w5100s/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/w5100s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>documentation</title>
-      <link>https://devbj.com/tags/documentation/</link>
+      <link>https://wizfi.github.io/mydocs/tags/documentation/</link>
       <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
       
-      <guid>https://devbj.com/tags/documentation/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/documentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://devbj.com/tags/tutorial/</link>
+      <link>https://wizfi.github.io/mydocs/tags/tutorial/</link>
       <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
       
-      <guid>https://devbj.com/tags/tutorial/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>드라마</title>
-      <link>https://devbj.com/tags/%EB%93%9C%EB%9D%BC%EB%A7%88/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%EB%93%9C%EB%9D%BC%EB%A7%88/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/%EB%93%9C%EB%9D%BC%EB%A7%88/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%EB%93%9C%EB%9D%BC%EB%A7%88/</guid>
       <description></description>
     </item>
     
     <item>
       <title>미드</title>
-      <link>https://devbj.com/tags/%EB%AF%B8%EB%93%9C/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%EB%AF%B8%EB%93%9C/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/%EB%AF%B8%EB%93%9C/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%EB%AF%B8%EB%93%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>영화</title>
-      <link>https://devbj.com/tags/%EC%98%81%ED%99%94/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%EC%98%81%ED%99%94/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/%EC%98%81%ED%99%94/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%EC%98%81%ED%99%94/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Encoding</title>
-      <link>https://devbj.com/tags/encoding/</link>
+      <link>https://wizfi.github.io/mydocs/tags/encoding/</link>
       <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/encoding/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/encoding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://devbj.com/tags/golang/</link>
+      <link>https://wizfi.github.io/mydocs/tags/golang/</link>
       <pubDate>Sat, 03 Dec 2016 01:02:26 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/golang/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bytes</title>
-      <link>https://devbj.com/tags/bytes/</link>
+      <link>https://wizfi.github.io/mydocs/tags/bytes/</link>
       <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/bytes/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/bytes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Package</title>
-      <link>https://devbj.com/tags/package/</link>
+      <link>https://wizfi.github.io/mydocs/tags/package/</link>
       <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/package/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/package/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strings</title>
-      <link>https://devbj.com/tags/strings/</link>
+      <link>https://wizfi.github.io/mydocs/tags/strings/</link>
       <pubDate>Wed, 02 Nov 2016 18:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/strings/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/strings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IO</title>
-      <link>https://devbj.com/tags/io/</link>
+      <link>https://wizfi.github.io/mydocs/tags/io/</link>
       <pubDate>Wed, 26 Oct 2016 02:30:33 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/io/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/io/</guid>
       <description></description>
     </item>
     
     <item>
       <title>번역</title>
-      <link>https://devbj.com/tags/%EB%B2%88%EC%97%AD/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%EB%B2%88%EC%97%AD/</link>
       <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/%EB%B2%88%EC%97%AD/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%EB%B2%88%EC%97%AD/</guid>
       <description></description>
     </item>
     
     <item>
       <title>아키텍쳐</title>
-      <link>https://devbj.com/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</link>
       <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Object Oriented</title>
-      <link>https://devbj.com/tags/object-oriented/</link>
+      <link>https://wizfi.github.io/mydocs/tags/object-oriented/</link>
       <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/object-oriented/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/object-oriented/</guid>
       <description></description>
     </item>
     
     <item>
       <title>struct</title>
-      <link>https://devbj.com/tags/struct/</link>
+      <link>https://wizfi.github.io/mydocs/tags/struct/</link>
       <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/struct/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/struct/</guid>
       <description></description>
     </item>
     
     <item>
       <title>allocator</title>
-      <link>https://devbj.com/tags/allocator/</link>
+      <link>https://wizfi.github.io/mydocs/tags/allocator/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/allocator/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/allocator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bootstrap</title>
-      <link>https://devbj.com/tags/bootstrap/</link>
+      <link>https://wizfi.github.io/mydocs/tags/bootstrap/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/bootstrap/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/bootstrap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internals</title>
-      <link>https://devbj.com/tags/internals/</link>
+      <link>https://wizfi.github.io/mydocs/tags/internals/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/internals/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/internals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>memory</title>
-      <link>https://devbj.com/tags/memory/</link>
+      <link>https://wizfi.github.io/mydocs/tags/memory/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/memory/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/memory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>runtime</title>
-      <link>https://devbj.com/tags/runtime/</link>
+      <link>https://wizfi.github.io/mydocs/tags/runtime/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/runtime/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/runtime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linker</title>
-      <link>https://devbj.com/tags/linker/</link>
+      <link>https://wizfi.github.io/mydocs/tags/linker/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/linker/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/linker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>metadata</title>
-      <link>https://devbj.com/tags/metadata/</link>
+      <link>https://wizfi.github.io/mydocs/tags/metadata/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/metadata/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/metadata/</guid>
       <description></description>
     </item>
     
     <item>
       <title>object file</title>
-      <link>https://devbj.com/tags/object-file/</link>
+      <link>https://wizfi.github.io/mydocs/tags/object-file/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/object-file/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/object-file/</guid>
       <description></description>
     </item>
     
     <item>
       <title>relocations</title>
-      <link>https://devbj.com/tags/relocations/</link>
+      <link>https://wizfi.github.io/mydocs/tags/relocations/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/relocations/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/relocations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Compiler</title>
-      <link>https://devbj.com/tags/compiler/</link>
+      <link>https://wizfi.github.io/mydocs/tags/compiler/</link>
       <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/compiler/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/compiler/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Structure</title>
-      <link>https://devbj.com/tags/structure/</link>
+      <link>https://wizfi.github.io/mydocs/tags/structure/</link>
       <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/structure/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/structure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Assembler</title>
-      <link>https://devbj.com/tags/assembler/</link>
+      <link>https://wizfi.github.io/mydocs/tags/assembler/</link>
       <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/assembler/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/assembler/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beginning</title>
-      <link>https://devbj.com/tags/beginning/</link>
+      <link>https://wizfi.github.io/mydocs/tags/beginning/</link>
       <pubDate>Mon, 12 Sep 2016 13:10:03 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/beginning/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/beginning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AVR</title>
-      <link>https://devbj.com/tags/avr/</link>
+      <link>https://wizfi.github.io/mydocs/tags/avr/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/avr/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/avr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>develop</title>
-      <link>https://devbj.com/tags/develop/</link>
+      <link>https://wizfi.github.io/mydocs/tags/develop/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/develop/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/develop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>driver</title>
-      <link>https://devbj.com/tags/driver/</link>
+      <link>https://wizfi.github.io/mydocs/tags/driver/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/driver/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/driver/</guid>
       <description></description>
     </item>
     
     <item>
       <title>embedded</title>
-      <link>https://devbj.com/tags/embedded/</link>
+      <link>https://wizfi.github.io/mydocs/tags/embedded/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/embedded/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/embedded/</guid>
       <description></description>
     </item>
     
     <item>
       <title>F/W</title>
-      <link>https://devbj.com/tags/f/w/</link>
+      <link>https://wizfi.github.io/mydocs/tags/f/w/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/f/w/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/f/w/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IoT</title>
-      <link>https://devbj.com/tags/iot/</link>
+      <link>https://wizfi.github.io/mydocs/tags/iot/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/iot/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/iot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IT</title>
-      <link>https://devbj.com/tags/it/</link>
+      <link>https://wizfi.github.io/mydocs/tags/it/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/it/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/it/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mbed</title>
-      <link>https://devbj.com/tags/mbed/</link>
+      <link>https://wizfi.github.io/mydocs/tags/mbed/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/mbed/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/mbed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>S/W</title>
-      <link>https://devbj.com/tags/s/w/</link>
+      <link>https://wizfi.github.io/mydocs/tags/s/w/</link>
       <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/s/w/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/s/w/</guid>
       <description></description>
     </item>
     
     <item>
       <title>drama</title>
-      <link>https://devbj.com/tags/drama/</link>
+      <link>https://wizfi.github.io/mydocs/tags/drama/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/drama/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/drama/</guid>
       <description></description>
     </item>
     
     <item>
       <title>movie</title>
-      <link>https://devbj.com/tags/movie/</link>
+      <link>https://wizfi.github.io/mydocs/tags/movie/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/movie/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/movie/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tool</title>
-      <link>https://devbj.com/tags/tool/</link>
+      <link>https://wizfi.github.io/mydocs/tags/tool/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/tool/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/tool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>torrent</title>
-      <link>https://devbj.com/tags/torrent/</link>
+      <link>https://wizfi.github.io/mydocs/tags/torrent/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/torrent/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/torrent/</guid>
       <description></description>
     </item>
     
     <item>
       <title>util</title>
-      <link>https://devbj.com/tags/util/</link>
+      <link>https://wizfi.github.io/mydocs/tags/util/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/util/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/util/</guid>
       <description></description>
     </item>
     
     <item>
       <title>토렌트</title>
-      <link>https://devbj.com/tags/%ED%86%A0%EB%A0%8C%ED%8A%B8/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%ED%86%A0%EB%A0%8C%ED%8A%B8/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/%ED%86%A0%EB%A0%8C%ED%8A%B8/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%ED%86%A0%EB%A0%8C%ED%8A%B8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>install</title>
-      <link>https://devbj.com/tags/install/</link>
+      <link>https://wizfi.github.io/mydocs/tags/install/</link>
       <pubDate>Sun, 28 Aug 2016 15:10:07 +0830</pubDate>
       
-      <guid>https://devbj.com/tags/install/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/install/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://devbj.com/tags/blog/</link>
+      <link>https://wizfi.github.io/mydocs/tags/blog/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:55 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/blog/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://devbj.com/tags/hugo/</link>
+      <link>https://wizfi.github.io/mydocs/tags/hugo/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:55 -0400</pubDate>
       
-      <guid>https://devbj.com/tags/hugo/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>https://devbj.com/tags/development/</link>
+      <link>https://wizfi.github.io/mydocs/tags/development/</link>
       <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/development/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>https://devbj.com/tags/vim/</link>
+      <link>https://wizfi.github.io/mydocs/tags/vim/</link>
       <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/vim/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TDD</title>
-      <link>https://devbj.com/tags/tdd/</link>
+      <link>https://wizfi.github.io/mydocs/tags/tdd/</link>
       <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/tdd/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/tdd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UnitTest</title>
-      <link>https://devbj.com/tags/unittest/</link>
+      <link>https://wizfi.github.io/mydocs/tags/unittest/</link>
       <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
       
-      <guid>https://devbj.com/tags/unittest/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/unittest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>english</title>
-      <link>https://devbj.com/tags/english/</link>
+      <link>https://wizfi.github.io/mydocs/tags/english/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/english/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>영어</title>
-      <link>https://devbj.com/tags/%EC%98%81%EC%96%B4/</link>
+      <link>https://wizfi.github.io/mydocs/tags/%EC%98%81%EC%96%B4/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/%EC%98%81%EC%96%B4/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/%EC%98%81%EC%96%B4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>build</title>
-      <link>https://devbj.com/tags/build/</link>
+      <link>https://wizfi.github.io/mydocs/tags/build/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/build/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/build/</guid>
       <description></description>
     </item>
     
     <item>
       <title>c</title>
-      <link>https://devbj.com/tags/c/</link>
+      <link>https://wizfi.github.io/mydocs/tags/c/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/c/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>c&#43;&#43;</title>
-      <link>https://devbj.com/tags/c&#43;&#43;/</link>
+      <link>https://wizfi.github.io/mydocs/tags/c&#43;&#43;/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/c&#43;&#43;/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>compile</title>
-      <link>https://devbj.com/tags/compile/</link>
+      <link>https://wizfi.github.io/mydocs/tags/compile/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/compile/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/compile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jekyll</title>
-      <link>https://devbj.com/tags/jekyll/</link>
+      <link>https://wizfi.github.io/mydocs/tags/jekyll/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/jekyll/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>makefile</title>
-      <link>https://devbj.com/tags/makefile/</link>
+      <link>https://wizfi.github.io/mydocs/tags/makefile/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/tags/makefile/</guid>
+      <guid>https://wizfi.github.io/mydocs/tags/makefile/</guid>
       <description></description>
     </item>
     

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linker on DevBJ.com</title>
-    <link>https://devbj.com/tags/linker/</link>
+    <link>https://wizfi.github.io/mydocs/tags/linker/</link>
     <description>Recent content in linker on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 18 Sep 2016 16:20:29 -0400</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/linker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/linker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part3/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part3/</link>
       <pubDate>Sat, 17 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part3/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part3/</guid>
       <description>오늘은 Go 링커와 오브젝트 파일, 그리고 재배치(relocations)에 대해 얘기해 보자. 이런 것들이 독자들과 무슨 상관이 있을까? 만약 독자가 어떤 대형 프</description>
     </item>
     
     <item>
       <title>Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part4/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part4/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part4/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part4/</guid>
       <description>오늘은, Func 구조에 대해 좀 더 자세히 들여다 보고 어떻게 가비지 컬렉션이 작동하는지 몇가지 자세한 내용을 논하겠다. 이 포스트는 Golang의 내부, 3부: 링커,</description>
     </item>
     
     <item>
       <title>Golang의 내부, 0부: 부록</title>
-      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/resources/</link>
       <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/resources/</guid>
       <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
     </item>
     

@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How-to on DevBJ.com</title>
-    <link>https://devbj.com/categories/how-to/</link>
+    <link>https://wizfi.github.io/mydocs/categories/how-to/</link>
     <description>Recent content in How-to on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 02 Oct 2016 00:51:06 +0900</lastBuildDate>
     
-	<atom:link href="https://devbj.com/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go언어 시작하기</title>
-      <link>https://devbj.com/golangkorea/go-start/getting-start/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/go-start/getting-start/</link>
       <pubDate>Sun, 28 Aug 2016 15:10:07 +0830</pubDate>
       
-      <guid>https://devbj.com/golangkorea/go-start/getting-start/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/go-start/getting-start/</guid>
       <description>Go 언어에 대해서 구글이 2009년에 만든 비교적 새로운 프로그래밍 언어다. 2009년이면 거의 7년 이상된 구닥다리 언어잖아? 라고 생각 할 수 있겠으나, Rub</description>
     </item>
     
     <item>
       <title>시리즈 #1 - Hugo 시작하기</title>
-      <link>https://devbj.com/golangkorea/hugo-intro/getting-started/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/getting-started/</link>
       <pubDate>Tue, 23 Aug 2016 23:24:55 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/hugo-intro/getting-started/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/getting-started/</guid>
       <description>Hugo 시작하기 Hugo는 Go로 제작되고 하나의 실행파일로 배포됩니다. 다양한 설치 방법이 있지만 우선 Package Manager를 쓰시는 분들을 중심으로 살펴보겠습니다</description>
     </item>
     
     <item>
       <title>Go의 주요 특징들</title>
-      <link>https://devbj.com/golangkorea/go-start/feature/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/go-start/feature/</link>
       <pubDate>Mon, 12 Sep 2016 13:10:03 +0900</pubDate>
       
-      <guid>https://devbj.com/golangkorea/go-start/feature/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/go-start/feature/</guid>
       <description>단순함 Go 언어는 단순함(simplicity)과 실용성(pragmatism)을 지향하는 언어로 이 두가지 철학이 다른 모든 것들 보다 상위에 있다. go 언어</description>
     </item>
     
     <item>
       <title>시리즈 #2 - 컨텐츠 제작 기초</title>
-      <link>https://devbj.com/golangkorea/hugo-intro/content-basic/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/content-basic/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:04 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/hugo-intro/content-basic/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/content-basic/</guid>
       <description>컨텐츠 제작 기초 컨텐츠를 제작하면서 꼭 알아야 할 몇가지 개념을 정리하겠습니다. 컨텐츠의 조직적인 관리 (Organization) 사이트가 많은 양의 컨텐츠를 보유하게 되면서 조직적인 관</description>
     </item>
     
     <item>
       <title>Go와 객체지향</title>
-      <link>https://devbj.com/golangkorea/go-start/object-oriented/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/go-start/object-oriented/</link>
       <pubDate>Sun, 02 Oct 2016 00:51:06 +0900</pubDate>
       
-      <guid>https://devbj.com/golangkorea/go-start/object-oriented/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/go-start/object-oriented/</guid>
       <description>객체지향 프로그래밍 Go는 클래스(Class)가 없다!! Struct가 Class의 역할을 수행 할 수 있기는 하지만 메서드도 구조체로부터 분리되는 구성을</description>
     </item>
     
     <item>
       <title>시리즈 #3 - 사이트 테마 개발하기</title>
-      <link>https://devbj.com/golangkorea/hugo-intro/theme-customizing/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/theme-customizing/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:30 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/hugo-intro/theme-customizing/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/theme-customizing/</guid>
       <description>사이트 테마 개발하기 시리즈 1 마지막에 hugo-octopress 테마를 사용하여 처음으로 사이트를 구축한 기억을 하실 겁니다. 사이트를 구축하기 전에 Hugo에서 사용할 수 있는 테마가</description>
     </item>
     
     <item>
       <title>시리즈 #4 - 분류(Taxonomy)기능 사용하기</title>
-      <link>https://devbj.com/golangkorea/hugo-intro/taxonomy-basic/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/taxonomy-basic/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:44 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/hugo-intro/taxonomy-basic/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/taxonomy-basic/</guid>
       <description>분류(Taxonomy)기능 사용하기 사이트에 컨텐트가 많아 질 수록 고민이 생깁니다. 비숫한 주제의 컨텐트를 한 곳에 나열해 주는 페이지를 만들수는 없는가? 순</description>
     </item>
     
     <item>
       <title>시리즈 #5 - 사이트에 블로그 올리는 방법</title>
-      <link>https://devbj.com/golangkorea/hugo-intro/how-to-contribute-content/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/how-to-contribute-content/</link>
       <pubDate>Tue, 23 Aug 2016 23:25:55 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/hugo-intro/how-to-contribute-content/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/hugo-intro/how-to-contribute-content/</guid>
       <description>사이트에 블로그 올리는 방법 Golang Korean Community 사이트는 깃헙의 golangkorea Organization의 웹사이트로 GitHub Pages를 이용해 제작되고 있습니다. 현존하는 Static Site Gene</description>
     </item>
     

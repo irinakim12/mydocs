@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>W6100 on DevBJ.com</title>
-    <link>https://devbj.com/tags/w6100/</link>
+    <link>https://wizfi.github.io/mydocs/tags/w6100/</link>
     <description>Recent content in W6100 on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/w6100/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/w6100/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IPv6 WebServer example with WIZnet W6100 chip</title>
-      <link>https://devbj.com/blog/2019-03-05-webserver-adafruit/</link>
+      <link>https://wizfi.github.io/mydocs/blog/2019-03-05-webserver-adafruit/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/blog/2019-03-05-webserver-adafruit/</guid>
+      <guid>https://wizfi.github.io/mydocs/blog/2019-03-05-webserver-adafruit/</guid>
       <description>(Modified) 2019-03-03 WebServer Example WebServer-Adafruit (https://github.com/WIZnet-ArduinoEthernet/WebServer-Adafruit) W6100의 IPv4, IPv6 Dual Stack을 이용한 WebServer Example 입니다. Browser로 접속하면 Host의 IPv4 또는 IPv6 주소가 Adafruit의 OLED SSD130</description>
     </item>
     
     <item>
       <title>List of Arduino Ethernet Shield products</title>
-      <link>https://devbj.com/blog/2019-01-15-arduino-ethernet-shield-list/</link>
+      <link>https://wizfi.github.io/mydocs/blog/2019-01-15-arduino-ethernet-shield-list/</link>
       <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devbj.com/blog/2019-01-15-arduino-ethernet-shield-list/</guid>
+      <guid>https://wizfi.github.io/mydocs/blog/2019-01-15-arduino-ethernet-shield-list/</guid>
       <description>(Modified) 2019-01-15
  W6100 W5500 W5100S W5100 W5200  Ethernet Shield List What is the &amp;ldquo;Ethernet Shield&amp;rdquo;?  The Arduino Ethernet Shield connects your Arduino to the internet in mere minutes. Just plug this module onto your Arduino board, connect it to your network with an RJ45 cable (not included) and follow a few simple instructions to start controlling your world through the internet. from Ethernet Shield
  WIZnet - W5100, W5200, W5500, W5100S, W6100 W6100    Name Maker Chipset Product link    W5500    Name Maker Chipset Product link     ARDUINO MKR ETH SHIELD Arduino W5500 Product Link   W5500 Ethernet Shield S(secure) EWBM W5500 Product Link   Arduino Ethernet Shield 2 Arduino W5500 Product Link   W5500 Ethernet Shield WIZnet W5500 Product Link   SweetPea UnoNet+ : Ethernet and NFC in one board ElectronicSweetpeas W5500 Product Link   POE W5500 Ethernet Shield Iteadstudio W5500 Product Link   W5500 Ethernet Shield v1.</description>

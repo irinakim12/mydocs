@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GoLang Korea on DevBJ.com</title>
-    <link>https://devbj.com/golangkorea/</link>
+    <link>https://wizfi.github.io/mydocs/golangkorea/</link>
     <description>Recent content in GoLang Korea on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 19 Aug 2016 23:35:49 -0400</lastBuildDate>
     
-	<atom:link href="https://devbj.com/golangkorea/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/golangkorea/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go에서 애플리케이션 설계하기</title>
-      <link>https://devbj.com/golangkorea/structuring-applications-in-go/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/structuring-applications-in-go/</link>
       <pubDate>Mon, 10 Oct 2016 21:11:16 +0900</pubDate>
       
-      <guid>https://devbj.com/golangkorea/structuring-applications-in-go/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/structuring-applications-in-go/</guid>
       <description>Structuring Applications in Go을 번역한 글입니다. 개요 Go를 배울 때 가장 어려웠던 부분은 애플리케이션을 어떻게 설계하는가였다. Go 이전에, 나는 Rails 애플리케이션을 만들었었는데</description>
     </item>
     
     <item>
       <title>vim-go를 이용한 go 개발 환경 구축</title>
-      <link>https://devbj.com/golangkorea/vim-go/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/vim-go/</link>
       <pubDate>Mon, 22 Aug 2016 22:57:14 +0900</pubDate>
       
-      <guid>https://devbj.com/golangkorea/vim-go/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/vim-go/</guid>
       <description>Vim Vim은 Emacs와 함께 (적어도 리눅스에서는) 가장 널리 사용하는 에디터일 것이다. 가볍고 빠르며, 어디에서나 실행되기 때문에 그 단순함에도 불구하고 여</description>
     </item>
     
     <item>
       <title>Golang 프로젝트에 TDD 도입하기</title>
-      <link>https://devbj.com/golangkorea/tdd-with-golang/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/tdd-with-golang/</link>
       <pubDate>Sat, 20 Aug 2016 12:15:44 +0900</pubDate>
       
-      <guid>https://devbj.com/golangkorea/tdd-with-golang/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/tdd-with-golang/</guid>
       <description>여기에서 사용한 테스트 코드는 Bitbucket 에서 다운로드 할 수 있다. TDD 클라우드와 MSA와 REST의 등장으로 TDD가 재조명 받고 있다. TDD를 제대로 적용하려면 상당</description>
     </item>
     

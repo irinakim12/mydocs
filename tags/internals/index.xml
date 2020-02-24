@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Internals on DevBJ.com</title>
-    <link>https://devbj.com/tags/internals/</link>
+    <link>https://wizfi.github.io/mydocs/tags/internals/</link>
     <description>Recent content in Internals on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 20 Sep 2016 16:20:29 -0400</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/internals/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/internals/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Golang의 내부, 1부: 주요 컨셉트와 프로젝트 구조</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part1/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part1/</link>
       <pubDate>Tue, 13 Sep 2016 13:18:28 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part1/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part1/</guid>
       <description>이 블로그 시리즈는 기본적인 Go 언어특성에 이미 익숙하며 좀 더 심도있게 내부구조를 알고자 하는 독자들을 위해 쓰여졌다. 이 포스트는 Go언어의 소스코드의 구조와 Go</description>
     </item>
     
     <item>
       <title>Golang의 내부, 2부: Go 컴파일러 들여다 보기</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part2/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part2/</link>
       <pubDate>Thu, 15 Sep 2016 05:53:48 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part2/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part2/</guid>
       <description>독자는 인터페이스 레퍼런스를 통해 변수를 사용할 경우 Go 런타임내에서 어떤 일이 있는지 정확하게 알고 있는가? 이 질문에 쉽게 답할 수 없는 이유는 어떤 인터페이스를 구</description>
     </item>
     
     <item>
       <title>Golang의 내부, 3부: 링커, 오브젝트 파일, 그리고 재배치</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part3/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part3/</link>
       <pubDate>Sat, 17 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part3/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part3/</guid>
       <description>오늘은 Go 링커와 오브젝트 파일, 그리고 재배치(relocations)에 대해 얘기해 보자. 이런 것들이 독자들과 무슨 상관이 있을까? 만약 독자가 어떤 대형 프</description>
     </item>
     
     <item>
       <title>Golang의 내부, 4부: 오브젝트 파일, 그리고 함수 메타데이터</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part4/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part4/</link>
       <pubDate>Sun, 18 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part4/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part4/</guid>
       <description>오늘은, Func 구조에 대해 좀 더 자세히 들여다 보고 어떻게 가비지 컬렉션이 작동하는지 몇가지 자세한 내용을 논하겠다. 이 포스트는 Golang의 내부, 3부: 링커,</description>
     </item>
     
     <item>
       <title>Golang의 내부, 5부: 런타임 부트스트랩</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part5/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part5/</link>
       <pubDate>Mon, 19 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part5/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part5/</guid>
       <description>부트스트래핑 과정은 Go의 런타임이 어떻게 작동하는지를 이해하는데 열쇠와 같은 구실을 한다. Go와 함께 앞으로 나아가고자 한다면 반드시 배워야한다. 그래서 G</description>
     </item>
     
     <item>
       <title>Golang의 내부, 6부: 부트스트래핑과 메모리 할당자</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part6/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part6/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part6/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part6/</guid>
       <description>이 포스트는 Golang 내부 시리즈의 연속이다. Go 런타임을 자세히 이해하는데 열쇠와 같은 부트스트랩 과정을 살펴볼 것이다. 이번에는 시작하는 순서의 두번째 부분을 섭렵해</description>
     </item>
     
     <item>
       <title>Golang의 내부, 0부: 부록</title>
-      <link>https://devbj.com/golangkorea/golang-internals/resources/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/resources/</link>
       <pubDate>Mon, 12 Sep 2016 13:18:28 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/resources/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/resources/</guid>
       <description>Go 언어의 최신 컴파일러에 대한 내용 GopherCon 2016: Rob Pike - The Design of the Go Assembler Video Slides GopherCon 2014 Go from C to Go by Russ Cox Video Slides GopherFest 2015: Rob Pike on the move from C to Go in the toolchain Video Slides Go의 어셈블러 A Quick Guide to Go&amp;rsquo;s Assembler</description>
     </item>
     

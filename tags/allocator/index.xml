@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>allocator on DevBJ.com</title>
-    <link>https://devbj.com/tags/allocator/</link>
+    <link>https://wizfi.github.io/mydocs/tags/allocator/</link>
     <description>Recent content in allocator on DevBJ.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 20 Sep 2016 16:20:29 -0400</lastBuildDate>
     
-	<atom:link href="https://devbj.com/tags/allocator/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wizfi.github.io/mydocs/tags/allocator/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Golang의 내부, 6부: 부트스트래핑과 메모리 할당자</title>
-      <link>https://devbj.com/golangkorea/golang-internals/part6/</link>
+      <link>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part6/</link>
       <pubDate>Tue, 20 Sep 2016 16:20:29 -0400</pubDate>
       
-      <guid>https://devbj.com/golangkorea/golang-internals/part6/</guid>
+      <guid>https://wizfi.github.io/mydocs/golangkorea/golang-internals/part6/</guid>
       <description>이 포스트는 Golang 내부 시리즈의 연속이다. Go 런타임을 자세히 이해하는데 열쇠와 같은 부트스트랩 과정을 살펴볼 것이다. 이번에는 시작하는 순서의 두번째 부분을 섭렵해</description>
     </item>
     
